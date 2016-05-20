@@ -922,7 +922,7 @@ default:
 	<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>" title="<?php esc_attr_e( 'Password Lost and Found' ); ?>"><?php _e( 'Lost your password?' ); ?></a>
 <?php endif; ?>
 </p>
-<?php } ?>
+<?php }  ?>
 
 <script type="text/javascript">
 function wp_attempt_focus(){
