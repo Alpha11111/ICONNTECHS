@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>cart</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="fonts/iconfont.css" />
+		<link rel="stylesheet" href="css/cart.css" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>http://s.ap.wps.cn/ciba/mini/index.9d49951b.html?mode=lnp#
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		
+	</head>
+	<body>
+		<!--
+        	作者：1164365204@qq.com
+        	时间：2016-05-05
+        	描述：head
+        -->
+		<iframe src="head.html" width="100%" height="50px" scrolling="no" frameborder ="0"></iframe>
+		<div class="container container1" >
+			<h1><i class="iconfont">&#xe60f;</i>&nbsp; Shopping Cart</h1>
+			<hr />
+			<div class="product-Box">
+				
+				<div class="product-Box-left">
+					<div class="product-img"><a><img src="img/cart1.png" alt="cart1" class="img-responsive"/></a></div>
+					<div class="product-desc">
+						<p class="product-title">Bluetooth Audio</p>
+						<p>Price: 357</p>
+						<p>Color: blue </p>
+					</div>
+				</div>
+				<div class="product-Box-right">
+					<div>
+						Quantity &nbsp;&nbsp;
+						<p class="calculationBox">
+							<label id="reduce"><i class="iconfont">&#xe644;</i></label>
+							<span class="num">11</span>
+							<label id="add"><i class="iconfont">+</i></label>
+						</p>
+						<a data-target="#myModal" data-toggle="modal" date-num="2"><i class="iconfont">&#xe639;</i></a>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="product-Box">
+				
+				<div class="product-Box-left">
+					<div class="product-img"><a><img src="img/cart1.png" alt="cart1" class="img-responsive"/></a></div>
+					<div class="product-desc">
+						<p class="product-title">Bluetooth Audio</p>
+						<p>Price: 357</p>
+						<p>Color: blue </p>
+					</div>
+				</div>
+				<div class="product-Box-right">
+					<div>
+						Quantity &nbsp;&nbsp;
+						<p class="calculationBox">
+							<label id="reduce"><i class="iconfont">&#xe644;</i></label>
+							<span class="num">11</span>
+							<label id="add"><i class="iconfont">+</i></label>
+						</p>
+						<a data-target="#myModal" data-toggle="modal" date-num="1"  ><i class="iconfont">&#xe639;</i></a>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<!--
+            	作者：1164365204@qq.com
+            	时间：2016-05-06
+            	描述：结算按钮
+            -->
+			<p class="buyBtnBox"><a class="buyBtn">Subtotal: $199.99   |  CHECK OUT</a></p>
+		</div>
+		<!--
+        	作者：1164365204@qq.com
+        	时间：2016-05-13
+        	描述：如果购物车没有商品则显示
+        -->
+		<div class="container container2" style="display: none;">
+			<h1><i class="iconfont">&#xe60f;</i></h1>
+			<p>Your cart is empty</p>
+			<p class="btn1"><a> SHOP NOW</a></p>
+		</div>
+		<!--
+        	作者：1164365204@qq.com
+        	时间：2016-05-05
+        	描述：foot
+        -->
+		<iframe src="foot.html" width="100%" height="399px" scrolling="no" frameborder ="0"></iframe>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+        
+         <div class="modal-body">
+            <h3>REMOVE ITEM</h3>
+            <p>Are you sure you want to remove this item from your cart?</p>
+         </div>
+         <div class="modal-footer">
+            <input type="button" class="btn1 fff" data-dismiss="modal" value="NO"/><input type="button" class="btn1 yes " value="YES"/>
+            
+           
+           
+         </div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+		<script src="bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
+		<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+		<script>
+				$(function(){
+					var id=0;
+					$(".product-Box-right a").click(function(){
+					   id=$(this).attr("date-num");
+					 
+					});
+					$(".yes").click(function(){
+						$('#myModal').modal('hide');
+					    location.href="?id="+=id;
+						
+					});
+					//数量减少
+					$("#reduce").click(function(){
+					  var num = parseInt($(this).next(".num").text());
+					 
+					   num--;
+					   if(num<=1){
+					   	 $(this).next(".num").text(1);
+					   	 return;
+					   	  
+					   }
+					    $(this).next(".num").text(num);
+					});
+					//数量增加
+					$("#add").click(function(){
+						var num = parseInt($(this).prev(".num").text());
+						num++;
+						$(this).prev(".num").text(num);
+						
+					});
+				 });
+			
+			     
+		</script>
+	</body>
+</html>

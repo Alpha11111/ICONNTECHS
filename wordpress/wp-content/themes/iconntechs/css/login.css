@@ -1,0 +1,130 @@
+.loginBox{
+	background: url(../img/back1.png);
+	background-size:cover ;
+	height: 712px;
+}
+.loginBox form{
+	width: 35.5%;
+	margin-left: 65%;
+	padding-top: 70px;
+}
+.loginBox h1{
+	text-align: center;
+	margin: 30px 0px;
+}
+.loginBox form input[type="text"],.loginBox form input[type="password"]{
+	width: 100%;
+	height:48px ;
+	border: 1px solid #ccc;
+	padding-left:6px;
+}
+.loginBox form input[type="submit"],.register,.facebook,.Google{
+	width: 100%;
+	height:35px ;
+	background: #349cd8;
+	color: #fff;
+	border: 1px solid #349cd8;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 35px;
+	float: none;
+}
+.loginBox form input[type="submit"]{
+		margin: 20px 0px 10px 0px;
+}
+.register{
+	display: inline-block;
+	background: #e9554f;
+	border: 1px solid #e9554f;
+	text-decoration: none;
+	margin-top: 30px;
+}
+.facebook{
+	display: inline-block;
+	background: #5d82d1;
+	border: 1px solid #5d82d1;
+	text-decoration: none;
+	font-size: 16px;
+}
+.Google{
+	display: inline-block;
+	background: #eb5e4c;
+	border: 1px solid #eb5e4c;
+	text-decoration: none;
+	font-size: 16px;
+}
+.register:hover,.facebook:hover,.Google:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.checkBox{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #ccc;
+
+}
+label.error{
+	color: #FF5550;
+	font-weight: 300;
+	padding-left: 7px;
+}
+.other-box{
+	vertical-align: middle;
+	line-height: 18px;
+}
+.checkBox i{
+	font-size: 22px;
+	margin-left: -3px;
+}
+.forgetPwd{
+	margin-left: 30%;
+	color: #FF5550;
+}
+.xiantiao{
+	display: inline-block;
+	width: 43%;
+	height: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.xiantiao:first-child{
+	float: left;
+}
+.xian-box{
+	position: relative;
+}
+.or{
+	position: absolute;
+	left:46.5%;
+	z-index: 2;
+	font-size: 20px;
+	color: #b2b2b2;
+}
+.xiantiao:last-child{
+	float: right;
+}
+.changePwd{
+	margin: 30px 0px 0px -1px !important;
+	text-align: left !important;
+}
+.changePwdForm{
+	padding-top: 130px !important;
+}
+.registerForm{
+	padding-top: 100px !important;
+}
+.propmt{
+	color: #999999;
+}
+.back{
+	margin-top: -15px;
+	cursor: pointer;
+}
+@media only screen and (max-width:768px ) {
+	.loginBox form{
+	width: 100%;
+	margin-left: 0%;
+	padding-top: 70px;
+}
+}

@@ -1,0 +1,153 @@
+body{
+	font-family: arial;
+}
+.container1{
+	padding: 30px 0px 80px 0px;
+}
+.container1 h1{
+	text-align: center;
+}
+.container1 h1 i{
+	font-size: 50px;
+}
+
+a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+.product-Box-left{
+	float: left;
+	overflow: hidden;
+}
+.product-Box-right{
+	float: right;
+	overflow: hidden;
+	padding-right: 2%;
+}
+.product-Box-right div{
+	padding:81px 20px 81px 0px ;
+}
+.product-Box-right p{
+
+	display: inline-block;
+	border: 1px solid #ccc;
+	line-height: 30px;
+}
+.product-Box-right p #add,.product-Box-right p #reduce {
+	width: 35px;
+	text-align: center;
+		line-height: 20px;
+		cursor: pointer;
+}
+.product-Box-right p i{
+	color: #A5A5A5;
+}
+.product-Box-right p span{
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+}
+.product-img a img{
+	max-width: 320px;
+	max-height: 200px;
+	overflow: hidden;
+}
+.product-Box-left .product-img,.product-Box-left .product-desc{
+	float: left;
+}
+.product-Box-left .product-desc {
+	padding-top: 40px;
+}
+.product-Box-left .product-desc{
+	color: #A5A5A5;
+}
+.product-Box-left .product-desc .product-title{
+	color: #323232;
+	font-size: 20px;
+}
+.calculationBox i:first-child{
+	font-size: 16px;
+}
+.product-Box{
+	overflow: hidden;
+}
+iframe{
+	border: 0;
+	display: block;
+}
+.buyBtn{
+	width: 30%;
+	display: inline-block;
+	background: #ff6464;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	margin-top: 50px;
+	float: right;
+}
+.buyBtn:hover{
+	color: #fff ;
+}
+.container2{
+	text-align: center;
+	padding: 40px 0px 247px 0px;
+}
+.container2 h1{
+	text-align: center;
+}
+.container2 h1 i{
+	font-size: 50px;
+}
+.container2 p.btn1{
+	margin-top: 30px;
+}
+.container2 p a{
+	display: inline-block;
+	width: 15%;
+	height: 40px;
+	background: #349cd8;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	border-radius:5px ;
+}
+@media only screen and (max-width:768px ) {
+	.buyBtn{
+	width: 100%;
+	float: none;
+	
+   }
+  .buyBtnBox{
+  	width: 80%;
+  	margin: 0px auto;
+  }
+  .product-Box-left{
+	float: none;
+	
+   }
+   .product-Box-right{
+	float: none;
+	padding-left: 15%;
+   }
+   .product-Box-right div{
+	padding:21px 20px 21px 0px ;
+   }
+   .container2 p a{
+
+	width: 35%;
+	
+}
+   
+}
+@media only screen and (max-width:473px ) {
+	.product-Box-left .product-img,.product-Box-left .product-desc{
+	float: none;
+   }
+   .product-Box-left .product-desc{
+   	padding-left: 15%;
+   }
+   .product-Box-left .product-desc {
+	padding-top: 0px;
+   }
+}

@@ -1,0 +1,76 @@
+footer{
+	background: #000;
+	min-height: 300px;
+	padding: 50px 0px 50px 0px;
+	background: url(../img/footback.png);
+}
+footer ul li a {
+	color: #fff !important;
+	line-height: 30px !important;
+	font-size: 12px;
+	
+	
+}
+footer ul li a:hover{
+	color: #ff5550 !important;
+}
+ul li{
+	list-style: none !important;
+}
+footer ul:nth-child(4) li{
+	margin-left: 50%;
+}
+.social-contact{
+	margin-top: 15px;
+}
+.social-contact a{
+	display: inline-block;
+	width: 10%;
+}
+.social-contact a i{
+	color: #fff;
+}
+footer .container .col-lg-6{
+	color: #fff;
+}
+footer .container .col-lg-6 a{
+	display: inline-block;
+	color: #fff;
+    float: right;
+    text-decoration: underline;
+}
+footer input[type="text"]{
+	width: 250px;
+	padding-left:5px ;
+}
+footer input[type="submit"]{
+	background:rgba(0,0,0,0.1) ;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-top: 1em;
+}
+footer .container .col-lg-6 a img{
+	display: inline;
+}
+@media only screen and (min-width: 970px) and (max-width: 1169px) {
+	
+	
+	footer ul:nth-child(4) li{
+	margin-left: 0%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 969px) {
+	
+		footer ul:nth-child(4) li{
+	margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width:768px ) {
+		
+footer ul:nth-child(4) li{
+	margin-left: 0%;
+}
+
+}
+

@@ -1,0 +1,79 @@
+body{
+	font-family: arial;
+}
+.img-box a img{
+	width: 120px;
+	height: 90px;
+	overflow: hidden;
+}
+.container1{
+	padding: 30px 0px 80px 0px;
+}
+.container1 h1{
+	text-align: center;
+}
+.container1 h1 i{
+	font-size: 50px;
+}
+.productList .img-box,.productList .other-desc{
+	float: left;
+}
+.product-title{
+	font-size: 18px;
+}
+.productList .other-desc{
+	padding-top: 10px;
+	color: #a5a5a5;
+}
+.productList .other-desc p{
+	margin: 4px 0px;
+}
+.productList{
+	overflow: hidden;
+}
+a{
+	cursor: pointer;
+}
+.price1{
+	text-align: right;
+	color: #a5a5a5;
+	padding-right: 3%;
+	margin-top: -20px;
+}
+hr{
+	margin: 10px 0px;
+}
+.container1 .col-lg-6 p{
+	width: 70px;
+	margin: 20px auto;
+	color: #a5a5a5;
+}
+.container1 .col-lg-6  p.TotalPrice{
+	margin-top: 50px;
+	color: #323232;
+}
+.choosePayWay{
+	text-align: center;
+}
+.choosePayWay p{
+	color: #a5a5a5;
+}
+.payBtn{
+	display: inline-block;
+	width: 30%;
+	height: 40px;
+	background: #FF5550;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	margin-top: 50px;
+}
+.payBtn:hover{
+	color: #fff;
+	text-decoration: none;
+}
+@media only screen and (max-width:768px ) {
+	.payBtn{
+		width: 60%;
+	}
+}

