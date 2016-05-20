@@ -1,0 +1,369 @@
+body{
+	font-family: arial;
+}
+iframe{
+	display:block;
+	border: 0;
+}
+.headImg{
+	width: 150px;
+	margin: 0px auto;
+	margin-top: 30px;
+}
+.headImg img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.container1 p{
+	text-align: center;
+	margin: 5px 0px;
+}
+.name{
+	font-size: 20px;
+}
+.personDesc{
+	margin-top: 15px !important;
+}
+.container3,.container4{
+	padding-bottom: 70px;
+}
+.container1.col-lg-3{
+	background: #e6e6e6;
+	height: 88px;
+	margin-top: 20px;
+}
+.activeDiv{
+	background: #FF5550 !important;
+	color: #fff;
+}
+
+
+.container1 .col-lg-3 a{
+	cursor: pointer;
+	text-decoration: none;
+	display:box;
+	color: inherit;
+	
+	
+}
+.container1 .col-lg-3 a div{
+	text-align: center;
+	margin-top: 10px;
+}
+.container1.col-lg-3 a div i{
+	font-size: 30px;
+	
+}
+.container2{
+	margin: 30px auto;
+}
+.addressForm{
+	padding: 20px 0px;
+}
+.num2{
+	position: relative;
+	float: left;
+	width: 49.1%;
+}
+.num1{
+	position: relative;
+	display: inline-block;
+	width: 99.4%;
+}
+.num4{
+	position: relative;
+	float: left;
+	width: 24%;
+}
+.input-Box{
+	height: 65px;
+	
+}
+.inputPropmt{
+	position: absolute;
+	z-index: 2;
+	margin-top: -30px;
+	left: 3%;
+	color: #b9b9b9;
+}
+label.error{
+	color: #FF5550;
+	font-weight: 300;
+	padding-left: 10px;
+	height: 20px;
+}
+.num1 .inputPropmt{
+	left: 1%;
+}
+.inputPropmt span{
+	color: #FF5550;
+}
+.num2:nth-child(2){
+	margin-left: 0.7%;
+}
+.num4{
+	margin-left:0.8% ;
+}
+.num4:first-child{
+	margin-left: 0%;
+}
+.num2 input,.num4 input,.num1 input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left:14px ;
+}
+.num4 input{
+	padding-left: 6px !important;
+}
+.num1 input{
+	padding-left: 8px !important;
+}
+input[type=submit]{
+	background: #FF5550;
+	color: #fff;
+	border: 1px solid #FF5550;
+	width: 100px;
+	height: 32px;
+	float: right;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.addressBox{
+	width: 20%;
+	background: #e6e6e6;
+	padding: 10px;
+	border-radius: 8px;
+}
+.addressBox p{
+	margin: 4px;
+}
+.operateIcon{
+	width: 20%;
+	padding-left: 6%;
+	padding-top: 10px;
+	
+}
+.operateIcon a{
+	text-decoration: none;
+	cursor: pointer;
+}
+.container3 .huicolor{
+	height: 50px;
+	background: #e6e6e6;
+	line-height: 50px;
+	padding-left: 20px;
+	border-radius: 4px;
+	font-weight: bold;
+	
+}
+.container3 .huicolor span{
+	float: right;
+	padding-right:20px ;
+	color: #FF5550;
+}
+.container3 .items,.items1{
+	font-size: 18px;
+	border-bottom: 1px solid #ccc;
+	margin-top: 20px;
+}
+.container3 .items1{
+	border-bottom: none;
+	margin-top: 10px;
+	padding-left: 3px;
+}
+.container3 .product-Box{
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-radius:4px ;
+}
+.container3 .product-Box .product-img,
+.container3 .product-Box .product-desc
+{
+	float: left;
+}
+.container3 .product-Box .product-img{
+	padding: 0px 30px;
+}
+.container3 .product-Box .product-img img{
+	width: 127px;
+	height: 127px;
+}
+.container3 .product-Box .product-desc{
+	padding: 20px 0px;
+	font-size: 16px;
+}
+.container3 .product-Box .product-price{
+	float: right;
+	padding: 0px 20px;
+	margin-top: 70px;
+	
+}
+.container3 .totalNum .totalLeft{
+	float: left;
+}
+.container3 .totalNum .totalRight{
+	float: right;
+}
+.container3 .totalRight{
+	margin-top: 50px;
+}
+.container3 .totalRight .abtn{
+	display: block;
+	width: 100%;
+	background: #FF5550;
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	padding: 0px 20px;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius:5px ;
+}
+.container3 .orderti{
+	margin-top: 20px;
+}
+ .hui{
+	color: #848484;
+}
+.container3 .totalRight .abtn1{
+	background: #999999;
+}
+.container4 h4{
+	background:#e6e6e6 ;
+	height: 50px;
+	line-height: 51px;
+	padding-left: 12px;
+}
+.productList{
+	padding: 0px 20px;
+	border: 1px solid #ccc;
+	margin-top: -10px;
+	border-top: none;
+	margin-bottom: 20px;
+}
+.container4 .product-Box{
+	overflow: hidden;
+}
+.container4 .product-Box .product-img,
+.container4 .product-Box .product-desc
+{
+	float: left;
+}
+.container4 .product-Box .product-img{
+	padding: 0px 30px;
+}
+.container4 .product-Box .product-img img{
+	width: 127px;
+	height: 127px;
+}
+.container4 .product-Box .product-desc{
+	padding: 20px 0px;
+	font-size: 16px;
+}
+.container4 .product-Box .product-price{
+	float: right;
+	padding: 0px 20px;
+	margin-top: 70px;
+	
+}
+.container4 .totalNum{
+	overflow: hidden;
+}
+.container4 .totalNum .totalLeft{
+	float: left;
+}
+.container4 .totalNum .totalRight{
+	float: right;
+}
+.container4 .totalRight{
+	margin-top: 30px;
+	cursor: pointer;
+}
+.container4 h3{
+	text-align: center;
+}
+.container4 .goshop{
+	width: 130px;
+	margin: 0px auto;
+}
+.container4 .goshop a{
+	display: inline-block;
+	padding: 10px 30px;
+	border: 1px solid #CCCCCC;
+	cursor: pointer;
+	text-decoration: none;
+	
+	
+}
+.container5{
+	padding: 20px 15px 80px 15px;
+}
+.container6{
+	padding: 20px 0px 80px 0px;
+}
+.container6 .ptitle{
+	font-size: 18px;
+}
+.container6 input[type=submit]{
+	width: 25%;
+	height: 50px;
+	background: #999999;
+	border-radius:5px ;
+	border: 1px solid #999999;
+	margin-right: 0px;
+}
+.container6 p input[type=text]{
+	width: 71%;
+	height: 50px;
+	border-radius:5px ;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+}
+.container7 {
+	padding: 70px 0px 70px 0px;
+}
+.container7 p{
+	text-align: center;
+	color: #999999;
+}
+.container7 p a{
+	padding: 5px 35px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	cursor: pointer;
+}
+@media only screen and (max-width:995px ) {
+
+.num4,.num1,.num2{
+	width: 100%;
+}
+.num4 input,.num1 input,.num2 input{
+	margin-top: 20px;
+	margin-left: 0% !important;
+}
+.num4{
+	margin-left:0% ;
+}
+.num2:nth-child(2){
+	margin-left: 0%;
+}
+.addressBox{
+	width: 100%;
+	background: #e6e6e6;
+	padding: 10px;
+	border-radius: 8px;
+}
+.operateIcon{
+	width: 100%;
+	padding-left: 6%;
+	padding-top: 10px;
+}
+.col-lg-3 a div{
+	text-align: center;
+	padding-top: 10px;
+}
+}

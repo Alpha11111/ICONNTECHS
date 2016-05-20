@@ -1,0 +1,277 @@
+.container1{
+  padding: 50px 0px;
+}
+.container2{
+	padding: 0px 0px 50px 0px;
+}
+.container1 .col-lg-3{
+	padding: 0px;
+}
+.container2 input[type="text"]{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius:4px ;
+	padding-left: 5px;
+	margin-top: 10px;
+}
+.container1 h1{
+	border: 2px solid #323232;
+	text-align: center;
+	width: 30%;
+	margin: 0px auto;
+	padding: 5px 0px;
+	text-transform: uppercase;
+}
+
+.container2 .left,.container2 .col-lg-9{
+	padding: 0px;
+}
+.container2 .left{
+	width: 15%;
+	float: left;
+}
+.search-Box{
+	padding: 0px 10px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.search-Box h5,.search-Box hr{
+	margin: 8px 0px 5px 0px ;
+}
+.search-Box ul{
+	padding: 14px;
+		cursor: pointer;
+}
+.search-Box ul li{
+	list-style: none;
+	line-height: 30px;
+}
+.search-Box ul li a{
+	text-decoration: none;
+
+}
+.color-Box span{
+	display: inline-block;
+	width: 30px;
+	height: 28px;
+}
+.color-Box.move{
+	margin-top:20px;
+}
+.container2 .right hr{
+	margin: 9px 0px ;
+}
+.container2 .right  .searchLable a{
+	display: inline-block;
+	width: 60px;
+	cursor: pointer;
+	text-decoration: none;
+	padding-left: 16px;
+	color: #a5a5a5;
+}
+.container2 .right  .searchLable a:nth-child(1){
+	color: #FF5550;
+}
+.search-iocn{
+	display: inline-block;
+	position: absolute;
+	z-index: 9;
+	margin: 20px 0px 0px -30px;
+}
+.container2 .right  #productBox{
+	padding: 0px ;
+	margin-top: -20px;
+	overflow: hidden;
+}
+.container2 .right  #productBox li{
+	list-style: none;
+	float: left;
+	width: 215px;
+	margin-left: 1.8%;
+	margin-top: 20px;
+}
+.container2 .right  #productBox li:hover .btn-a{
+	visibility: visible;
+}
+.container2 .right  #productBox li  img{
+	border: 1px solid #ccc;
+}
+.container2 .right  #productBox li a{
+	 text-decoration: none;
+	 cursor: pointer;
+}
+.container2 .right  #productBox li .product-desc h4{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	width: inherit;
+	height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	 -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin: 5px 0px;
+   
+    
+}
+.container2 .right  #productBox li .product-desc .product-Info{
+	display: -webkit-box;
+	display: box;
+	width: inherit;
+	height: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	 -webkit-line-clamp: 4;
+	 word-break: break-all;
+    -webkit-box-orient: vertical;
+}
+.container2 .right {
+	width: 81%;
+	float: left;
+	margin-left: 4%;
+}
+.btn-a{
+	visibility: hidden;
+}
+.btn-a a{
+	display: inline-block;
+	width: 49.5%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 10px;
+}
+.price{
+	font-size: 23px;
+	margin: 0px 0px;
+}
+.btn-info1{
+	background: #1eb9d2;
+	
+}
+.add-cart1{
+	background: #ff5550;
+}
+#Page{
+	width: 70%;
+	text-align: center;
+	height: 50px;
+	position: relative;
+	left: 40%;
+	
+}
+#Page  li{
+	list-style: none;
+	width: 50px;
+	float: left;
+}
+#Page  li{
+	cursor: pointer;
+}
+#Page  li a{
+	text-decoration: none;
+	cursor: pointer;
+	padding: 5px 15px;
+}
+
+.active1{
+	background: #FF5550;
+	color: #fff;
+	font-size: 15px;
+}
+#Page  li a.active1:hover{
+	color: #fff;
+}
+#Page  li a:hover{
+	
+   font-size: 15px;
+}
+@media only screen and (max-width:768px ) {
+.container2 .left{
+	width: 100%;
+	float: left;
+}
+.container2 .right{
+	width: 100%;
+	float: left;
+}
+.container1 h1{
+	width: 50%;
+}
+#Page{
+	width: 100%;
+    left: 25%;
+    padding: 0px;
+	
+}
+#Page  li{
+	width: 40px;
+}
+}
+@media only screen and (max-width:320px ) {
+.container1 h1{
+	width: 100%;
+	font-size: 20px;
+}	
+#Page{
+	width: 100%;
+    left: 10%;
+    padding: 0px;
+	
+}
+#Page  li{
+	width: 40px;
+}
+ .container2 .right  #productBox li img{
+    	width: 100%;
+    	margin-top: 20px;
+  }
+.container2 .right  #productBox li{
+	width: 90%;
+	
+}
+
+}
+@media only screen and (min-width: 321px) and (max-width: 447px) {
+	.container2 .right  #productBox li{
+	 width: 90%;
+	 margin: 0px auto;
+	
+    }
+    .container2 .right  #productBox li img{
+    	width: 100%;
+    	margin-top: 20px;
+    }
+    .container1 h1{
+	width: 100%;
+	font-size: 20px;
+}	
+#Page{
+	width: 100%;
+    left: 20%;
+    padding: 0px;
+	
+}
+#Page  li{
+	width: 40px;
+}
+}
+@media only screen and (min-width: 448px) and (max-width: 600px){
+	#Page{
+	width: 100%;
+    left: 22%;
+    padding: 0px;
+	
+}
+  .container1 h1{
+	width: 60%;
+	font-size: 20px;
+}	
+#Page  li{
+	width: 40px;
+}
+}

@@ -1,0 +1,162 @@
+body{
+	font-family: arial;
+}
+.container1{
+	margin: 40px auto;
+}
+.container1 .col-lg-6 h1{
+	width: 70%;
+	margin: 20px auto;
+	
+}
+.container1 .col-lg-6:last-child{
+	border-left:2px solid #cccccc ;
+}
+.container1 .col-lg-6 h1 i{
+	font-size: 40px;
+}
+.container1 .col-lg-6 h5{
+	margin-top: 35px;
+}
+.num2{
+	position: relative;
+	display: inline-block;
+	width: 48%;
+}
+.num1{
+	position: relative;
+	display: inline-block;
+	width: 99.4%;
+}
+.num3{
+	position: relative;
+	display: inline-block;
+	width: 32%;
+}
+.TotalPrice{
+	padding: 50px 0px 50px 0px;
+}
+.TotalPrice .Total1{
+	display: inline-block;
+	width: 50%;
+}
+.TotalPrice .price1{
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+}
+.input-Box{
+	min-height: 60px;
+}
+.inputPropmt{
+	position: absolute;
+	z-index: 2;
+	margin-top: -30px;
+	left: 3%;
+	color: #b9b9b9;
+}
+.num2:nth-child(2){
+	margin-left: 3%;
+}
+label.error{
+	color: #FF5550;
+	font-weight: 300;
+	padding-left: 5px;
+}
+.num1 .inputPropmt{
+	left: 1%;
+}
+.inputPropmt span{
+	color: #FF5550;
+}
+.num3{
+	margin-left:0.8% ;
+}
+.num3:first-child{
+	margin-left: 0%;
+}
+.num2 input,.num3 input,.num1 input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left:3px ;
+}
+.product-img img{
+	width: 150px;
+	height: 130px;
+	overflow: hidden;
+}
+.product-Box{
+	margin-top: 38px;
+	overflow: hidden;
+}
+hr{
+border:1px solid #ccc ;	
+}
+.product-Box .product-img,.product-Box .product-desc{
+	float: left;
+}
+.product-Box .product-desc{
+	margin-left: 5%;
+}
+.calculationBox{
+	overflow: hidden;
+}
+.calculationBox p{
+	color: #999999;
+}
+.calculationBox .calculationBox-left{
+	float: left;
+}
+.calculationBox .calculationBox-right{
+	float: right;
+}
+.container2{
+	padding-bottom: 70px;
+}
+.container2 input{
+	display: block;
+	width: 100%;
+	height: 40px;
+	background: #FF5550;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 18px;
+	border: 1px solid #FF5550;
+}
+
+a{
+	cursor: pointer;
+}
+@media only screen and (max-width:497px ) {
+	
+.container1 .col-lg-6 h1{
+	width: 100%;
+	margin: 20px auto;
+	font-size: 30px;
+	
+}
+.num2,.num1,.num3{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.num2:nth-child(2){
+	margin-left: 0%;
+}
+.container1 .col-lg-6:last-child{
+	border-left:none ;
+}
+.container2 input{
+	font-size: 16px;
+}
+.num3{
+	margin-left:0% ;
+}
+.num1 .inputPropmt{
+	left: 3%;
+}
+}
