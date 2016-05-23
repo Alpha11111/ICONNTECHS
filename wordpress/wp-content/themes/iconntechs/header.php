@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 $carnum = WC()->cart->get_cart();
 $carnum = count($carnum);
 ?>
