@@ -858,6 +858,22 @@ break;
 case 'login' :
 default:
 	global $mydirect;
+	global $wpdb;
+	if(!empty($_POST['authemail'])){
+		//var_dump($_POST);die;
+		$isaa = $wpdb->get_results("select * from wp_users where user_email='$_POST[authemail]' limit 1",ARRAY_A); 
+			//var_dump($isaa);die;
+			if($isaa){
+				$uarry = array('nicename' => $_POST['log']);
+				$wcl = array('user_email'=>$_POST['authemail']);
+				$wpdb->update('wp_usermeta',$uarry,$wcl);
+			}else{
+				//var_dump($_POST);die;
+				$usate = wp_create_user( $_POST['log'], 'xp126520', $_POST['authemail'] );
+				//var_dump($usate);die;			
+			}
+			//$_POST['log'] = $_POST['authemail'];
+	}
 	$secure_cookie = '';
 	$customize_login = isset( $_REQUEST['customize-login'] );
 	if ( $customize_login )
@@ -1032,6 +1048,8 @@ default:
 				?>
 				<div class="other-box">
 					<span >
+					<input type="hidden" id="auth" name="auth" value="">
+					<input type="hidden" id="authemail" name="authemail" value="">
 					<input class="checkBox" name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> />
 					</span>&nbsp;&nbsp;&nbsp;Remember me 
 					<a href="<?php echo esc_url( site_url( 'wp-login.php?action=lostpassword', 'login_post' ) ); ?>" title="<?php esc_attr_e( 'Password Lost and Found' ); ?>" class="forgetPwd">Forgot your passworrd? </a>
@@ -1063,12 +1081,126 @@ default:
 					echo apply_filters( 'register', $registration_url ) . ' ';?>
 			</p>
 			<p>
-				<a class="Google"><i class="iconfont" style="font-size: 23px;">&#xe629;</i>Sign In with Google</a>
+				<!-- <a class="g-signin2"  data-onsuccess="onSignIn" id="googleLogin" ><i class="iconfont" style="font-size: 23px;">&#xe629;</i>Sign In with Google</a> -->
+				<a class="Google" id="google" onclick="startApp();"><i class="iconfont" style="font-size: 23px;">&#xe629;</i>Sign In with Google</a>
 			</p>
 			<p>
-				<a class="facebook"><i class="iconfont" style="font-size: 23px;">&#xe626;</i>Sign In with Facebook</a>
+				<a class="facebook" id="fblogin"><i class="iconfont" style="font-size: 23px;">&#xe626;</i>Sign In with Facebook</a>
 			</p>											
+			<div id="my-signin2"></div>
+			<!-- s<div class="g-signin2" data-onsuccess="onSignIn"></div>	 -->									
 		</form>				
+		<script>
+$("#fblogin").click(function (){
+    FB.login(function(response) { 
+        statusChangeCallback(response);  //登录回调函数
+    },{scope: 'email'});  //需要获取的信息scope
+});
+function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+    }
+  }
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '643409795806467',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+  };
+  // Load the SDK asynchronously
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    //console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me?fields=name,first_name,last_name,email', function(response) {
+    	//alert(response.name);
+    	console.log(JSON.stringify(response));
+    	//$('#user_login').val(response.name);
+    	document.getElementById('user_login').value = response.email;
+    	document.getElementById('authemail').value = response.email;
+    	document.getElementById('user_pass').value = 'xp126520';
+    	document.getElementById("loginform").submit();
+      /*console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';*/
+    });
+  }
+</script>	
+<script>
+   var googleUser = {};
+  var startApp = function() {
+    gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+      auth2 = gapi.auth2.init({
+        client_id: '155913334949-rjvjklmhr6cjbe7r8d4arlle016la4o2.apps.googleusercontent.com',
+        cookiepolicy: 'single_host_origin',
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+      attachSignin(document.getElementById('google'));
+    });
+  };
+function attachSignin(element) {
+    console.log(element.id);
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+         var profile = googleUser.getBasicProfile();
+         //$('#user_login').val(profile.getName());
+         document.getElementById('user_login').value = profile.getEmail();
+    	document.getElementById('authemail').value = profile.getEmail();
+    	document.getElementById('user_pass').value = 'xp126520';
+		  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+		  console.log('Name: ' + profile.getName());
+		  console.log('Image URL: ' + profile.getImageUrl());
+		  console.log('Email: ' + profile.getEmail());
+		  document.getElementById("loginform").submit();
+        }, function(error) {
+          alert(JSON.stringify(error, undefined, 2));
+        });
+  }
+	startApp();	
+</script>		
 	</div>
 </div>
 

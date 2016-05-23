@@ -10,6 +10,7 @@ $carnum = count($carnum);
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-signin-client_id" content="155913334949-rjvjklmhr6cjbe7r8d4arlle016la4o2.apps.googleusercontent.com">
 		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 		<title>home</title>
 
@@ -18,6 +19,11 @@ $carnum = count($carnum);
 		<link href="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/head.css" />
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="http://connect.facebook.net/en_US/sdk.js" async="true" defer></script>
+		<script src="https://apis.google.com/js/api:client.js"></script>
+         <style type="text/css">
+  </style>
 	
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
