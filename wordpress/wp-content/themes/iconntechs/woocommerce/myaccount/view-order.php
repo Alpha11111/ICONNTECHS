@@ -150,8 +150,10 @@
 	    			<p><strong>Total: <?php echo sprintf( _n( '%s', '%s', $item_count, 'woocommerce' ), $order->get_formatted_order_total(), $item_count ); ?></strong></p>
 	    		</div>
 	    		<div class="totalRight">
-	    			<!-- <a class="abtn">COMPLETE PURCHASE</a><br/>
-	    			<a class="abtn abtn1">CANCEL</a> -->
+	    			<?php if($order->get_status()=='pending'):?>
+	    			<a class="abtn" href="<?php echo $order->get_checkout_payment_url();?>" >COMPLETE PURCHASE</a><br/>
+	    			<a class="abtn abtn1" href="<?php echo $order->get_cancel_order_url( wc_get_page_permalink( 'myaccount' ) );?>">CANCEL</a>
+	    			<?php endif;?>
 	    		</div>
 	    	</div>
 	    	
