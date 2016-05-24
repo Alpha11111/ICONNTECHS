@@ -25,7 +25,6 @@ if ( ! wc_coupons_enabled() ) {
 
 if ( ! WC()->cart->applied_coupons ) {
     $info_message = apply_filters( 'woocommerce_checkout_coupon_message', __( '', 'woocommerce' ) . ' <a href="#" class="showcoupon"></a>' );
-   // $info_message = '<p>    erere </p>';
     wc_print_notice( $info_message, 'notice' );
 }
 ?>

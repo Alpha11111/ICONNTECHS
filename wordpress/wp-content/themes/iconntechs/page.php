@@ -187,7 +187,7 @@ if(is_page('My Account') and !$user_ID){
 							billing_address_1:"required",
 							
 							billing_country: "required",
-							billing_state:"required",
+							
 							billing_city:"required",
 							billing_phone: "required",
 							billing_postcode:"required",
@@ -198,7 +198,7 @@ if(is_page('My Account') and !$user_ID){
 							billing_address_1:"Please enter your Address1",
 							
 							billing_country: "Please enter your  Country",
-							billing_state:"Please enter your  State",
+							
 							billing_city:"Please enter your  City",
 							billing_phone: "Please enter your email Zipcode",
 							billing_postcode: "Please enter your Phonenumber"

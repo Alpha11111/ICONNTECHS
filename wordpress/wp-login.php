@@ -665,13 +665,13 @@ case 'rp' :
 				<form class="changePwdForm" name="resetpassform" id="resetpassform" action="<?php echo esc_url( network_site_url( 'wp-login.php?action=resetpass', 'login_post' ) ); ?>" method="post" autocomplete="off">
 					<h1 class="changePwd">Change Your Password</h1>
 					
-					<p class="propmt">Passwords must be at least 7 characters and contain  both alpha </p>
+					<p class="propmt">Passwords must be at least 6 characters and contain  both alpha </p>
 						
 				   <!--  <p>* Email Address: <span>136671796@qq.com</span></p> -->
 				    
-					<p><input  type="password"   name="pass" id="pass" value=""  autocomplete="off" required/></p>
+					<p><input  type="password"   name="pass" id="pass" value=""  autocomplete="off"  size="16" required/></p>
 
-					<p><input type="password" value="" name="pass22" id="pass22"   autocomplete="off" required/></p>
+					<p><input type="password" value="" name="pass22" id="pass22"   autocomplete="off"  size="16" required/></p>
 					
 					
 					<input type="hidden" name="rp_key" value="<?php echo esc_attr( $rp_key ); ?>" />

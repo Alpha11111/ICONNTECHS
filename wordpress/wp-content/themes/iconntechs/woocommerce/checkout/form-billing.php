@@ -78,7 +78,7 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 			    			</div>
 			    			<div class="num3">
 				    			<input type="text" name="billing_state" id="billing_state"   />
-				    			<p class="inputPropmt">State <span class="mark2">*</span></p>
+				    			<p class="inputPropmt">State <span class="mark2"></span></p>
 			    			</div>
 			    			<div class="num3">
 				    			<input type="text" name="billing_city" id="billing_city"   />

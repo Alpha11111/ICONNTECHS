@@ -49,7 +49,7 @@ if(!empty($_POST['Email'])){
 		<div class="container">
 				<h2>CONTACT US</h2>
 		<div>
-			<p class="propmt">Please fill in the form below, we will respond within 8 hours t</p>
+			<p class="propmt">Please fill in the form below, we will respond within 8 hours </p>
 	    	<form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" >
 	    		<p class="p2"><input type="text" placeholder="Name" id="name1" name="name1"/></p>
 	    		<p class="p2"><input type="text" placeholder="Email"  name="Email" id="Email"/></p>
