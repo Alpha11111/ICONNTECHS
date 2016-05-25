@@ -263,9 +263,9 @@ foreach ($data as $post) {
 			<?php echo $cahtml;?>				
 			</div>
 
-			<div class="container-fluid more">
+			<!-- <div class="container-fluid more">
 			      <a>more</a>
-			</div>
+			</div> -->
 		</section>
 
         <div id="top"> <i class="iconfont">&#xe64a;</i></div>
