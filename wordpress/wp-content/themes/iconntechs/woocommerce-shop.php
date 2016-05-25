@@ -85,7 +85,7 @@ $carnum = count($carnum);
 		<link href="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/index.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
-		<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="https://seal.wosign.com/tws-en.js"></SCRIPT>
+		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
