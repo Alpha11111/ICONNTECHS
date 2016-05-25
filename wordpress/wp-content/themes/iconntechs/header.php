@@ -20,7 +20,6 @@ $carnum = count($carnum);
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/head.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/blog.css" />
-		<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="https://seal.wosign.com/tws-en.js"></SCRIPT>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
