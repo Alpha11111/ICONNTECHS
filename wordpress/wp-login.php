@@ -1051,7 +1051,7 @@ default:
 					<input type="hidden" id="auth" name="auth" value="">
 					<input type="hidden" id="authemail" name="authemail" value="">
 					<input class="checkBox" name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> />
-					</span>&nbsp;&nbsp;&nbsp;Remember me 
+					</span>&nbsp;&nbsp;&nbsp;<span class="Remember">Remember me </span>
 					<a href="<?php echo esc_url( site_url( 'wp-login.php?action=lostpassword', 'login_post' ) ); ?>" title="<?php esc_attr_e( 'Password Lost and Found' ); ?>" class="forgetPwd">Forgot your passworrd? </a>
 				</div>
 

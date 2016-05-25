@@ -59,11 +59,12 @@
 	text-decoration: none;
 }
 .checkBox{
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	border: 1px solid #ccc;
-
+	vertical-align: middle;
+	padding: 2px;
+	
+}
+.other-box .Remember,.other-box a{
+	vertical-align: middle;
 }
 label.error{
 	color: #FF5550;
@@ -71,7 +72,6 @@ label.error{
 	padding-left: 7px;
 }
 .other-box{
-	vertical-align: middle;
 	line-height: 18px;
 }
 .checkBox i{
