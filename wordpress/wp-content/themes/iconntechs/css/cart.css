@@ -33,7 +33,7 @@ a:hover{
 	border: 1px solid #ccc;
 	line-height: 30px;
 }
-.product-Box-right p #add,.product-Box-right p #reduce {
+.product-Box-right p .add,.product-Box-right p .reduce {
 	width: 35px;
 	text-align: center;
 		line-height: 20px;

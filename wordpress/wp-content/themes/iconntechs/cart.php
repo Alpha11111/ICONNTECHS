@@ -4,6 +4,23 @@ Template Name:shop-cart
 */
  
 $tdata = WC()->cart->get_cart();
+$tr = WC()->cart->get_cart();
+/*foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+		//var_dump($cart_item_key);die;
+		var_dump($cart_item);die;
+		 //WC()->cart->remove_cart_item($cart_item_key);
+	}*/
+//var_dump($tr);die;
+if(!empty($_POST)){
+	$num = $_POST['num'];
+	$product_id = $_POST['product_id'];
+	foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+		if($cart_item['product_id']==$product_id){
+			 WC()->cart->remove_cart_item($cart_item_key);
+		}
+	}
+	WC()->cart->add_to_cart($product_id = $product_id, $quantity = $num, $variation_id = 0, $variation = array(), $cart_item_data = array() );
+}
 ?>
 
 <!DOCTYPE html>
@@ -86,12 +103,12 @@ $tdata = WC()->cart->get_cart();
 					<div>
 						Quantity &nbsp;&nbsp;
 						<p class="calculationBox">
-							<label id="reduce"><i class="iconfont">&#xe644;</i></label>
-							<span class="num"><?php
+							<label class="reduce" onclick="reduce(this)"><i class="iconfont">&#xe644;</i></label>
+							<span class="num" id="<?php echo $product_id;?>"><?php
 								echo $cart_item['quantity'];
 						?>
 							</span>
-							<label id="add"><i class="iconfont">+</i></label>
+							<label class="add" onclick="add(this)"><i class="iconfont">+</i></label>
 						</p>
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
@@ -178,25 +195,31 @@ $tdata = WC()->cart->get_cart();
 						
 					});
 					//数量减少
-					$("#reduce").click(function(){
-					  var num = parseInt($(this).next(".num").text());
+				 });
+				function reduce(obj){
+					  var num = parseInt($(obj).next(".num").text());
+					  var product_id = $(obj).next(".num").attr('id');
 					 
 					   num--;
+					   $.post("<?php echo the_permalink();?>",{'num':num,'product_id':product_id},function(data){
+					    });
 					   if(num<=1){
-					   	 $(this).next(".num").text(1);
+					   	 $(obj).next(".num").text(1);
 					   	 return;
 					   	  
 					   }
-					    $(this).next(".num").text(num);
-					});
+					    $(obj).next(".num").text(num);
+					};
 					//数量增加
-					$("#add").click(function(){
-						var num = parseInt($(this).prev(".num").text());
+			function add(obj){
+						var num = parseInt($(obj).prev(".num").text());
+						var product_id = $(obj).prev(".num").attr('id');
 						num++;
-						$(this).prev(".num").text(num);
+						$.post("<?php echo the_permalink();?>",{'num':num,'product_id':product_id},function(data){
 						
 					});
-				 });
+						$(obj).prev(".num").text(num);
+					};
 			
 		</script>
 	</body>
