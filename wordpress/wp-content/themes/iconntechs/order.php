@@ -14,7 +14,6 @@ $orderdata = "";
 foreach($customer_orders as $customer_order){
 	$order      = wc_get_order( $customer_order );
 	$item_count = $order->get_item_count();//数量
-	//var_dump($order);die;
 	$order_id = $order->id;
 	$order_item_id = $wpdb->get_results("select order_item_id,order_item_name from wp_woocommerce_order_items where order_id=$order_id");
 
@@ -139,7 +138,9 @@ foreach($customer_orders as $customer_order){
 				?>
 	    	<h4 style="background: #FF5550;color: #fff;"><?php echo wc_get_order_status_name( $order->get_status() ); ?></h4>
 	    	<div class="productList">
-	    		<?php foreach ($orderdata as $kv):?>
+	    		<?php $fi=0; foreach ($orderdata as $kv):?>
+				<?php if($fi<$item_count):?>
+	    		<?php $fi++;?>
 	    		<div class="product-Box">
 		    		<div class="product-img">
 		    			<img src="<?php echo $kv['pimg'];?>" />
@@ -153,6 +154,7 @@ foreach($customer_orders as $customer_order){
 		    			<p>$<?php echo !empty($kv['sprice'])?$kv['sprice']:$kv['rprice'];?></p>
 		    		</div>
 	    	    </div>
+	    		<?php endif;?>
 				<?php endforeach;?>
 		    	<hr />
 		    	<div class="totalNum">

@@ -141,6 +141,9 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 						<p>Price: <?php
 							echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 						?></p>
+						<p>Quantity: <?php
+								echo $cart_item['quantity'];
+						?></p>
 						<!-- <p>Color: blue </p> -->
 						<h4><?php
 							echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
