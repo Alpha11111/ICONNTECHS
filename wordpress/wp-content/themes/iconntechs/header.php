@@ -40,7 +40,7 @@ $carnum = count($carnum);
 	<?php flush(); ?>
 	
 	<body>	
-		<div class="container-fluid" id="navMenu">
+		<div class="container-fluid" id="navMenu" name="navMenu">
 			<div class="container">
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
