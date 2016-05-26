@@ -1,0 +1,62 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: arial;
+	width: 100%;
+}
+
+.product1 img,
+.product2 img,
+.product3 img,
+.product4 img {
+	width: 100%;
+	display: block;
+}
+
+.product1,
+.product2,
+.product3,
+.product4 {
+	position: relative;
+}
+
+.product1 .btn {
+	border: 2px solid #FFFFFF !important;
+	color: #FFFFFF !important;
+	bottom: 43.5%;
+	left: 35%;
+}
+
+.product2 .btn {
+	bottom: 25.5%;
+	left: 23%;
+}
+
+.product3 .btn {
+	bottom: 43.5%;
+	left: 50%;
+}
+
+.product4 .btn {
+	bottom: 32.5%;
+	left: 34%;
+}
+
+
+
+
+
+.btn {
+	display: inline-block;
+	width: 30%;
+	height: 28px;
+	border: 2px solid #000000;
+	line-height: 28px;
+	color: #000000;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 4px;
+	position: absolute;
+	z-index: 99;
+	cursor: pointer;
+}
