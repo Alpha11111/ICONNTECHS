@@ -120,7 +120,7 @@
 			 	 </div>
 			 	 <div class="formBox">
 			 	 	 <form id="regform" name="regform" action="<?php bloginfo('home');?>/index.php/land-register/" method="post">
-			 	 	 	<p><input type="email" id="email" name="email" placeholder="Email or name" required="required" /></p> 
+			 	 	 	<p><input type="text" id="email" name="email" placeholder="Email or name" required="required" /></p> 
 			 	 	 	<p><input type="password" id="password" name="password" placeholder="Password" required="required" /></p> 
 			 	 	 	<p><input type="submit" value="SUBMIT"/></p>
 			 	 	 </form>
