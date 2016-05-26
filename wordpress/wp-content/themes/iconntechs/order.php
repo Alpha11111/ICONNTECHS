@@ -183,7 +183,7 @@ foreach($customer_orders as $customer_order){
 	<?php else:?>
 	    <div class="container container7" >
 	    	<p>No order</p>
-	    	<p><a>Shop now</a></p>
+	    	<p><a href="wp_redirect( site_url('/index.php/shop/'));">Shop now</a></p>
 	    </div>
 	<?php endif;?>
 	   
