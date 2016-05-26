@@ -48,17 +48,17 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 						<div class="input-Box">
 				    			<div class="num2">
 					    			<input type="text" name="billing_first_name" id="billing_first_name" value="<?php echo get_the_author_meta( 'billing_first_name', $user_ID );?>"/>
-					    			<p class="inputPropmt" <?php $billing_first_name = get_the_author_meta( 'billing_first_name', $user_ID );if(!empty($billing_first_name)):?>style="margin-top:-42px"<?php endif;?>>First name  <span class="mark2">*</span></p>
+					    			<p class="inputPropmt" <?php $billing_first_name = get_the_author_meta( 'billing_first_name', $user_ID );if(!empty($billing_first_name)):?>style="margin-top:-43px"<?php endif;?>>First name  <span class="mark2">*</span></p>
 				    			</div>
 				    			<div class="num2">
 					    			<input type="text" name="billing_last_name" id="billing_last_name" value="<?php echo get_the_author_meta( 'billing_last_name', $user_ID );?>"/>
-					    			<p class="inputPropmt" <?php $billing_last_name = get_the_author_meta( 'billing_last_name', $user_ID );if(!empty($billing_last_name)):?>style="margin-top:-42px"<?php endif;?>>Last name <span class="mark2">*</span></p>
+					    			<p class="inputPropmt" <?php $billing_last_name = get_the_author_meta( 'billing_last_name', $user_ID );if(!empty($billing_last_name)):?>style="margin-top:-43px"<?php endif;?>>Last name <span class="mark2">*</span></p>
 				    			</div>
 	    		        </div>
 	    		        <div class="input-Box">
 			    			<div class="num1">
 				    			<input type="text" name="billing_address_1" id="billing_address_1"   value="<?php echo get_the_author_meta( 'billing_address_1', $user_ID );?>"/>
-				    			<p class="inputPropmt" <?php $billing_address_1 = get_the_author_meta( 'billing_address_1', $user_ID );if(!empty($billing_address_1)):?>style="margin-top:-42px"<?php endif;?>>Address line 1<span class="mark2">*</span></p>
+				    			<p class="inputPropmt" <?php $billing_address_1 = get_the_author_meta( 'billing_address_1', $user_ID );if(!empty($billing_address_1)):?>style="margin-top:-43px"<?php endif;?>>Address line 1<span class="mark2">*</span></p>
 			    			</div>
 	    					<input type="hidden" name="billing_email" id="billing_email" value="<?php echo $e_mail;?>">
 	    	        	</div>
@@ -66,7 +66,7 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 	    	        	<div class="input-Box">
 			    			<div class="num1">
 				    			<input type="text" name="billing_address_2" id="billing_address_2"   value="<?php echo get_the_author_meta( 'billing_address_2', $user_ID );?>"/>
-				    			<p class="inputPropmt"  <?php $billing_address_2 = get_the_author_meta( 'billing_address_2', $user_ID );if(!empty($billing_address_2)):?>style="margin-top:-42px"<?php endif;?>>Address line 2</p>
+				    			<p class="inputPropmt"  <?php $billing_address_2 = get_the_author_meta( 'billing_address_2', $user_ID );if(!empty($billing_address_2)):?>style="margin-top:-43px"<?php endif;?>>Address line 2</p>
 			    			</div>
 	    			
 	    	        	</div>
@@ -74,22 +74,22 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 	    	        	<div class="input-Box">
 			    			<div class="num3">
 				    			<input type="text" name="billing_country" id="billing_country"  value="<?php echo get_the_author_meta( 'billing_country', $user_ID );?>" />
-				    			<p class="inputPropmt"  <?php $billing_country = get_the_author_meta( 'billing_country', $user_ID );if(!empty($billing_country)):?>style="margin-top:-42px"<?php endif;?>>Country <span class="mark2">*</span></p>
+				    			<p class="inputPropmt"  <?php $billing_country = get_the_author_meta( 'billing_country', $user_ID );if(!empty($billing_country)):?>style="margin-top:-43px"<?php endif;?>>Country <span class="mark2">*</span></p>
 			    			</div>
 			    			<div class="num3">
 				    			<input type="text" name="billing_state" id="billing_state"   value="<?php echo get_the_author_meta( 'billing_state', $user_ID );?>"/>
-				    			<p class="inputPropmt" <?php $billing_state = get_the_author_meta( 'billing_state', $user_ID );if(!empty($billing_state)):?>style="margin-top:-42px"<?php endif;?>>State <span class="mark2"></span></p>
+				    			<p class="inputPropmt" <?php $billing_state = get_the_author_meta( 'billing_state', $user_ID );if(!empty($billing_state)):?>style="margin-top:-43px"<?php endif;?>>State <span class="mark2"></span></p>
 			    			</div>
 			    			<div class="num3">
 				    			<input type="text" name="billing_city" id="billing_city"   value="<?php echo get_the_author_meta( 'billing_city', $user_ID );?>"/>
-				    			<p class="inputPropmt" <?php $billing_city = get_the_author_meta( 'billing_city', $user_ID );if(!empty($billing_city)):?>style="margin-top:-42px"<?php endif;?>>City <span class="mark2">*</span></p>
+				    			<p class="inputPropmt" <?php $billing_city = get_the_author_meta( 'billing_city', $user_ID );if(!empty($billing_city)):?>style="margin-top:-43px"<?php endif;?>>City <span class="mark2">*</span></p>
 			    			</div>
 	    	        	</div>
 
 	    	        	<div class="input-Box">
 			    			<div class="num1">
 				    			<input type="text" name="billing_phone" id="billing_phone"    value="<?php echo get_the_author_meta( 'billing_phone', $user_ID );?>"/>
-				    			<p class="inputPropmt" <?php $billing_phone = get_the_author_meta( 'billing_phone', $user_ID );if(!empty($billing_phone)):?>style="margin-top:-42px"<?php endif;?>>Phone number <span class="mark2">*</span></p>
+				    			<p class="inputPropmt" <?php $billing_phone = get_the_author_meta( 'billing_phone', $user_ID );if(!empty($billing_phone)):?>style="margin-top:-43px"<?php endif;?>>Phone number <span class="mark2">*</span></p>
 			    			</div>
 	    	        	</div>
 
@@ -97,7 +97,7 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 			    			<div class="num1">
 
 				    			<input type="text" name="billing_postcode" id="billing_postcode"  value="<?php echo get_the_author_meta( 'billing_postcode', $user_ID );?>" />
-				    			<p class="inputPropmt" <?php $billing_postcode = get_the_author_meta( 'billing_postcode', $user_ID );if(!empty($billing_postcode)):?>style="margin-top:-42px"<?php endif;?>>Zip code <span class="mark2">*</span></p>
+				    			<p class="inputPropmt" <?php $billing_postcode = get_the_author_meta( 'billing_postcode', $user_ID );if(!empty($billing_postcode)):?>style="margin-top:-43px"<?php endif;?>>Zip code <span class="mark2">*</span></p>
 
 			    			</div>
 			    			<p>Note : do not know zip code can fill 000000</p>

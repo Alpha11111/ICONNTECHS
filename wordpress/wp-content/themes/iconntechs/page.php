@@ -9,7 +9,8 @@ if(is_checkout() || is_page('My Account')){
 }
 if(is_page('My Account') and !$user_ID){
 	$aurl = get_permalink();
-	header("Location:http://localhost/wordpress/wp-login.php?redirect_to=$aurl");die;
+	wp_redirect( site_url('/wp-login.php?redirect_to=$aurl"'));
+	//header("Location:".bloginfo('home')."/wp-login.php?redirect_to=$aurl");die;
 }
 ?>
 <!DOCTYPE html>

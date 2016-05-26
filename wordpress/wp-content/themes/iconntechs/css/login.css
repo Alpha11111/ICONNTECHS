@@ -79,7 +79,8 @@ label.error{
 	margin-left: -3px;
 }
 .forgetPwd{
-	margin-left: 30%;
+	display: line-block;
+	margin-left: 28%;
 	color: #FF5550;
 }
 .xiantiao{
