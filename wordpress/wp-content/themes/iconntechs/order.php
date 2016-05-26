@@ -181,7 +181,7 @@ foreach($customer_orders as $customer_order){
 	    	
 	    </div>
 	<?php else:?>
-	    <div class="container container7" style="display: none;">
+	    <div class="container container7" >
 	    	<p>No order</p>
 	    	<p><a>Shop now</a></p>
 	    </div>
