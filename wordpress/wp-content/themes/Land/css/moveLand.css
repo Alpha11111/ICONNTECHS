@@ -131,11 +131,55 @@ footer .copy {
 @media only screen and (max-width:425px ) {
 	
 	.btn,.btn2 {
-	
+	width: 28%;
 	height: 20px;
 	border: 1px solid #FFFFFF;
 	line-height: 20px;
 	
+   }
+.product2 .btn {
+	bottom: 53.5%;
+	left: 32.5%;
+}
+
+.product3 .btn {
+	bottom: 36.5%;
+	left: 17.5%;
+}
+
+.product4 .btn {
+	bottom: 35.5%;
+	left: 25%;
+}
+.product5 .btn {
+	bottom: 38.5%;
+	left: 16%;
+}
+
+.product1 .btn2 {
+	border: 1px solid #FFFFFF !important;
+	color: #FFFFFF !important;
+	bottom: 50.5%;
+	left: 33%;
+}
+
+.product2 .btn2 {
+	bottom: 43.5%;
+	left: 32.5%;
+}
+
+.product3 .btn2 {
+	bottom: 21.5%;
+	left: 17.5%;
+}
+
+.product4 .btn2 {
+	bottom: 35.5%;
+	left: 62%;
+}
+.product5 .btn2 {
+	bottom: 24.5%;
+	left: 16%;
 }
 }
 
