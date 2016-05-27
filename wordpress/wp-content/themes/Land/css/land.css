@@ -94,6 +94,7 @@ body {
 	position: absolute;
 	z-index: 99;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .formBox {

@@ -81,52 +81,44 @@ header("Location: ".$xredir);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/moveLand.css" />
-    <link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
-    <title></title> 
-<script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '1160998803951999');
-    fbq('track', "PageView");
-</script>
-<noscript>
-<img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=1160998803951999&ev=PageView&noscript=1"
-    />
-</noscript>
+    <title></title>
+  
+   
 </head>
 <body>
     <div class="product1">
-            <img src="<?php bloginfo('template_url');?>/img/samml1.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" target="_blank">By On Amazon</a>
-            <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
+            <img src="<?php bloginfo('template_url');?>/img/moveTop.jpg" />
+                <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <div class="product2">
-            <img src="<?php bloginfo('template_url');?>/img/samll2.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01F70Q236" target="_blank">By On Amazon</a>
+            <img src="<?php bloginfo('template_url');?>/img/move1.jpg" />
+            <a class="btn" href="http://www.amazon.com/dp/B01FS65MCG">By On Amazon</a>
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <div class="product3">
-            <img src="<?php bloginfo('template_url');?>/img/samll3.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank">By On Amazon</a>
+            <img src="<?php bloginfo('template_url');?>/img/move2.jpg" />
+            <a class="btn"  href="http://www.amazon.com/dp/B01FS16U9A" target="_blank">By On Amazon</a>
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <div class="product4">
-            <img src="<?php bloginfo('template_url');?>/img/samll4.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01FS16U9A " target="_blank">By On Amazon</a>
+            <img src="<?php bloginfo('template_url');?>/img/move3.jpg" />
+            <a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank">By On Amazon</a>
+            <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
+        </div>
+        <div class="product5">
+            <img src="<?php bloginfo('template_url');?>/img/move4.jpg" />
+            <a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank">By On Amazon</a>
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <footer>
             <p>
-                <a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;
-                <a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;
-                <a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a>
+                <a class="faceBook"></a> &nbsp; &nbsp; &nbsp;
+                <a class="Google"></a> &nbsp; &nbsp; &nbsp;
+                <a class="instagram"></a>
             </p>
         <p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
         </footer>
+        
 </body>
 </html>
 <?php else:?>

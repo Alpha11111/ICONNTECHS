@@ -8,7 +8,9 @@ body {
 .product1 img,
 .product2 img,
 .product3 img,
-.product4 img {
+.product4 img,
+.product5 img
+ {
 	width: 100%;
 	display: block;
 }
@@ -16,74 +18,83 @@ body {
 .product1,
 .product2,
 .product3,
-.product4 {
+.product4,
+.product5
+{
 	position: relative;
 }
 
-.product1 .btn {
-	border: 1px solid #FFFFFF !important;
-	color: #FFFFFF !important;
-	bottom: 50.5%;
-	left: 35%;
-}
+
 
 .product2 .btn {
-	bottom: 37.5%;
-	left: 23%;
+	bottom: 54.5%;
+	left: 40.5%;
 }
 
 .product3 .btn {
-	bottom: 33.5%;
-	left: 42%;
-}
-
-.product4 .btn {
-	bottom: 30.5%;
-	left: 18%;
-}
-.product1 .btn2 {
-	border: 1px solid #FFFFFF !important;
-	color: #FFFFFF !important;
-	bottom: 40.5%;
-	left: 35%;
-}
-
-.product2 .btn2 {
-	bottom: 20%;
+	bottom: 36.5%;
 	left: 23%;
 }
 
+.product4 .btn {
+	bottom: 35.5%;
+	left: 35%;
+}
+.product5 .btn {
+	bottom: 38.5%;
+	left: 22%;
+}
+
+.product1 .btn2 {
+	border: 1px solid #FFFFFF !important;
+	color: #FFFFFF !important;
+	bottom: 50.5%;
+	left: 37.8%;
+}
+
+.product2 .btn2 {
+	bottom: 46.5%;
+	left: 40.5%;
+}
+
 .product3 .btn2 {
-	bottom: 33.5%;
-	left: 70%;
+	bottom: 21.5%;
+	left: 23%;
 }
 
 .product4 .btn2 {
-		bottom: 30.5%;
-	left: 48%;
+	bottom: 35.5%;
+	left: 62%;
 }
+.product5 .btn2 {
+	bottom: 24.5%;
+	left: 22%;
+}
+
 
 
 .btn,.btn2 {
 	display: inline-block;
-	width: 25%;
+	width: 20%;
 	height: 28px;
-	border: 1px solid #000000;
+	border: 1px solid #fff;
 	line-height: 28px;
-	color: #000000;
+	color: #FFFFFF;
 	text-align: center;
 	font-size: 12px;
 	border-radius: 4px;
 	position: absolute;
 	z-index: 99;
 	cursor: pointer;
-	text-decoration:none;
+	padding: 0px 10px;
 }
+
 footer {
 	width: 100%;
 	background: #000;
 	height: 125px;
 }
+
 .faceBook,
 .Google,
 .instagram {
@@ -92,31 +103,39 @@ footer {
 	height: 38px;
 	margin-top: 20px;
 	cursor: pointer;
-	text-decoration:none;
 }
+
 .faceBook {
 	background: url(../img/sanxiao.png) no-repeat 0px 0px;
 }
+
 .Google {
 	background: url(../img/sanxiao.png) no-repeat -50px 0px;
 }
+
 .instagram {
 	background: url(../img/sanxiao.png) no-repeat -102px 0px;
 }
+
 footer p {
+
 	text-align: center;
 	margin: 0px auto;
 	color: #FFFFFF;
 }
+
 footer .copy {
 	font-size: 14px;
 	padding-top: 10px;
 }
 @media only screen and (max-width:425px ) {
+	
 	.btn,.btn2 {
-	width: 23%;
+	
 	height: 20px;
-	border: 1px solid #000000;
+	border: 1px solid #FFFFFF;
 	line-height: 20px;
+	
 }
 }
+
