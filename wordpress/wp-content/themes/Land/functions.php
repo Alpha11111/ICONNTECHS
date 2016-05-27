@@ -77,4 +77,8 @@ return wp_authenticate_username_password( null, $username, $password );
 remove_filter( 'authenticate', 'wp_authenticate_username_password', 20, 3 );
 add_filter( 'authenticate', 'dmeng_email_login_authenticate', 20, 3 );
 
+function Bing_set_html_content_type_html(){
+    return 'text/html';//可以自定义类型
+}
+add_filter( 'wp_mail_content_type', 'Bing_set_html_content_type_html' );
 ?>
