@@ -111,10 +111,10 @@ header("Location: ".$xredir);
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <footer>
-            <p>
-                <a class="faceBook"></a> &nbsp; &nbsp; &nbsp;
-                <a class="Google"></a> &nbsp; &nbsp; &nbsp;
-                <a class="instagram"></a>
+             <p>
+                <a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;
+                <a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;
+                <a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a>
             </p>
         <p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
         </footer>
