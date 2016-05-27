@@ -120,6 +120,7 @@ header("Location: ".$xredir);
 <html id="body">
 	<head>
 		<meta charset="utf-8"/>
+		<link rel="icon" type="<?php bloginfo('template_url');?>/image/png" href="img/logoIcon.png">
 		<title>
 			
 		</title>
@@ -155,7 +156,7 @@ header("Location: ".$xredir);
 		</div>
 		<footer>
 			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a></p>
-			<p class="copy">© 2016 by ICONNTECHS.com</p>
+			<p class="copy">© 2016  ICONNTECHS.com</p>
 		</footer>
 		<div class="hoverBox">
 			 <div class="middleContentBox">
