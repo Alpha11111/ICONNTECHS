@@ -43,10 +43,10 @@ foreach ($redata as $key) {
 $page = !empty($_POST['page'])?$_POST['page']:1;
 $pagelimit = 5;
 $startpage = ($page-1)*$pagelimit;
-$total = $wpdb->get_results("select count(*) as total from wp_comments where comment_post_ID=1");
+$total = $wpdb->get_results("select count(*) as total from wp_comments where comment_post_ID=$post_id");
 $totalitem = $total[0]->total;
 $totalpage = ceil($total[0]->total/$pagelimit);
-$comdata = $wpdb->get_results("select * from wp_comments where comment_post_ID=1 limit $startpage,$pagelimit",ARRAY_A);
+$comdata = $wpdb->get_results("select * from wp_comments where comment_post_ID=$post_id limit $startpage,$pagelimit",ARRAY_A);
 
 
 //获取产品一些属性

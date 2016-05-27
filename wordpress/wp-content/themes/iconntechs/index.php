@@ -1,4 +1,9 @@
 <?php 
+if ($_SERVER["HTTPS"] <> "on") 
+{ 
+$xredir="https://".$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; 
+header("Location: ".$xredir); 
+}
 get_header();
 
 ?>
