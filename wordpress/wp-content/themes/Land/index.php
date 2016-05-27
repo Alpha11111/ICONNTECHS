@@ -120,7 +120,7 @@ header("Location: ".$xredir);
 <html id="body">
 	<head>
 		<meta charset="utf-8"/>
-		<link rel="icon" type="<?php bloginfo('template_url');?>/image/png" href="img/logoIcon.png">
+		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
 		<title>
 			
 		</title>
@@ -138,19 +138,22 @@ header("Location: ".$xredir);
 	</script>
 	</head>
 	<body >
-		<div class="product1">
+        <div class="product1">
+            <img src="<?php bloginfo('template_url');?>/img/Pctop.jpg" />
+        </div>
+		<div class="product2">
 			<img src="<?php bloginfo('template_url');?>/img/1.jpg" />
 			<a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" target="_blank">View details</a>
 		</div>
-		<div class="product2">
+		<div class="product3">
 			<img src="<?php bloginfo('template_url');?>/img/2.jpg" />
 			<a class="btn" href="http://www.amazon.com/dp/B01F70Q236" target="_blank">View details</a>
 		</div>
-		<div class="product3">
+		<div class="product4">
 			<img src="<?php bloginfo('template_url');?>/img/3.jpg" />
 			<a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank">View details</a>
 		</div>
-		<div class="product4">
+		<div class="product5">
 			<img src="<?php bloginfo('template_url');?>/img/4.jpg" />
 			<a class="btn" href="http://www.amazon.com/dp/B01FS16U9A " target="_blank">View details</a>
 		</div>
