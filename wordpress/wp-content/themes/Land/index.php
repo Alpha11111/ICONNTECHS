@@ -107,9 +107,9 @@ header("Location: ".$xredir);
         </div>
         <footer>
             <p>
-                <a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495"></a> &nbsp; &nbsp; &nbsp;
-                <a class="Google" href="https://plus.google.com/?hl=en"></a> &nbsp; &nbsp; &nbsp;
-                <a class="instagram" href="https://www.instagram.com/iconntechs1/"></a>
+                <a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;
+                <a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;
+                <a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a>
             </p>
         <p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
         </footer>
@@ -154,7 +154,7 @@ header("Location: ".$xredir);
 			<a class="btn" href="http://www.amazon.com/dp/B01FS16U9A " target="_blank">View details</a>
 		</div>
 		<footer>
-			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/"></a></p>
+			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a></p>
 			<p class="copy">© 2016 by ICONNTECHS.com</p>
 		</footer>
 		<div class="hoverBox">
