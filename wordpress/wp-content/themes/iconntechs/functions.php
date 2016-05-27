@@ -17,7 +17,7 @@ function mail_smtp( $phpmailer ){
 	$phpmailer->Host = "smtp.exmail.qq.com"; //SMTP服务器地址(比如QQ是smtp.qq.com,腾讯企业邮箱是smtp.exmail.qq.com,阿里云是smtp.域名,其他自行咨询邮件服务商)
 	$phpmailer->Port = 25; //SMTP端口，常用的有25、465、587，SSL加密连接端口：465或587,qq是25,qq企业邮箱是465
 	$phpmailer->SMTPSecure = ""; //SMTP加密方式，常用的有ssl/tls,一般25端口不填，端口465天ssl
-	$phpmailer->Username = "xiongpeng@baiyanglin.cn"; //邮箱帐号，一般和发件人相同
+	$phpmailer->Username = "info@iconntechs.com"; //邮箱帐号，一般和发件人相同
 	$phpmailer->Password = 'BoRong2016'; //邮箱密码
 	$phpmailer->IsSMTP(); //使用SMTP发送
 	$phpmailer->SMTPAuth = true; //启用SMTPAuth服务

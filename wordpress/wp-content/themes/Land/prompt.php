@@ -2,6 +2,61 @@
 /*
 	Template Name:Prompt
 */
+$msg = "<div id='emailBox'>
+			<style>
+			#emailBox{
+				width: 900px;
+				margin: 0px auto;
+				font-family: arial;
+			}
+			#emailBox h1{
+				text-align: center;
+				color:#323232;
+				border-bottom: 3px solid #ff5550;
+				padding-bottom: 10px;
+			}
+			#emailBox p{
+				word-break:break-all;
+				line-height: 30px;
+			}
+			#emailBox label{
+				color: #FF5550;
+				font-size: 18px;
+			}
+			ul li{
+				list-style: disc;
+			}
+			ul li a{
+				color: #FF5550;
+			}
+			hr{
+					border: 2px solid #ff5550;
+					color:#ff5550 ;
+			}
+			.webSite{
+				text-align: center;
+			}
+			.webSite a{
+				font-size: 20px;
+			}
+		</style>
+			<h1>ICONNTECHS</h1>
+			<p>Greetings from Iconntechs,</p>
+			<p>Here is the promotional code <label>UB86EXMY</label></a></p>
+			<p>You can use the code to get 25% discount off any products you purchase in our Amazon store:</p>
+			<ul>
+				<li>VR Glasses &nbsp;<a href='https://www.amazon.com/dp/B01F70Q236'>https://www.amazon.com/dp/B01F70Q236</a></li>
+				<li>Action Camera &nbsp;<a href='https://www.amazon.com/dp/B01F759GKC'>https://www.amazon.com/dp/B01F759GKC </a></li>
+				<li>Bluetooth Speaker &nbsp;<a href='https://www.amazon.com/dp/B01FS65MCG'>https://www.amazon.com/dp/B01FS65MCG </a></li>
+				<li>Bluetooth Earbuds  &nbsp;<a href='https://www.amazon.com/dp/B01FS16U9A'>https://www.amazon.com/dp/B01FS16U9A  </a></li>
+			</ul>
+			<p>Just apply the code before you pay at the check, make sure the seller is IconnTechs.</p>
+			<p>Thanks again for choosing us, our website will officially be launched on June 6th , we hope you have a great shopping experience here and enjoy your day!</p>
+			<p>Warm Regards,</p>
+			<p>The Iconntechs Team </p><br />
+			<hr />
+			<p class='webSite'><a href='https://www.iconntechs.com'>https://www.iconntechs.com</a></p>
+		</div>";
 global $wpdb;
 if(!empty($_POST['email']) && !empty($_POST['password'])){
 	if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
@@ -17,12 +72,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 			$usate = wp_create_user($_POST['email'], $_POST['password'], $_POST['email'] );
 			$coupon = 'UB86EXMY';
 			$message = 'success';
-			/*$headers = "MIME-Version: 1.0\n" . "Content-Type: text/html;"; 
-			$message .= "<p>".$user_email.'('.$user_name.')'.'通过售后服务：'."</p>";
-			$message .= "<p>".$orderDetail."</p>";
-			$message .= "<p>".$Issue."</p>";
-			$message .= "<p><img src='".$iimage."'></p>";
-			wp_mail($_POST['email'],$title,$message,$headers);*/
+			wp_mail($_POST['email'],'ICONNTECHS',$msg);
 					
 		}
 		}
