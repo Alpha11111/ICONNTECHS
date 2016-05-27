@@ -12,7 +12,7 @@ add_action('login_head', 'custom_login');
 add_theme_support('woocommerce');
 // Customize your functions
 function mail_smtp( $phpmailer ){
-	$phpmailer->From = "xiongpeng@baiyanglin.cn"; //发件人
+	$phpmailer->From = "info@iconntechs.com"; //发件人
 	$phpmailer->FromName = "ICONNETCHS"; //发件人昵称
 	$phpmailer->Host = "smtp.exmail.qq.com"; //SMTP服务器地址(比如QQ是smtp.qq.com,腾讯企业邮箱是smtp.exmail.qq.com,阿里云是smtp.域名,其他自行咨询邮件服务商)
 	$phpmailer->Port = 25; //SMTP端口，常用的有25、465、587，SSL加密连接端口：465或587,qq是25,qq企业邮箱是465

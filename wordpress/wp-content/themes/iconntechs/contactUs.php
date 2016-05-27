@@ -6,7 +6,7 @@ if(!empty($_POST['Email'])){
 		$title = 'ICONNETCHS Contact Us';
 		$user_email = $_POST['Email'];
 		$message = $user_email.'通过联系我们：'.$_POST['message'];
-		wp_mail('229710133@qq.com',$title,$message);
+		wp_mail($user_email,$title,$message);
 		
 }
 
