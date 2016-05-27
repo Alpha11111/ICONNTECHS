@@ -147,7 +147,7 @@ header("Location: ".$xredir);
 		</div>
 		<div class="product3">
 			<img src="<?php bloginfo('template_url');?>/img/2.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01F70Q236" target="_blank">View details</a>
+			<a class="btn" href="http://www.amazon.com/dp/B01FS16U9A" target="_blank">View details</a>
 		</div>
 		<div class="product4">
 			<img src="<?php bloginfo('template_url');?>/img/3.jpg" />
@@ -155,7 +155,7 @@ header("Location: ".$xredir);
 		</div>
 		<div class="product5">
 			<img src="<?php bloginfo('template_url');?>/img/4.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01FS16U9A " target="_blank">View details</a>
+			<a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank">View details</a>
 		</div>
 		<footer>
 			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a></p>
