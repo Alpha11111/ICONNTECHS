@@ -16,7 +16,7 @@
 	</head>
 
 	<body>
-		<p class="propmt">Register Now to Get 25% off Coupon for Purchase Before 10th Jun</p>
+		<p class="propmt">Register Now to Get 25% off Coupon for Purchase Before 10th June</p>
 		<div>
 			<img src="<?php bloginfo('template_url');?>/img/samllPic.png" />
 		</div>
