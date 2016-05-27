@@ -51,7 +51,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 	<?php else:?>
 		<div id="errorBox">
 			<label class="error"></label>
-			<p>This emailbox is already registered. Please choose another one. </p>
+			<p><?php echo $message;?></p>
 			<p><a class="back" href="<?php bloginfo('home');?>">Back Land</a></p>
 		</div>
 	<?php endif;?>
