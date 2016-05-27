@@ -87,6 +87,7 @@ body {
 	z-index: 99;
 	cursor: pointer;
 	padding: 0px 10px;
+	text-decoration: none;
 }
 
 footer {
