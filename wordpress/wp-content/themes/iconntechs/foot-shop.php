@@ -26,60 +26,38 @@
 		
 		<footer>
 			<div class="container">
-				<ul class="col-lg-3">
-					<li><a href="#">Our Comepany</a></li>
-					<li><a href="#">Press Center</a></li>
-					<li><a href="#">Contact Iconnetchs</a></li>
-					<li><a href="#">Wholesale</a></li>
-					<li><a href="#">PowerIQ </a></li>
-					<li><a href="#">WEEE inforn ation</a></li>
-				</ul>
+				<ul class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
-				<ul class="col-lg-3">
-					<li><a href="#">Drivers downloads</a></li>
-					<li><a href="#">Refund Exchange</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Warranly</a></li>
-					<li><a href="#">Terms of Ues </a></li>
-				</ul>
-				<ul class="col-lg-3">
-					<li><a href="#">Subscribe</a></li>
-					<li><a href="#">Be the first to knows about our latest products</a></li>
+					<li><a href="javascript:;">Subscribe</a></li>
+					<li><a href="javascript:;">Be the first to knows about our latest products</a></li>
 
-					<form onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=baiyanglin/gFdm', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" target="popupwindow" method="post" action="https://feedburner.google.com/fb/a/mailverify">
-	    					<input type="text" name="email"  id="email" placeholder="Enter your e-mail address"/><br />
-	    						<input type="hidden" name="uri" value="baiyanglin/gFdm">
-								<input type="hidden" value="en_US" name="loc">
-	    						<input type="submit" value="Submit"/>
 	    					
-			    	</form>
 
-<!-- 
 					<input type="text" placeholder="Enter your email address" /><br />
-					<input type="submit" value="SUBMIT" /> -->
+					<input type="submit" value="SUBMIT" />
 
 					<p class="social-contact">
-						<a href="#"><i class="iconfont">&#xe63f;</i></a>
-						<a href="#"><i class="iconfont">&#xe608;</i></a>
-						<a href="#"><i class="iconfont">&#xe60c;</i></a>
-						<a href="#"><i class="iconfont">&#xe622;</i></a>
-						<a href="#"><i class="iconfont">&#xe629;</i></a>
+						<a  class="facebook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495"></a>&nbsp;&nbsp;
+						<a  class="twitter" href="https://twitter.com/Iconntechs1"></a>&nbsp;&nbsp;
+						<a  class="instagram"  href="https://www.instagram.com/iconntechs1/"></a>
+						
 					</p>
 				</ul>
-				<ul class="col-lg-3">
-					<li><a href="#">Our Comepany</a></li>
-					<li><a href="#">Press Center</a></li>
-					<li><a href="#">Contact Iconnetchs</a></li>
-					<li><a href="#">Wholesale</a></li>
-					<li><a href="#">PowerIQ </a></li>
-					<li><a href="#">WEEE inforn ation</a></li>
+				<ul class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<li><a href="#">Privacy Policy </a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+				</ul>
+				<ul class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<li><a href="<?php bloginfo('home') ;?>/index.php/about-us/">About Us</a></li>
+					<li><a href="<?php bloginfo('home') ;?>/index.php/contact-us">Contact Us</a></li>
+					
 				</ul>
 
 			</div>
 			<div class="container">
 				<hr />
 				<div class="col-lg-6 col-md-6 col-sm-12">Copyright     2016 ICONNTECHS Technology Co.Limited</div>
-				<div class="col-lg-6 col-md-6 col-sm-12"><a class="text-right"><img src="<?php bloginfo('template_url');?>/img/flag.png" class="img-responsive" />china shenzhen</a></div>
+				
 				
 			</div><br />
 			<div class="container">

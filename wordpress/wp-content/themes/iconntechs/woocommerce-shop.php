@@ -294,62 +294,13 @@ $fdata = get_posts(array(
         	时间：2016-04-22
         	描述：尾部
         -->
-		<footer>
-			<div class="container">
-				<ul class="col-lg-3">
-					<li><a href="#">Our Comepany</a></li>
-					<li><a href="#">Press Center</a></li>
-					<li><a href="#">Contact Iconnetchs</a></li>
-					<li><a href="#">Wholesale</a></li>
-					<li><a href="#">PowerIQ </a></li>
-					<li><a href="#">WEEE inforn ation</a></li>
-				</ul>
+		<?php get_template_part('foot','shop');?>
 
-				<ul class="col-lg-3">
-					<li><a href="#">Drivers downloads</a></li>
-					<li><a href="#">Refund Exchange</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Warranly</a></li>
-					<li><a href="#">Terms of Ues </a></li>
-				</ul>
-				<ul class="col-lg-3">
-					<li><a href="#">Subscribe</a></li>
-					<li><a href="#">Be the first to knows about our latest products</a></li>
-					<input type="text" placeholder="Enter your email address" /><br />
-					<input type="submit" value="SUBMIT" />
-					<p class="social-contact">
-						<a href="#"><i class="iconfont">&#xe63f;</i></a>
-						<a href="#"><i class="iconfont">&#xe608;</i></a>
-						<a href="#"><i class="iconfont">&#xe60c;</i></a>
-						<a href="#"><i class="iconfont">&#xe622;</i></a>
-						<a href="#"><i class="iconfont">&#xe629;</i></a>
-					</p>
-				</ul>
-				<ul class="col-lg-3">
-					<li><a href="#">Our Comepany</a></li>
-					<li><a href="#">Press Center</a></li>
-					<li><a href="#">Contact Iconnetchs</a></li>
-					<li><a href="#">Wholesale</a></li>
-					<li><a href="#">PowerIQ </a></li>
-					<li><a href="#">WEEE inforn ation</a></li>
-				</ul>
 
-			</div>
-			<div class="container">
-				<hr />
-				<div class="col-lg-6 col-md-6 col-sm-12">Copyright     2016 ICONNTECHS Technology Co.Limited</div>
-				<div class="col-lg-6 col-md-6 col-sm-12"><a class="text-right"><img src="<?php bloginfo('template_url');?>/img/flag.png" class="img-responsive" />china shenzhen</a></div>
 				
-			</div><br />
-			<div class="container">
-				<div class="col-lg-12 text-center"><img  src="<?php bloginfo('template_url');?>/img/logo.png"/></div>
-			</div>
 
-		</footer>
 
-		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
 
-		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 		<script>
 		    window.onload=function(){
 		   

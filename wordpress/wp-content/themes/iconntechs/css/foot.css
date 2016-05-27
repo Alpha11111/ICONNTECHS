@@ -52,6 +52,21 @@ footer input[type="submit"]{
 footer .container .col-lg-6 a img{
 	display: inline;
 }
+footer .facebook,footer .twitter,footer .instagram{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	text-decoration: none;
+}
+footer .facebook{
+	background:  url(../img/iocnBox3.png) no-repeat 0px 0px;
+}
+footer .twitter{
+	background:  url(../img/iocnBox3.png) no-repeat -54px 0px;
+}
+footer .instagram{
+	background:  url(../img/iocnBox3.png) no-repeat -108px 0px;
+}
 @media only screen and (min-width: 970px) and (max-width: 1169px) {
 	
 	
@@ -63,6 +78,10 @@ footer .container .col-lg-6 a img{
 	
 		footer ul:nth-child(4) li{
 	margin-left: 0%;
+    }
+    footer input[type="text"]{
+	width: 200px;
+	padding-left:5px ;
     }
 }
 

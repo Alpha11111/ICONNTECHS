@@ -107,9 +107,9 @@ header("Location: ".$xredir);
         </div>
         <footer>
             <p>
-                <a class="faceBook"></a> &nbsp; &nbsp; &nbsp;
-                <a class="Google"></a> &nbsp; &nbsp; &nbsp;
-                <a class="instagram"></a>
+                <a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495"></a> &nbsp; &nbsp; &nbsp;
+                <a class="Google" href="https://plus.google.com/?hl=en"></a> &nbsp; &nbsp; &nbsp;
+                <a class="instagram" href="https://www.instagram.com/iconntechs1/"></a>
             </p>
         <p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
         </footer>
