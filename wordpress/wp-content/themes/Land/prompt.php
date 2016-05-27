@@ -17,11 +17,120 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 			$usate = wp_create_user($_POST['email'], $_POST['password'], $_POST['email'] );
 			$coupon = 'UB86EXMY';
 			$message = 'success';
+			/*$headers = "MIME-Version: 1.0\n" . "Content-Type: text/html;"; 
+			$message .= "<p>".$user_email.'('.$user_name.')'.'通过售后服务：'."</p>";
+			$message .= "<p>".$orderDetail."</p>";
+			$message .= "<p>".$Issue."</p>";
+			$message .= "<p><img src='".$iimage."'></p>";
+			wp_mail($_POST['email'],$title,$message,$headers);*/
 					
 		}
 		}
 }
+ function isMobile()
+{ 
+    // 如果有HTTP_X_WAP_PROFILE则一定是移动设备
+    if (isset ($_SERVER['HTTP_X_WAP_PROFILE']))
+    {
+        return true;
+    } 
+    // 如果via信息含有wap则一定是移动设备,部分服务商会屏蔽该信息
+    if (isset ($_SERVER['HTTP_VIA']))
+    { 
+        // 找不到为flase,否则为true
+        return stristr($_SERVER['HTTP_VIA'], "wap") ? true : false;
+    } 
+    // 脑残法，判断手机发送的客户端标志,兼容性有待提高
+    if (isset ($_SERVER['HTTP_USER_AGENT']))
+    {
+        $clientkeywords = array ('nokia',
+            'sony',
+            'ericsson',
+            'mot',
+            'samsung',
+            'htc',
+            'sgh',
+            'lg',
+            'sharp',
+            'sie-',
+            'philips',
+            'panasonic',
+            'alcatel',
+            'lenovo',
+            'iphone',
+            'ipod',
+            'blackberry',
+            'meizu',
+            'android',
+            'netfront',
+            'symbian',
+            'ucweb',
+            'windowsce',
+            'palm',
+            'operamini',
+            'operamobi',
+            'openwave',
+            'nexusone',
+            'cldc',
+            'midp',
+            'wap',
+            'mobile'
+            ); 
+        // 从HTTP_USER_AGENT中查找手机浏览器的关键字
+        if (preg_match("/(" . implode('|', $clientkeywords) . ")/i", strtolower($_SERVER['HTTP_USER_AGENT'])))
+        {
+            return true;
+        } 
+    } 
+    // 协议法，因为有可能不准确，放到最后判断
+    if (isset ($_SERVER['HTTP_ACCEPT']))
+    { 
+        // 如果只支持wml并且不支持html那一定是移动设备
+        // 如果支持wml和html但是wml在html之前则是移动设备
+        if ((strpos($_SERVER['HTTP_ACCEPT'], 'vnd.wap.wml') !== false) && (strpos($_SERVER['HTTP_ACCEPT'], 'text/html') === false || (strpos($_SERVER['HTTP_ACCEPT'], 'vnd.wap.wml') < strpos($_SERVER['HTTP_ACCEPT'], 'text/html'))))
+        {
+            return true;
+        } 
+    } 
+    return false;
+} 
 ?>
+<?php if(isMobile()):?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/movePrompt.css" />
+	</head>
+	<body>
+		<div class="box">
+			<?php if($message=='success'):?>
+			<div class="successBox">
+				<label class="success"></label><br /><br />
+				<p>Your email Registration is successful, </p>
+				<p>click the button below to return</p>
+				<p><label>Preferential code: </label><label class="Preferential-code"><?php echo $coupon;?></label></p>
+				<p><a class="backLand"   href="<?php bloginfo('home');?>">BACK LAND</a></p>
+			</div>
+		<?php else:?>
+			<div class="errorBox" >
+				<label class="error"></label><br /><br />
+				<p><?php echo $message;?> </p>
+				<p><a class="backLand" href="<?php bloginfo('home');?>">BACK LAND</a></p>
+			</div>
+		<?php endif;?>
+		</div>
+		<p>
+			<a class="faceBook"></a> &nbsp; &nbsp; &nbsp;
+			<a class="Google"></a> &nbsp; &nbsp; &nbsp;
+			<a class="instagram"></a>
+		</p>
+		<p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
+	</body>
+</html>
+<?php else:?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -57,8 +166,9 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 	<?php endif;?>
 
 		<footer>
-			<p><a class="faceBook"></a> &nbsp; &nbsp; &nbsp;<a class="Google"></a> &nbsp; &nbsp; &nbsp;<a class="instagram"></a></p>
+			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/"></a></p>
 			<p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
 		</footer>
 	</body>
 </html>
+<?php endif;?>

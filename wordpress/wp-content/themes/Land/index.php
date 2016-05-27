@@ -69,6 +69,47 @@
 
 ?>
 
+<?php if(isMobile()):?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/moveLand.css" />
+    <title></title> 
+</head>
+<body>
+    <div class="product1">
+            <img src="<?php bloginfo('template_url');?>/img/samml1.jpg" />
+            <a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" target="_blank">View details</a>
+            <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">SUBMIT</a>
+        </div>
+        <div class="product2">
+            <img src="<?php bloginfo('template_url');?>/img/samll2.jpg" />
+            <a class="btn" href="http://www.amazon.com/dp/B01F70Q236" target="_blank">View details</a>
+            <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">SUBMIT</a>
+        </div>
+        <div class="product3">
+            <img src="<?php bloginfo('template_url');?>/img/samll3.jpg" />
+            <a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank">View details</a>
+            <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">SUBMIT</a>
+        </div>
+        <div class="product4">
+            <img src="<?php bloginfo('template_url');?>/img/samll4.jpg" />
+            <a class="btn" href="http://www.amazon.com/dp/B01FS16U9A " target="_blank">View details</a>
+            <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">SUBMIT</a>
+        </div>
+        <footer>
+            <p>
+                <a class="faceBook"></a> &nbsp; &nbsp; &nbsp;
+                <a class="Google"></a> &nbsp; &nbsp; &nbsp;
+                <a class="instagram"></a>
+            </p>
+        <p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
+        </footer>
+</body>
+</html>
+<?php else:?>
 <!DOCTYPE html>
 <html id="body">
 	<head>
@@ -131,3 +172,4 @@
 	</body>
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/land.js" ></script>
 </html>
+<?php endif;?>

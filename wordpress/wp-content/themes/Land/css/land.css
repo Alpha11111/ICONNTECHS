@@ -91,6 +91,7 @@ body {
 	position: absolute;
 	z-index: 99;
 	cursor: pointer;
+	text-decoration: none !important;
 }
 
 .formBox {
@@ -137,6 +138,7 @@ footer {
 	height: 38px;
 	margin-top: 40px;
 	cursor: pointer;
+	text-decoration:none;
 }
 
 .faceBook {
