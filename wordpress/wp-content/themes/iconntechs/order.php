@@ -54,6 +54,7 @@ foreach($customer_orders as $customer_order){
 	}
 
 }
+$headimg = get_the_author_meta( 'headimg', $user_ID );
 //var_dump($orderdata);die;
 
 ?>
@@ -90,12 +91,16 @@ foreach($customer_orders as $customer_order){
 		<?php get_template_part('head','shop');?>
 	    
 	    <div class="container container1">
-	    	<form id="headImgUpload"  enctype="multipart/form-data">
+	    	<form id="headImgUpload"  enctype="multipart/form-data" method="post" action="<?php bloginfo('home');?>/index.php/my-account/">
 	    		<div class="headImg">
-	    		     <img src="<?php bloginfo('template_url');?>/img/headImg1.png"/>
+				<?php if(!empty($headimg)):?>
+					 <img id="head" name="head" src="<?php echo $headimg;?>"/>
+				<?php else:?>
+	    		     <img id="head" name="head" src="<?php echo bloginfo('template_url');?>/img/headImg1.png"/>
+	    		<?php endif;?>
 	    		
 	    	    </div>
-	         	<input type="file" id="seeFile" style="display: none;">
+	         	<input type="file" id="photoimg" name="photoimg" style="display: none;" onchange="upload()">
 	    	</form>
 	    	<p class="name"><strong><?php echo get_the_author_meta( 'user_nicename', $user_ID );?></strong></p>
 	    	<p><?php echo get_the_author_meta( 'billing_country', $user_ID ).' ';?><?php echo get_the_author_meta( 'billing_city', $user_ID );?></p>
@@ -196,7 +201,19 @@ foreach($customer_orders as $customer_order){
 
 		<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/headImgUplad.js" ></script>
 		<script>
+			function upload(){
+				$("#accountform").ajaxForm({
+							beforeSubmit:function(){
 			
+						}, 
+						success:function(){
+							window.location.reload();
+						}, 
+						error:function(){
+							$('#message').text('Upload failure');
+						}
+							 }).submit();
+	   			}
 		</script>
 		
 	</body>

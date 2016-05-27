@@ -19,7 +19,7 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST" ){
 		$message .= "<p>".$orderDetail."</p>";
 		$message .= "<p>".$Issue."</p>";
 		$message .= "<p><img src='".$iimage."'></p>";
-		wp_mail('229710133@qq.com',$title,$message,$headers);
+		wp_mail($user_email,$title,$message,$headers);
 		
 }else{
 		$name = $_FILES['photoimg']['name'];
@@ -42,7 +42,7 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST" ){
 		$tmp = $_FILES['photoimg']['tmp_name'];
 		if(move_uploaded_file($tmp, $path.$image_name)){
 			$message = 'Upload Success';
-			$img = 'http://localhost/wordpress/wp-content/uploads/'.$image_name;
+			$img = site_url('wp-content/uploads/').$image_name;
 			echo $img;
 			
 		}else{

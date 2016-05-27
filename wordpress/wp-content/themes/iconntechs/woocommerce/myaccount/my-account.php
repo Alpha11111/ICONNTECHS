@@ -54,7 +54,7 @@ if(!empty($_POST['UserName'])){
 		$tmp = $_FILES['photoimg']['tmp_name'];
 		if(move_uploaded_file($tmp, $path.$image_name)){
 			
-			$img = 'http://localhost/wordpress/wp-content/uploads/head/'.$image_name;
+			$img = site_url('wp-content/uploads/head/').$image_name;
 
 			$isaa = $wpdb->query("select * from wp_usermeta where user_id=$user_ID and meta_key='headimg' limit 1"); 
 			if($isaa){
@@ -82,7 +82,7 @@ function extend($file_name){
 }
 
 
-$headimg = get_the_author_meta( 'headimg', $user_ID )
+$headimg = get_the_author_meta( 'headimg', $user_ID );
 
 ?>
 		<!--
