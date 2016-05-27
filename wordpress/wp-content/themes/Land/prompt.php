@@ -4,16 +4,21 @@
 */
 global $wpdb;
 if(!empty($_POST['email']) && !empty($_POST['password'])){
+	if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
+	 {
+	 	$message = 'E-mail is not valid';
+	 }else{
 	$isaa = $wpdb->get_results("select * from wp_users where user_email='$_POST[email]' limit 1",ARRAY_A); 
-		//var_dump($isaa);die;
+		
 		if($isaa){
-			$message = 'failure';				
+			$message = 'This emailbox is already registered. Please choose another one. ';				
 		}else{
-			//var_dump($_POST);die;
+			
 			$usate = wp_create_user($_POST['email'], $_POST['password'], $_POST['email'] );
 			$coupon = 'UB86EXMY';
 			$message = 'success';
-			//var_dump($usate);die;			
+					
+		}
 		}
 }
 ?>
