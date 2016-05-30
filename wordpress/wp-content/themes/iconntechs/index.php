@@ -4,6 +4,13 @@ if ($_SERVER["HTTPS"] <> "on")
 $xredir="https://".$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; 
 header("Location: ".$xredir); 
 }
+//var_dump($_COOKIE['times']);die;
+if(!$_GET['blog']){
+	if(empty($_COOKIE['times'])){
+		//header("Location:index.php/shop/");
+		wp_redirect(site_url('index.php/shop/'));
+	}
+}
 get_header();
 
 ?>
@@ -86,9 +93,8 @@ get_header();
         	时间：2016-05-05
         	描述：foot
         -->
-		<?php get_template_part('foot','shop');?>
-		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
-		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+	<?php get_footer();?>
+		
 		<script>
 				$(function(){
 					$(".loadMore").click(function(){

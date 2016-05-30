@@ -59,7 +59,7 @@ $carnum = count($carnum);
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav  navbar-right">
 								<li class=""><a href="<?php echo home_url();?>/index.php/product-list/">Products<span class="sr-only">(current)</span></a></li>
-								<li><a href="<?php echo get_option('home');?>">Blog</a></li>
+								<li><a href="<?php echo get_option('home');?>?blog=blog">Blog</a></li>
 								<li><a href="<?php echo get_option('home');?>/index.php/return-goods/">Support</a></li>
 								<li><a href="<?php echo home_url();?>/index.php/contact-us/">Contact us</a></li>
 								<li class="dropdown">
