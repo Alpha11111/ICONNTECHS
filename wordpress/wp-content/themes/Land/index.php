@@ -91,6 +91,18 @@ header("Location: ".$xredir);
     fbq('init', '1160998803951999');
     fbq('track', "PageView");
 </script>
+<noscript>
+<img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=1160998803951999&ev=PageView&noscript=1"
+    />
+</noscript>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-74879058-2', 'auto');
+      ga('send', 'pageview');
+</script>
 </head>
 <body>
     <div class="product1">
@@ -99,29 +111,29 @@ header("Location: ".$xredir);
         </div>
         <div class="product2">
             <img src="<?php bloginfo('template_url');?>/img/move1.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" fbq('track', 'InitiateCheckout');>Buy On Amazon</a>
+            <a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <div class="product3">
             <img src="<?php bloginfo('template_url');?>/img/move2.jpg" />
-            <a class="btn"  href="http://www.amazon.com/dp/B01FS16U9A" target="_blank" fbq('track', 'InitiateCheckout');>Buy On Amazon</a>
+            <a class="btn"  href="http://www.amazon.com/dp/B01FS16U9A" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <div class="product4">
             <img src="<?php bloginfo('template_url');?>/img/move3.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank" fbq('track', 'InitiateCheckout');>Buy On Amazon</a>
+            <a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <div class="product5">
             <img src="<?php bloginfo('template_url');?>/img/move4.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank" fbq('track', 'InitiateCheckout');>Buy On Amazon</a>
+            <a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <footer>
              <p>
                 <a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;
                 <a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;
-                <a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a>
+            
             </p>
         <p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
         </footer>
@@ -173,22 +185,22 @@ header("Location: ".$xredir);
         </div>
 		<div class="product2">
 			<img src="<?php bloginfo('template_url');?>/img/1.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" target="_blank" fbq('track', 'InitiateCheckout');>Buy On Amazon</a>
+			<a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
 		</div>
 		<div class="product3">
 			<img src="<?php bloginfo('template_url');?>/img/2.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01FS16U9A" target="_blank" fbq('track', 'InitiateCheckout');>Buy On Amazon</a>
+			<a class="btn" href="http://www.amazon.com/dp/B01FS16U9A" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
 		</div>
 		<div class="product4">
 			<img src="<?php bloginfo('template_url');?>/img/3.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank" fbq('track', 'InitiateCheckout');>Buy On Amazon</a>
+			<a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
 		</div>
 		<div class="product5">
 			<img src="<?php bloginfo('template_url');?>/img/4.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank" fbq('track', 'InitiateCheckout');>Buy On Amazon</a>
+			<a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
 		</div>
 		<footer>
-			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a></p>
+			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> </p>
 			<p class="copy">© 2016  ICONNTECHS.com</p>
 		</footer>
 		<div class="hoverBox">
