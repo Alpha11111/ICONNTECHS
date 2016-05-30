@@ -44,8 +44,8 @@
 					</p>
 				</ul>
 				<ul class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<li><a href="#">Privacy Policy </a></li>
-					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="<?php bloginfo('home');?>/index.php/privacy-policy/">Privacy Policy </a></li>
+					<li><a href="<?php bloginfo('home');?>/index.php/terms/">Terms & Conditions</a></li>
 				</ul>
 				<ul class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<li><a href="<?php bloginfo('home');?>/index.php/about-us/">About Us</a></li>

@@ -260,7 +260,11 @@ if(!empty($_POST['pnum'])){
 					  <div class="ReviewsBox">
 								<div class="ReviewPersonInfo">
 									<div>
+										<?php $headimg = get_the_author_meta('headimg',$comkey['user_id']); if(empty($headimg)):?>
 										<img src="<?php bloginfo('template_url');?>/img/headImg1.png"  />
+										<?php else:?>
+										<img src="<?php echo $headimg;?>"/>
+										<?php endif;?>
 									</div>
 									<div>
 										<p><label><?php echo get_the_author_meta('user_nicename',$comkey['user_id']);?></label>&nbsp;&nbsp;&nbsp; <span>Verified Buyer </span></p>

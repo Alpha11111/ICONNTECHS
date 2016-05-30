@@ -1,26 +1,33 @@
 body{
 	font-family: arial;
 }
+
 .container1{
 	background:#efefef ;
 	padding: 0px !important;
 }
-.container1 .col-lg-3{
+.container1 .col-lg-6{
 	
 	text-align: center;
 	border-left: 2px solid #fff;
 	cursor: pointer;
-	padding:0px !important;
 	
 }
-
-.container1 .col-lg-3:first-child{
+.container1 .col-lg-6.activeDiv a{
+	color: #fff;
+	text-decoration: none;
+}
+.container1 .col-lg-6 a:hover{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.container1 .col-lg-6:first-child{
 	border-left:none;
 }
-.container1 .col-lg-3 div{
+.container1 .col-lg-6 div{
 	padding: 20px 0px;
 }
-.container1 .col-lg-3 div i{
+.container1 .col-lg-6 div i{
 	font-size: 40px;
 }
 .container2{
@@ -109,9 +116,6 @@ textarea{
 	font-size: 18px;
 	float: right;
 }
-#message{
-	color: #ff5550;
-}
 .container3 input[type=submit]{
 	background: #ff5550;
 	
@@ -132,13 +136,41 @@ textarea{
 .container4{
 	padding: 20px 0px 30px 0px !important;
 }
+.container4 p.problem2{
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+
+}
 .container4 p.problem{
 	height: 30px;
 	border-bottom: 1px solid #ccc;
+	color:#323232;
+	
 
+}
+.container4 p.problem3{
+	padding-top: 10px;
+	height: 30px;
+	border-top: 1px solid #ccc;
+	color:#323232;
+	font-size: 16px;
+	
+
+}
+.container4 .ptitle{
+	padding-bottom: 10px;
+	color: #323232;
+	border-bottom:2px solid #E2E2E2 ;
+	font-size: 16px;
 }
 .container4 p{
 		color: #999999;
+		line-height: 28px;
+}
+.color{
+	color: #323232 !important;
+	font-size: 16px;
 }
 @media only screen and (max-width:768px ) {
 .container3 h2{
