@@ -33,8 +33,9 @@
 		<?php get_template_part('head','shop');?>
 		<div class="container container2">
 			<h2>Your Account Has Been Created</h2>
-			<p>Thank you for creating your account at ICONNTECHS. Your account</p>
-			<p>details have been emailed to your mailbox</p>
+			<p>Thank you for creating your account at ICONNTECHS.</p>
+			<!-- <p>Thank you for creating your account at ICONNTECHS. Your account</p> -->
+			<!-- <p>details have been emailed to your mailbox</p> -->
 			
 			<a class="sendEmail" href="<?php echo site_url( 'wp-login.php?' );?>">Click here to login</a>
 		</div>

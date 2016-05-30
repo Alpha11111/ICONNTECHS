@@ -760,13 +760,31 @@ case 'register' :
 	$user_email = '';
 	if ( $http_post ) {
 		$user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : '';
-		$user_email = isset( $_POST['user_email'] ) ? $_POST['user_email'] : '';
-		$errors = register_new_user($user_login, $user_email);
+		$pwd = isset( $_POST['pwd'] ) ? $_POST['pwd'] : '';
+		$repwd = isset($_POST['repwd']) ? $_POST['repwd'] : '';
+		global $wpdb;
+	if($pwd != $repwd){
+			$llogin_error = 'You enter the password twice inconsistencies';
+		}
+		else{
+			if(!empty($user_login) && !empty($pwd) && !empty($repwd)){
+				$isaa = $wpdb->get_results("select * from wp_users where user_email='$user_login' limit 1",ARRAY_A); 
+					if($isaa){
+						$llogin_error = 'Sorry, that email address is already used! ';
+					}else{			
+						$usate = wp_create_user( $user_login, $pwd, $user_login );
+						$redirect_to = !empty( $_POST['redirect_to'] ) ? $_POST['redirect_to'] : 'wp-login.php?checkemail=registered';
+						wp_safe_redirect( $redirect_to );	
+						exit();
+					}
+			}
+		}
+		/*$errors = register_new_user($user_login, $user_email);
 		if ( !is_wp_error($errors) ) {
 			$redirect_to = !empty( $_POST['redirect_to'] ) ? $_POST['redirect_to'] : 'wp-login.php?checkemail=registered';
 			wp_safe_redirect( $redirect_to );
 			exit();
-		}
+		}*/
 	}
 
 	$registration_redirect = ! empty( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : '';
@@ -788,15 +806,16 @@ case 'register' :
 				
 				<form class="registerForm" name="registerform" id="registerform" action="<?php echo esc_url( site_url( 'wp-login.php?action=register', 'login_post' ) ); ?>" method="post" novalidate="novalidate">
 					<h1>Create Account</h1>
-					<p><input type="text"  placeholder="Username" type="text" name="user_login" id="user_login" class="input" value="<?php echo esc_attr(wp_unslash($user_login)); ?>" required/></p>
+					<p><input type="text"  placeholder="Email address" type="text" name="user_login" id="user_login" class="input"  required/></p>
 					
 					<?php if(!empty($llogin_error)):?>
 					<p><?php echo $llogin_error; ?></p>
 					<?php endif;?>
 
-					<p><input   placeholder="Email" type="text" name="user_email" id="user_email"  value="<?php echo esc_attr( wp_unslash( $user_email ) ); ?>" required/></p>
+					<p><input   placeholder="Password" type="password" name="pwd" id="pwd"   required/></p>
+					<p><input   placeholder="Confirm Password" type="password" name="repwd" id="repwd"   required/></p>
 					<div class="other-box">
-						The new password will be sent to your email box.
+						<!-- The new password will be sent to your email box. -->
 						<!-- <span class="checkBox">
 							<i class="iconfont" style="visibility: hidden;">&#xe686;</i>
 						</span>&nbsp;&nbsp;&nbsp;Subscribe to the Iconntechs Newsletter -->
@@ -978,7 +997,7 @@ default:
 			$errors->add('newpass', __('Check your email for your new password.'), 'message');
 		elseif	( isset($_GET['checkemail']) && 'registered' == $_GET['checkemail'] ){
 				$errors->add('registered', __('Registration complete,your password is '.$_COOKIE['user_pass']), 'message');
-				setcookie('message','Registration complete,your password is '.$_COOKIE['user_pass'],time()+60);
+				//setcookie('message','Registration complete,your password is '.$_COOKIE['user_pass'],time()+60);
 				wp_redirect( site_url('index.php/register-success?message=Registration complete,your password is '.$_COOKIE['user_pass'] ));
 			}
 			//$errors->add('registered', __('Registration complete. Please check your email.'), 'message');
