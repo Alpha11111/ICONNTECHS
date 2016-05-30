@@ -28,7 +28,7 @@ foreach ($data as $post) {
 						<img src='".wp_get_attachment_url( get_post_thumbnail_id($id) )."' alt='img1'  class='img-responsive center-block'/>
 							
 						</div>
-						<p><a>".get_the_title()."</a>　</p>
+						<p><a href='".$post->guid."'>".get_the_title()."</a>　</p>
 					</div>
 					<div class='otherBox'>
 						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
@@ -60,7 +60,7 @@ foreach ($data as $post) {
 						<img src='".wp_get_attachment_url( get_post_thumbnail_id($id) )."' alt='img1'  class='img-responsive center-block'/>
 							
 						</div>
-						<p><a>".get_the_title()."</a>　</p>
+						<p><a href='".$post->guid."'>".get_the_title()."</a>　</p>
 					</div>
 					<div class='otherBox'>
 						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
@@ -91,7 +91,7 @@ foreach ($data as $post) {
 						<img src='".wp_get_attachment_url( get_post_thumbnail_id($id) )."' alt='img1'  class='img-responsive center-block'/>
 							
 						</div>
-						<p><a>".get_the_title()."</a>　</p>
+						<p><a href='".$post->guid."'>".get_the_title()."</a>　</p>
 					</div>
 					<div class='otherBox'>
 						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
@@ -124,7 +124,7 @@ foreach ($data as $post) {
 						<img src='".wp_get_attachment_url( get_post_thumbnail_id($id) )."' alt='img1'  class='img-responsive center-block'/>
 							
 						</div>
-						<p><a>".get_the_title()."</a>　</p>
+						<p><a href='".$post->guid."'>".get_the_title()."</a>　</p>
 					</div>
 					<div class='otherBox'>
 						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
