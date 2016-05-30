@@ -207,7 +207,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		</div>
 
 		<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;
-			<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a></p>
+			<a class="Google" href="https://twitter.com/Iconntechs1" target="_blank"></a></p>
 			<p class="copy" >© &nbsp;2016 ICONNTECHS.com</p>
 
 	</body>
@@ -266,7 +266,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		<?php endif;?>
 
 		<footer>
-			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> </p>
+			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp;<a class="Google" href="https://twitter.com/Iconntechs1" target="_blank"></a> </p>
 			<p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
 		</footer>
 	</body>

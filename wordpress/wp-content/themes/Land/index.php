@@ -132,7 +132,7 @@ header("Location: ".$xredir);
         <footer>
              <p>
                 <a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;
-                <a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;
+                <a class="Google" href="https://twitter.com/Iconntechs1" target="_blank"></a> &nbsp; &nbsp; &nbsp;
             
             </p>
         <p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
@@ -200,7 +200,7 @@ header("Location: ".$xredir);
 			<a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
 		</div>
 		<footer>
-			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> </p>
+			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://twitter.com/Iconntechs1" target="_blank"></a> </p>
 			<p class="copy">© 2016  ICONNTECHS.com</p>
 		</footer>
 		<div class="hoverBox">
