@@ -161,31 +161,35 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>ICONNTECHS</title>
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/movePrompt.css" />
 	</head>
 	<body>
 <?php if($message=='success'):?>
-		<div id="successBox">
-			<label class="success"></label>
+		<div class="box">
+			<div class="successBox" >
+				<label class="success" ></label><br /><br />
 			<p>Thank you for registering with us! </p>
 			<p>Below coupon code is also sent to your email.</p>
 			<p><label>Coupon Code: </label><label class="Preferential-code"><?php echo $coupon;?></label></p>
-			<p><a class="back"  href="<?php bloginfo('home');?>">Continue Shopping</a></p>
+				<p><a class="backLand" href="<?php bloginfo('home');?>">Continue Shopping</a></p>
 		</div>
 <?php else:?>
-		<div id="errorBox" >
-			<label class="error"></label>
+			<div class="errorBox" >
+				<label class="error"></label><br /><br />
 			<p>This email address has been registered. </p>
 				<p>Please try with another email address.</p>
-			<p><a class="back"  href="<?php bloginfo('home');?>">Continue Shopping</a></p>
+				<p><a class="backLand" href="<?php bloginfo('home');?>">Continue Shopping</a></p>
 		</div>
 	<?php endif;?>
-		<footer>
-			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a></p>
+		</div>
+
+		<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;
+			<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;
+			<a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a></p>
 			<p class="copy" >© &nbsp;2016 ICONNTECHS.com</p>
-		</footer>
+
 	</body>
 </html>
 
@@ -198,7 +202,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>ICONNTECHS</title>
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/prompt.css" />
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

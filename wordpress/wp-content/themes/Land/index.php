@@ -81,7 +81,7 @@ header("Location: ".$xredir);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/moveLand.css" />
-    <title></title>
+    <title>ICONNTECHS</title> 
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -135,7 +135,7 @@ header("Location: ".$xredir);
 		<meta charset="utf-8"/>
 		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
 		<title>
-			
+			ICONNTECHS
 		</title>
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/land.css" />
         <link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
