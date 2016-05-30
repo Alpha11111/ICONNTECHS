@@ -162,7 +162,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/prompt.css" />
+		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/movePrompt.css" />
 	</head>
 	<body>
 <?php if($message=='success'):?>
