@@ -2,12 +2,14 @@
 /*
 	Template Name:Prompt
 */
+
 $msg = "<div id='emailBox'>
 			<style>
 			#emailBox{
 				width: 900px;
 				margin: 0px auto;
 				font-family: arial;
+				
 			}
 			#emailBox h1{
 				text-align: center;
@@ -22,6 +24,7 @@ $msg = "<div id='emailBox'>
 			#emailBox label{
 				color: #FF5550;
 				font-size: 18px;
+				
 			}
 			ul li{
 				list-style: disc;
@@ -35,6 +38,7 @@ $msg = "<div id='emailBox'>
 			}
 			.webSite{
 				text-align: center;
+				
 			}
 			.webSite a{
 				font-size: 20px;
@@ -43,6 +47,7 @@ $msg = "<div id='emailBox'>
 			<h1>ICONNTECHS</h1>
 			<p>Greetings from Iconntechs,</p>
 			<p>Here is the promotional code <label>UB86EXMY</label></a></p>
+			
 			<p>You can use the code to get 25% discount off any products you purchase in our Amazon store:</p>
 			<ul>
 				<li>VR Glasses &nbsp;<a href='https://www.amazon.com/dp/B01F70Q236'>https://www.amazon.com/dp/B01F70Q236</a></li>
@@ -57,13 +62,15 @@ $msg = "<div id='emailBox'>
 			<hr />
 			<p class='webSite'><a href='https://www.iconntechs.com'>https://www.iconntechs.com</a></p>
 		</div>";
+
 global $wpdb;
 if(!empty($_POST['email']) && !empty($_POST['password'])){
+	
 	if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 	 {
 	 	$message = 'E-mail is not valid';
 	 }else{
-	$isaa = $wpdb->get_results("select * from wp_users where user_email='$_POST[email]' limit 1",ARRAY_A); 
+		$isaa = $wpdb->get_results("select * from wp_users where user_email='$_POST[email]' limit 1",ARRAY_A); 
 		
 		if($isaa){
 			$message = 'This emailbox is already registered. Please choose another one. ';				
@@ -75,8 +82,9 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 			wp_mail($_POST['email'],'ICONNTECHS',$msg);
 					
 		}
-		}
+	}
 }
+
  function isMobile()
 { 
     // 如果有HTTP_X_WAP_PROFILE则一定是移动设备
@@ -144,76 +152,80 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
     } 
     return false;
 } 
+
 ?>
+
 <?php if(isMobile()):?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title></title>
-		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/movePrompt.css" />
-		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
-	</head>
-	<body>
-		<div class="box">
-			<?php if($message=='success'):?>
-			<div class="successBox">
-				<label class="success"></label><br /><br />
-				<p>Your email Registration is successful, </p>
-				<p>click the button below to return</p>
-				<p><label>Preferential code: </label><label class="Preferential-code"><?php echo $coupon;?></label></p>
-				<p><a class="backLand"   href="<?php bloginfo('home');?>">BACK LAND</a></p>
-			</div>
-		<?php else:?>
-			<div class="errorBox" >
-				<label class="error"></label><br /><br />
-				<p><?php echo $message;?> </p>
-				<p><a class="backLand" href="<?php bloginfo('home');?>">BACK LAND</a></p>
-			</div>
-		<?php endif;?>
-		</div>
-		<p>
-			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a></p>
-		</p>
-		<p class="copy">© &nbsp;2016 ICONNTECHS.com</p>
-	</body>
-</html>
-<?php else:?>
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/prompt.css" />
-		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-74879058-2', 'auto');
-	  ga('send', 'pageview');
-	</script>
 	</head>
 	<body>
-	
-	<?php if($message=='success'):?>
+<?php if($message=='success'):?>
 		<div id="successBox">
 			<label class="success"></label>
-			<p>Your email Registration is successful,  </p>
-			<p> click the button below</p>
-			<p><label>Preferential code: </label><label class="Preferential-code"><?php echo $coupon;?></label></p>
-			<p><a class="back" href="<?php bloginfo('home');?>">Back Land</a></p>
+			<p>Thank you for registering with us! </p>
+			<p>Below coupon code is also sent to your email.</p>
+			<p><label>Coupon Code: </label><label class="Preferential-code"><?php echo $coupon;?></label></p>
+			<p><a class="back"  href="<?php bloginfo('home');?>">Continue Shopping</a></p>
 		</div>
-	<?php else:?>
-		<div id="errorBox">
+<?php else:?>
+		<div id="errorBox" >
 			<label class="error"></label>
-			<p><?php echo $message;?></p>
-			<p><a class="back" href="<?php bloginfo('home');?>">Back Land</a></p>
+			<p>This email address has been registered. </p>
+				<p>Please try with another email address.</p>
+			<p><a class="back"  href="<?php bloginfo('home');?>">Continue Shopping</a></p>
 		</div>
 	<?php endif;?>
+		<footer>
+			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a></p>
+			<p class="copy" >© &nbsp;2016 ICONNTECHS.com</p>
+		</footer>
+	</body>
+</html>
+
+
+
+<?php else:?>
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/prompt.css" />
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-74879058-2', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<?php if($message=='success'):?>
+		<div id="successBox">
+			<label class="success"></label>
+			<p>Thank you for registering with us! </p>
+			<p>Below coupon code is also sent to your email.</p>
+			<p><label>Coupon Code: </label><label class="Preferential-code"><?php echo $coupon;?></label></p>
+			<p><a class="back"  href="<?php bloginfo('home');?>">Continue Shopping</a></p>
+		</div>
+		<?php else:?>
+		<div id="errorBox" >
+			<label class="error"></label>
+			<p>This email address has been registered. </p>
+				<p>Please try with another email address.</p>
+			<p><a class="back"  href="<?php bloginfo('home');?>">Continue Shopping</a></p>
+		</div>
+		<?php endif;?>
 
 		<footer>
 			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://plus.google.com/?hl=en" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="instagram" href="https://www.instagram.com/iconntechs1/" target="_blank"></a></p>
@@ -221,4 +233,6 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		</footer>
 	</body>
 </html>
+
+
 <?php endif;?>

@@ -36,7 +36,8 @@ body p {
 	background: #00aaff;
 	color: #fff;
 	border-radius: 5px;
-	text-decoration:none;
+	font-size: 22px;
+	text-decoration: none !important;
 }
 .Preferential-code{
 	color: #00aaff;
