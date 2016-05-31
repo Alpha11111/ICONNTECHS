@@ -89,6 +89,7 @@ header("Location: ".$xredir);
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1160998803951999');
+    fbq('track', 'InitiateCheckout');
     fbq('track', "PageView");
 </script>
 <noscript>
@@ -161,6 +162,7 @@ header("Location: ".$xredir);
 
     fbq('init', '1160998803951999');
     fbq('track', "PageView");
+    fbq('track', 'InitiateCheckout');
 </script>
 <noscript>
 <img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=1160998803951999&ev=PageView&noscript=1"
