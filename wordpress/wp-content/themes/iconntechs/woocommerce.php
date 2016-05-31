@@ -74,6 +74,9 @@ if(!empty($photo_str)){
 	$kk = 0;
 	$gallery = array();
 	foreach ($info as $ky) {
+		if($kk==0){
+			$pimg = $ky['guid'];
+		}
 		$info[$kk]['thumbnail'] = str_replace('.', '-82x82.', $ky['guid']);
 		$kk++;
 	}
@@ -140,16 +143,22 @@ if(!empty($_POST['pnum'])){
 						<a><?php echo $product;?></a>
 					</p>
 				<div class="goodsInfoleft" >
+					<?php if(empty($pimg)):?>
 					<div id="mainImg" > 
 
 						<img src="<?php echo $pimg = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="good" class="img-responsive"/>
 					</div>
+					<?php else:?>
+					<div id="mainImg"> 
+						<img src="<?php echo $pimg;?>" alt="good" class="img-responsive"/>
+					</div>
+					<?php endif;?>
 					<?php if(!empty($info)):?>
 					<div id="pic_list_2" class="scroll_horizontal">
 					    <div class="box">
 						<ul class="list">
 						<?php foreach($info as $gk):?>
-							<li><a href="#"><img src="<?php echo $gk['thumbnail'];?>"  alt="<?php echo $gk['guid'];?>"></a></li>
+							<li><a><img src="<?php echo $gk['thumbnail'];?>"  alt="<?php echo $gk['guid'];?>"></a></li>
 						<?php endforeach;?>
 						
 						</ul>
