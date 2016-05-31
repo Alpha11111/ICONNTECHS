@@ -137,7 +137,7 @@ textarea{
 	padding: 20px 0px 30px 0px !important;
 }
 .container4 p.problem2{
-	height: 60px;
+	height: auto;
 	border-bottom: 1px solid #ccc;
 	font-size: 16px;
 
@@ -186,5 +186,8 @@ textarea{
 	
 	border-left: none;
 	
+}
+.container4{
+	padding: 0px 5% !important;
 }
 }

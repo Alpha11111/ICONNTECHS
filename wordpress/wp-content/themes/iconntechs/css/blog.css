@@ -48,6 +48,9 @@ iframe{
 .bolgIcon{
 	color: #909090;
 }
+a:hover{
+text-decoration: none !important; 
+}
 .move1{
 	display: inline-block;
 	margin-left: 45%;
@@ -55,6 +58,8 @@ iframe{
 .text-box{
 	padding: 15px 0px;
 	line-height: 28px;
+	word-break:break-all;
+	overflow: hidden;
 }
 .blog-iocn-Box{
 	overflow: hidden;
@@ -316,5 +321,23 @@ ul{
 	width:100% ;
 	margin-left:0 ;
 	margin-top: 20px;
+}
+/***/
+.move1{
+	display: inline-block;
+	margin-left: 4%;
+}
+/***/
+.labBox{
+	padding:0% 5%;
+}
+/***/
+.turnPage{
+	padding:0% 5%;
+}
+/***/
+#previous1,#next1{
+	width: 20%;
+	font-size: 12px !important;
 }
 }

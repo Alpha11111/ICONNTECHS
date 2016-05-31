@@ -15,7 +15,7 @@
 		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 		<title>policy</title>
 		<!-- Bootstrap -->
-		<link href="<?php bloginfo('template_ur');?>/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+		<link href="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/returnGoods.css" />
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

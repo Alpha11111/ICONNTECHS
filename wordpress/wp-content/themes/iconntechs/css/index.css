@@ -144,6 +144,9 @@ a:hover{
 	text-align: center;
 
 }
+a:hover{
+	text-decoration: none !important;
+}
 footer{
 	background: #000;
 	min-height: 300px;
@@ -282,7 +285,9 @@ footer .container .col-lg-6 a img{
 		display: none;
 	}
 	.whiteBorder2{
-		font-size: 2em;
+		font-size: 1em !important;
+		height: 2em;
+		line-height: 2em;
 	}
 	.bottomWord{
 	position: absolute;
@@ -335,9 +340,7 @@ footer ul:nth-child(4) li{
 .labBtn{
 	margin-top:0em ;
 }
-.whiteBorder2{
-		font-size: 1.5em;
-	}
+
 	.bottomWord{
 	position: absolute;
 	z-index: 99;

@@ -70,16 +70,13 @@ if(!empty($_POST['Email'])){
         	描述：尾部
         -->
 		<?php get_template_part('foot','shop');?>
-		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
-		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+		
 		<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery.validate.min.js" ></script>
 		<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/validate_myexpand.js" ></script>
 		<script>
 	 window.onload=function(){
 		   
-		    if(window.innerWidth>=1350){
-		    		ScreenCover();
-		    }
+		  
 		    
 		   
       }
@@ -103,30 +100,9 @@ if(!empty($_POST['Email'])){
 			});
 
 		});
-		    window.onresize=function(){
-		    	if(window.innerWidth>=1350){
-		    		ScreenCover();
-		    	}else{
-			    	document.getElementById("box1").style.width="100%";
-			    	document.getElementById("box1").style.height="inherit";
-				    var names =document.getElementsByClassName("imgh");
-				    for (var i=0;i<names.length;i++) {
-				    	  names[i].style.width="100%";
-				    	  names[i].style.height="inherit";
-				    }
-			    }
-		    }
+		   
 		    
-		    function ScreenCover(){
-		    	 document.getElementById("box1").style.height=(window.innerHeight-50)+"px";
-		    	 document.getElementById("box1").style.width=(window.innerWidth-17)+"px";
-			     var names =document.getElementsByClassName("imgh");
-			     for (var i=0;i<names.length;i++) {
-			    	 names[i].style.height=(window.innerHeight-50)+"px";
-			    	 console.log( names[i].style.height);
-			    	  names[i].style.width=(window.innerWidth-17)+"px";
-			     }
-		    }
+		
 			
 		
 		</script>
