@@ -142,6 +142,9 @@ if(!empty($_POST['emailto'])){
 
 
 	 	wp_mail($_POST['emailto'],$_POST['emailtitle'],$msg);
+	 	if(isMobile()){
+	 		echo "<script>alert('Emails Sent');</script>";
+	 	}
 	 	
 	 }
 }
