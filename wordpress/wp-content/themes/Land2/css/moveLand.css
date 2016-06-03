@@ -53,6 +53,7 @@ input[placeholder]{
 	height: 42px;
 	font-size: 18px;
 	color: #fff;
+        margin-left:-1px;
 }
 #footer{
 	margin-top: 180px;
