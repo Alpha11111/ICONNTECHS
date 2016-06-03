@@ -34,8 +34,7 @@
 	  	  	  <h2>Sign Up & Get Your $200 Credit</h2>
 	  	  	  <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" id="form">
 	  	  	  	<input type="hidden" value="<?php echo $invite_id;?>" name="invite_id">
-	  	  	  	 <input type="email" name="email" placeholder="Enter Email" required/>
-	  	  	  	 <a id="submit" onclick="document.getElementById('form').submit()">step inside</a>
+	  	  	  	 <input type="email" name="email" placeholder="Enter Email" required/><a id="submit" onclick="document.getElementById('form').submit()">step inside</a>
 	  	  	  </form>
 	  	  	  	<?php get_footer();?>
 	  	  </div>
