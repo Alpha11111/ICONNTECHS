@@ -1,0 +1,67 @@
+body,h2{
+	margin: 0px;
+	font-family: arial;
+	background: #ebebeb;
+}
+
+a:hover{
+	text-decoration: none;
+}
+.top{
+	width: 100%;
+}
+.top img{
+	width: 100%;
+	display: block;
+}
+.bottom{
+	width: 100%;
+	
+	background: #ebebeb;
+	text-align: center;
+	overflow: hidden;
+}
+.bottom h2{
+	color: #FF5550;
+	padding-top: 35px;
+	font-size: 18px;
+}
+.bottom form{
+	padding-top: 44px;
+}
+.bottom form input[type=email]{
+	width: 60%;
+	height: 42px;
+	border: 1px solid #FF5550;
+	font-size: 18px;
+	padding-left: 5px;
+		outline: 0;
+	
+}
+input[placeholder]{
+	color: #bcbcbc;
+}
+
+.bottom form input[type=submit]{
+	background:#FF5550 ;
+	border: 1px solid #FF5550;
+	width: 10;
+	height: 46px;
+	font-size: 18px;
+	color: #fff;
+}
+#footer{
+	margin-top: 180px;
+}
+#footer .faceBook,#footer .twitter{
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	
+}
+#footer .faceBook{
+	background: url(../img/icon.png) no-repeat -205px -14px;
+}
+#footer .twitter{
+	background: url(../img/icon.png) no-repeat -258px -14px;
+}

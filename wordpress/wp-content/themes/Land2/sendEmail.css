@@ -1,0 +1,63 @@
+ body{
+ 	background: #f5f5f5;
+ 	margin: 0px;
+ }
+ .white{
+ 	width: 100%;
+ 	height: auto;
+ 	background: #fff;
+ }
+ .input{
+ 	width: 100%;
+ 	padding: 0 5%;
+	border-bottom: 1px solid #ccc;
+	line-height: 50px;
+	height: 50px;
+	margin: 0px;
+}
+ .input input[type=text]{
+	border: none;
+	outline: 0;
+	padding-left: 5px;
+	height: 40px;
+	font-size: 15px;
+	width: 75%;
+}
+  .mTitle img{
+	float: right;
+	padding-right: 20px;
+	margin-top: 13px;
+	cursor: pointer;
+}
+ .textarea{
+ 	
+	margin: 0px;
+	height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom:30px ;
+	
+}
+ .textarea p{
+ 	padding-left: 5%;
+ 	font-size: 14px;
+ }
+
+.submitBox{
+   width:80%;
+   margin: 0px auto;
+}
+ input[type=submit]{
+    width: 100%;
+    margin-top: 20px;
+   
+	background: #FF5550;
+	border: 1px  solid #FF5550;
+	height: 40px;
+    border-radius: 2px;
+	text-align: center;
+	outline: 0;
+	color: #FFFFFF;
+	font-size: 20px;
+	
+	
+}
