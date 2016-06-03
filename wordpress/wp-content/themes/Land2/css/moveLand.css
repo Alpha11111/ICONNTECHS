@@ -49,11 +49,12 @@ input[placeholder]{
 	-webkit-box-sizing: border-box;
 	background:#FF5550 ;
 	border: 1px solid #FF5550;
-	width: 10;
+	width: 30%;
 	height: 42px;
 	font-size: 18px;
 	color: #fff;
         margin-left:-1px;
+		outline: 0;
 }
 #footer{
 	margin-top: 180px;
