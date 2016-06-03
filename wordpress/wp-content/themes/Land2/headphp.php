@@ -90,7 +90,8 @@ if(!empty($_POST['email'])){
 		
 		if($isaa){
 			$share_id = $isaa[0]['ID'];
-			$share_url = site_url().'/index.php/?invite='.$share_id;
+			$pre = rtrim($_SERVER['HTTP_REFERER'],'/');
+			$share_url = $pre.'?invite='.$share_id;
 			$message = 'success';
 			wp_mail($_POST['email'],'ICONNTECHS',$msg);
 			wp_redirect(site_url('index.php/registrationcompletion/?share_url='.$share_url.'&share_id='.$share_id));	
@@ -134,7 +135,8 @@ if(!empty($_POST['email'])){
 				$uid = $uu;
 
 				$share_id = $uid;
-				$share_url = site_url().'/index.php/?invite='.$uid;
+				$pre = rtrim($_SERVER['HTTP_REFERER'],'/');
+				$share_url = $pre.'?invite='.$share_id;
 				$message = 'success';
 				
 				$msg = "<div id='emailBox'>
