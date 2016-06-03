@@ -168,7 +168,7 @@ if(!empty($_POST['emailto'])){
     </script>
 	</head>
 	<body>
-		<form id="send" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>?share_url=<?php echo $_GET['share_url'];?>">
+		<form id="send" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>.'?share_url='.<?php echo $_GET['share_url'];?>">
 		<div class="white">
 			
 			 <p class="input"><label>To :</label><input name="emailto" type="text"></p>
