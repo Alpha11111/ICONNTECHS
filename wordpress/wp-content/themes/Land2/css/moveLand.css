@@ -29,11 +29,12 @@ a:hover{
 .bottom form{
 	padding-top: 44px;
 }
-.bottom form input[type=email]{
-        box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+.bottom form input[type=text]{
+	display: inline-block;
 	width: 60%;
 	height: 42px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	border: 1px solid #FF5550;
 	font-size: 18px;
 	padding-left: 5px;
@@ -44,17 +45,20 @@ input[placeholder]{
 	color: #bcbcbc;
 }
 
-.bottom form input[type=submit]{
+#submit{
+	display: inline-block;
        box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	background:#FF5550 ;
 	border: 1px solid #FF5550;
 	width: 30%;
 	height: 42px;
+	line-height: 42px;
 	font-size: 18px;
 	color: #fff;
-        margin-left:-1px;
 		outline: 0;
+	text-decoration: none;
+	vertical-align: bottom;
 }
 #footer{
 	margin-top: 180px;

@@ -34,7 +34,7 @@ include("headphp.php");
 	  	  </div>
 	  	  <div class="bottom">
 	  	  	  <h2>Sign Up & Get Your $200 Credit</h2>
-	  	  	  <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+	  	  	  <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" id="form">
 	  	  	  	<input type="hidden" value="<?php echo $invite_id;?>" name="invite_id">
 	  	  	  	 <input type="email" name="email" placeholder="Enter Email" required/><input type="submit" value="step inside" />
 	  	  	  </form>
