@@ -142,7 +142,7 @@ if(!empty($_POST['emailto'])){
 
 
 	 	wp_mail($_POST['emailto'],$_POST['emailtitle'],$msg);
-	 	wp_redirect($_SERVER['HTTP_REFERER']);
+	 	
 	 }
 }
 
