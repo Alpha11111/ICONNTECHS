@@ -30,6 +30,8 @@ a:hover{
 	padding-top: 44px;
 }
 .bottom form input[type=email]{
+box-sizing: border-box;
+
 	width: 60%;
 	height: 42px;
 	border: 1px solid #FF5550;
@@ -43,10 +45,12 @@ input[placeholder]{
 }
 
 .bottom form input[type=submit]{
+box-sizing: border-box;
+
 	background:#FF5550 ;
 	border: 1px solid #FF5550;
 	width: 10;
-	height: 46px;
+	height: 42px;
 	font-size: 18px;
 	color: #fff;
         margin-left:-1px;
