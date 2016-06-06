@@ -91,7 +91,7 @@ add_filter( 'wp_mail_content_type', 'Bing_set_html_content_type_html' );
 class RRHE {
   // Register the column - Registered
   public static function registerdate($columns) {
-    $columns['registerdate'] = __('注册时间', 'registerdate');
+    $columns['registerdate'] = __('Registerdate', 'registerdate');
     return $columns;
   }
   // Display the column content
