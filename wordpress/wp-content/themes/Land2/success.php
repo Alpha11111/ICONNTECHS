@@ -96,8 +96,8 @@ function isMobile()
 				<p>each friend who signs up.</p>
 				<label class="linkBox"><?php echo $_GET['share_url'];?></label>
 				<p class="shareBox">
-					<a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a class="twitter" href="https://twitter.com/Iconntechs1" target="_blank"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="faceBook" target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $_GET['share_url'];?>"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="twitter" href="https://twitter.com/intent/tweet?url=<?php echo $_GET['share_url'];?>"  target="_blank"></a>&nbsp;&nbsp;&nbsp;&nbsp;
 					<a class="emailBox" href="<?php bloginfo('home');?>/index.php/send-email?share_url=<?php echo $_GET['share_url'];?>"></a>
 				</p>
 			</div>
