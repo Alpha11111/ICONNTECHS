@@ -1,0 +1,208 @@
+﻿body,h2,h1{
+	margin: 0px;
+	font-family: arial;
+	min-width: 1200px;
+}
+a:hover{
+	text-decoration: none;
+}
+#head{
+	width: 100%;
+	height: 50px;
+	background: #323232;
+	text-align: center;
+	line-height: 50px;
+}
+
+#body .top{
+	width: 100%;
+	height: 600px;
+	background: #ffffff;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+#body .top h1{
+	font-size: 38px;
+	padding-top: 120px;
+}
+#body .top .linkBox{
+	width: 25%;
+	padding: 8px 10px;
+	border: 2px solid #323232;
+	margin: 0px auto;
+	border-radius: 5px;
+	color: #848484;
+}
+.shareBox .faceBook,.shareBox .twitter,.shareBox .emailBox{
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	cursor: pointer;
+}
+.p1{
+	margin-top: -1px;
+}
+.p2{
+	margin-top:40px;
+}
+.shareBox .faceBook{
+	background: url(../img/icon.png) no-repeat -17px -12px;
+}
+.shareBox .twitter{
+	background: url(../img/icon.png) no-repeat -80px -12px;
+}
+.shareBox .emailBox{
+	background: url(../img/icon.png) no-repeat -142px -12px;
+}
+#body .bottom{
+	width: 100%;
+	height: auto;
+	background: url(../img/BG1.png);
+	text-align: center;
+        padding-bottom:20px;
+}
+#body .bottom h2{
+	padding-top: 50px;
+}
+ul {
+	width: 1200px;
+	padding: 0px;
+	margin: 0px auto;
+	padding-top: 54px;
+}
+ul li{
+	list-style: none;
+}
+ul li{
+	float: left;
+	width: 20%;
+}
+.speedHead  li.first {
+	font-weight: bold;
+	line-height: 40px;
+	text-align: left;
+}
+.speedFoot li.first{
+	font-weight: bold;
+	text-align: left;
+}
+.speedHead  li label{
+	width: 40px;
+	height: 40px;
+	background: #ff5550;
+	display: inline-block;
+	border-radius: 50%;
+	line-height: 40px;
+	color: #fff;
+	font-weight: bold;
+}
+.speedShow {
+	position: relative;
+}
+.speedShow li{
+	float: left;
+	width: 20%;
+	height: 6px;
+	background: #323232;
+}
+.speedShow li:first-child{
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+.speedShow li:last-child{
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+#cover{
+	position: absolute;
+	z-index: 9;
+	width: 0%;
+	height: 7px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background: #ff5550;
+	margin-top:-0.001% ;
+	transition:width 1s ease-in; 
+}
+.clear{
+	clear: both;
+}
+.speedFoot{
+	margin-top: -25px;
+}
+
+.speedFoot li div{
+	margin-top: 25px;
+}
+
+/*遮罩的样式*/
+#mask{
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.6);
+	display: none;
+}
+#content{
+	width: 600px;
+	height: 500px;
+	background: #fff;
+	margin: 80px auto;
+	border-radius:10px ;
+}
+#mask .mTitle{
+	height: 50px;
+	background: #323232;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin: 0px;
+}
+#mask .input{
+	padding: 0 5%;
+	border-bottom: 1px solid #ccc;
+	line-height: 50px;
+	height: 50px;
+	margin: 0px;
+}
+#mask .input input[type=text]{
+	border: none;
+	outline: 0;
+	padding-left: 5px;
+	width: 70%;
+}
+#mask  .mTitle img{
+	float: right;
+	padding-right: 20px;
+	margin-top: 13px;
+	cursor: pointer;
+}
+#mask .textarea{
+	margin: 0px;
+	border-bottom: 1px solid #ccc;
+	
+}
+#mask .textarea p{
+	font-size: 14px;
+	margin: 5px;
+	line-height: 27px;
+	padding-left:5%;
+	
+	
+}
+#mask input[type=submit]{
+
+	float: right;
+	margin-right: 20px;
+	margin-top: 15px;
+	background: #FF5550;
+	border: 1px  solid #FF5550;
+	height: 30px;
+    border-radius: 2px;
+	width: 87px;
+	outline: 0;
+	color: #FFFFFF;
+	
+}
