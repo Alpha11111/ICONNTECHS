@@ -84,4 +84,44 @@ function Bing_set_html_content_type_html(){
     return 'text/html';//可以自定义类型
 }
 add_filter( 'wp_mail_content_type', 'Bing_set_html_content_type_html' );
+/**
+ * WordPress 后台用户列表显示注册时间
+ * 
+ */
+class RRHE {
+  // Register the column - Registered
+  public static function registerdate($columns) {
+    $columns['registerdate'] = __('注册时间', 'registerdate');
+    return $columns;
+  }
+  // Display the column content
+  public static function registerdate_columns( $value, $column_name, $user_id ) {
+    if ( 'registerdate' != $column_name )
+      return $value;
+    $user = get_userdata( $user_id );
+    $registerdate = get_date_from_gmt($user->user_registered);
+    return $registerdate;
+  }
+  public static function registerdate_column_sortable($columns) {
+    $custom = array(
+      // meta column id => sortby value used in query
+      'registerdate'    => 'registered',
+      );
+    return wp_parse_args($custom, $columns);
+  }
+  public static function registerdate_column_orderby( $vars ) {
+    if ( isset( $vars['orderby'] ) && 'registerdate' == $vars['orderby'] ) {
+      $vars = array_merge( $vars, array(
+        'meta_key' => 'registerdate',
+        'orderby' => 'meta_value'
+        ) );
+    }
+    return $vars;
+  }
+}
+// Actions
+add_filter( 'manage_users_columns', array('RRHE','registerdate'));
+add_action( 'manage_users_custom_column',  array('RRHE','registerdate_columns'), 15, 3);
+add_filter( 'manage_users_sortable_columns', array('RRHE','registerdate_column_sortable') );
+add_filter( 'request', array('RRHE','registerdate_column_orderby') );
 ?>

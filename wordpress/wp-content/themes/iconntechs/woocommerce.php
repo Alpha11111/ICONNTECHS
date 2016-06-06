@@ -63,6 +63,10 @@ foreach ($data as $key) {
 	if($key['meta_key']=='_product_image_gallery'){
 		$photo_str = $key['meta_value'];
 	}
+	if($key['meta_key']=='_product_attributes'){
+		$amazon_url = unserialize($key['meta_value']);
+		$amazon_url = $amazon_url['amazon']['value'];
+	}
 }
 
 /*获取产品相册*/
@@ -177,7 +181,7 @@ if(!empty($_POST['pnum'])){
 						<i class="iconfont">&#xe613;</i>
 						<span><?php echo $totalitem;?> Reviews</span>
 					</p>
-					<p class="desc1"><?php echo $post->post_excerpt;?></p>
+					<!-- <p class="desc1"><?php echo $post->post_excerpt;?></p> -->
 					<p class="price">$<?php echo $data['price'];?></p>
 
 					<!-- <p class="boldFont">Color</p>
@@ -198,7 +202,7 @@ if(!empty($_POST['pnum'])){
 					<div>
 						<input type="hidden" name="pnum" id="pnum">
 						<a class="addCart1 cart" onclick="checknum()">ADD TO CART</a>
-						<!-- <a class="addCart1 amazon">BUY AT AMAZON US</a> -->
+						<a class="addCart1 amazon" href="<?php echo $amazon_url;?>" target="_blank">BUY AT AMAZON US</a>
 						<script>
 							function checknum(){
 							$zhi = $('#ppnum').val();
@@ -209,6 +213,7 @@ if(!empty($_POST['pnum'])){
 					</div>
 					</form>
 					<div class="product-rule">
+						<?php echo $post->post_excerpt;?>
 						
 						<!-- <p>Bluetooth Version :4.0</p>
 						<p>Driver output :3W×2 Playt</p>
