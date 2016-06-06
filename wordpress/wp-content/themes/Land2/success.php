@@ -90,7 +90,7 @@ function isMobile()
 	<body>
 		<div id="body">
 			<div id="top">
-				<h5>INVITE FRIENDS & EARN <span style="color: #FF5550;">FREE</span> Products</h5>
+				<h5>INVITE FRIENDS & EARN <span style="color: #FF5550;">FREE</span> PRODUCTS</h5>
 				<p>Share your unique link via email,Facebook</p>
 				<P>or Twitter and earn Iconntechs’s goods for </P>
 				<p>each friend who signs up.</p>
@@ -229,7 +229,7 @@ function isMobile()
 		</header>
 		<div id="body">
 			<div class="top">
-				<h1>INVITE FRIENDS & EARN <span style="color:#ff5500">FREE</span> Products</h1>
+				<h1>INVITE FRIENDS & EARN <span style="color:#ff5500">FREE</span> PRODUCTS</h1>
 				<br />
 				<p>Share your unique link via email,Facebook</p>
 				<p>or Twitter and earn Iconntechs’s goods for  </p>
