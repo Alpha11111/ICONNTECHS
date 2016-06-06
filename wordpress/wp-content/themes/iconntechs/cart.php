@@ -18,9 +18,11 @@ if(!empty($_POST)){
 		if($cart_item['product_id']==$product_id){
 			 WC()->cart->remove_cart_item($cart_item_key);
 		}
+		
 	}
 	WC()->cart->add_to_cart($product_id = $product_id, $quantity = $num, $variation_id = 0, $variation = array(), $cart_item_data = array() );
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -107,9 +109,11 @@ if(!empty($_POST)){
 							<span class="num" id="<?php echo $product_id;?>"><?php
 								echo $cart_item['quantity'];
 						?>
+							
 							</span>
 							<label class="add" onclick="add(this)"><i class="iconfont">+</i></label>
 						</p>
+						
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 								'<a hreff="%s" data-target="#myModal" data-toggle="modal"   title="%s" data-product_id="%s" data-product_sku="%s"><i class="iconfont">&#xe639;</i></a>',
@@ -124,6 +128,7 @@ if(!empty($_POST)){
 				</div>
 
 			</div>
+
 		<?php
 			}}?>
 
@@ -142,7 +147,7 @@ if(!empty($_POST)){
 
 		<?php else: ?>
 
-				<a class="buyBtn" href="<?php echo home_url();?>/index.php/checkout/">Subtotal: <?php wc_cart_totals_subtotal_html();?>  |  CHECK OUT
+				<a class="buyBtn"  href="<?php echo home_url();?>/index.php/checkout/">Subtotal: <?php wc_cart_totals_subtotal_html();?>  |  CHECK OUT
 					</a>
 
 				</p>
@@ -195,13 +200,17 @@ if(!empty($_POST)){
 						
 					});
 					//数量减少
+					
 				 });
+
 				function reduce(obj){
+
 					  var num = parseInt($(obj).next(".num").text());
 					  var product_id = $(obj).next(".num").attr('id');
-					 
+					  
 					   num--;
 					   $.post("<?php echo the_permalink();?>",{'num':num,'product_id':product_id},function(data){
+					    		
 					    });
 					   if(num<=1){
 					   	 $(obj).next(".num").text(1);
@@ -209,6 +218,9 @@ if(!empty($_POST)){
 					   	  
 					   }
 					    $(obj).next(".num").text(num);
+
+					   
+					   
 					};
 					//数量增加
 			function add(obj){
@@ -216,9 +228,12 @@ if(!empty($_POST)){
 						var product_id = $(obj).prev(".num").attr('id');
 						num++;
 						$.post("<?php echo the_permalink();?>",{'num':num,'product_id':product_id},function(data){
-						
-					});
+					    		
+					    });
 						$(obj).prev(".num").text(num);
+
+						 
+						
 					};
 			
 		</script>

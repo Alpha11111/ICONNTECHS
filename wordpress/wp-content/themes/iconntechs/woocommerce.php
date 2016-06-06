@@ -77,7 +77,7 @@ if(!empty($photo_str)){
 		if($kk==0){
 			$pimg = $ky['guid'];
 		}
-		$info[$kk]['thumbnail'] = str_replace('.', '-82x82.', $ky['guid']);
+		$info[$kk]['thumbnail'] = str_replace('.png', '-82x82.png', $ky['guid']);
 		$kk++;
 	}
 

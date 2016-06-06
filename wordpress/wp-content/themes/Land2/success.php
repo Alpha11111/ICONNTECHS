@@ -242,7 +242,7 @@ function isMobile()
 			<div class="bottom">
 				   <h2>HERE’S HOW IT WORKS</h2>
 				   <ul class="speedHead">
-					   	<li class="first">FRIENDS JOINED </li>
+					   	<li class="first">NO. of Friends Joined </li>
 					   	<li><label>5</label></li>
 					   	<li><label>10</label></li>
 					   	<li><label>25</label></li>

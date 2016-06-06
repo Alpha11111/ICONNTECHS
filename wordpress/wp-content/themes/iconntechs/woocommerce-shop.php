@@ -7,24 +7,39 @@ foreach ( $car as $cart_item_key => $cart_item ) {
 	}
 
 /*获取产品各种属性*/
-$data = $wpdb->get_results( "select * from wp_postmeta where post_id=42 ",ARRAY_A );
+/*$data = $wpdb->get_results( "select * from wp_postmeta where post_id=42 ",ARRAY_A );
 foreach ($data as $key) {
 	if($key['meta_key']=='_regular_price'){
 		$price = $key['meta_value'];
 		
 	}
-}
+}*/
 
 
 //var_dump($info);die;
 /*获取产品图*/
-$data = $wpdb->get_results( "select guid from wp_posts where post_parent=42",ARRAY_A );
+$data = $wpdb->get_results( "select ID,guid from wp_posts where post_type='product' and post_status='publish' order by post_date DESC limit 1",ARRAY_A );
 $thumbnail = $data[0]['guid'];
+$t_id = $data[0]['ID'];
+$dprice = $wpdb->get_results( "select * from wp_postmeta where post_id=$t_id ",ARRAY_A );
+foreach ($dprice as $key) {
+	if($key['meta_key']=='_sale_price'){
+		$sprice = $key['meta_value'];
 
-$data = get_post(42,ARRAY_A);
+	}
+	if($key['meta_key']=='_regular_price'){
+		$rprice = $key['meta_value'];
+	}
+}
+$data = get_post($t_id,ARRAY_A);
 $data['thumbnail'] = $thumbnail;
-$data['price'] = $price;
+if(!empty($sprice)){
+	$data['price'] = $sprice;
+}else{
+	$data['price'] = $rprice;
+}
 
+//var_dump($data);die;
 /*获取首页四个产品*/
 /*$finfo_id = $wpdb->get_results("select m.object_id from wp_terms t  left join wp_term_relationships m on t.term_id=m.term_taxonomy_id where t.name='camera'",ARRAY_A );*/
 
@@ -85,7 +100,8 @@ $carnum = count($carnum);
 		<link href="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/index.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
-		
+		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
+		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -228,7 +244,7 @@ $carnum = count($carnum);
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-					<img src="<?php echo $data['thumbnail'];?>" class="img-responsive" />
+					<img src="<?php echo $ppimg = wp_get_attachment_url( get_post_thumbnail_id($t_id) );?>" class="img-responsive" />
 					<p class="product-title"><?php echo $data['post_title'];?></p>
 
 				</div>
@@ -250,8 +266,7 @@ $fdata = get_posts(array(
 	$arr = '';
 	$i = 0;
 	foreach ($fdata as $post) {
-		$id = $post->ID;
-		if($id!=42){ ?>
+		$id = $post->ID; ?>
 
 		 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					<div class="product-Box">
@@ -285,7 +300,7 @@ $fdata = get_posts(array(
 					</div>
 		</div>
 					
-	<?php } }?>
+	<?php  }?>
 				
 			</div>
 		</section>
