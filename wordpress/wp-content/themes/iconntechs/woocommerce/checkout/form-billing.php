@@ -93,7 +93,7 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 			    					<option>Australia</option>
 			    					<option>New Zealand</option>
 			    				</select>
-				    			<p class="inputPropmt"  <?php $billing_country = get_the_author_meta( 'billing_country', $user_ID );if(!empty($billing_country)):?>style="margin-top:-43px"<?php endif;?>>Country <span class="mark2">*</span></p>
+
 			    			</div>
 			    			<div class="num3">
 				    			<input type="text" name="billing_state" id="billing_state"   value="<?php echo get_the_author_meta( 'billing_state', $user_ID );?>"/>
