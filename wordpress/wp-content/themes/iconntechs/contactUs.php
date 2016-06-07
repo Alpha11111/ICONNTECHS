@@ -7,7 +7,7 @@ if(!empty($_POST['Email'])){
 		$user_email = $_POST['Email'];
 		$message = $user_email.'通过联系我们：'.$_POST['message'];
 		wp_mail('info@iconntechs.com',$title,$message);
-		
+		wp_redirect(site_url('/index.php/contact-us-success/'));
 }
 
 //wp_mail( $user_email, wp_specialchars_decode( $title ), $message )

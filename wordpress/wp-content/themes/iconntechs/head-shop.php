@@ -12,7 +12,7 @@ $carnum = count($carnum);
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google-signin-client_id" content="155913334949-rjvjklmhr6cjbe7r8d4arlle016la4o2.apps.googleusercontent.com">
 		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-		<title>home</title>
+		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' | '; } ?> <?php bloginfo('name'); ?></title>
 
 		<!-- Bootstrap -->
 		

@@ -24,7 +24,7 @@ if(!empty($_POST)){
 }
 
 ?>
-
+<?php get_template_part('head','shop');?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
@@ -53,7 +53,7 @@ if(!empty($_POST)){
         	时间：2016-05-05
         	描述：head
         -->
-		<?php get_template_part('head','shop');?>
+
 
 		
 		<div class="container container1" <?php if(empty($tdata)):?>style="display:none"<?php endif;?>>
