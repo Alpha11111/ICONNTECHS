@@ -21,7 +21,7 @@ $carnum = count($carnum);
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/head.css" />
 		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
-		<script src="http://connect.facebook.net/en_US/sdk.js" async="true" defer></script>
+		
 		<script src="https://apis.google.com/js/api:client.js"></script>
 		
          <style type="text/css">
