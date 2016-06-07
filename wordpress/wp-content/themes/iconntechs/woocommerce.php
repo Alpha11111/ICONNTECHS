@@ -2,7 +2,6 @@
 header("Access-Control-Allow-Origin: *");
 
 if(is_shop()){
-	var_dump($_POST);die;
 	get_template_part('woocommerce', 'shop' );
 	die;
 }
@@ -189,7 +188,7 @@ if(!empty($sprice)){
 					</div> -->
 
 					<p class="boldFont">Quantity</p>
-					<form id="ppform" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+					<form id="ppform" action="<?php the_permalink();?>" method="post">
 					<div>
 						 <label class="clickBtn " id="reduce">-</label><input type="button" name="ppnum" id="ppnum" value="1" readonly="readonly"/><label class="clickBtn" id="add">+</label>
 					</div>

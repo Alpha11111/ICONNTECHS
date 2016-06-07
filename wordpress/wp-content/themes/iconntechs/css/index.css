@@ -24,6 +24,9 @@
 	margin-top:-6em;
 	font-weight: 700;
 }
+a:focus {
+outline: none !important;
+} 
 section{
 	padding: 50px 0px;
 }
