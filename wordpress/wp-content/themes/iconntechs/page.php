@@ -203,8 +203,8 @@ if(is_page('My Account') and !$user_ID){
 							billing_country: "Please enter your  Country",
 							
 							billing_city:"Please enter your  City",
-							billing_phone: "Please enter your email Zipcode",
-							billing_postcode: "Please enter your Phonenumber"
+							billing_phone: " Please Enter Your Zip Code",
+							billing_postcode: "Please Enter Your Phone Number"
 						},
 						errorPlacement: function(error, element) {  
 							error.appendTo(element.parent());  

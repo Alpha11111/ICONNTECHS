@@ -29,7 +29,15 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
         <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+		<style>
 		
+	.woocommerce-error{
+		display: none !important;
+	}
+	.woocommerce-message{
+		display: none !important;
+	}
+		</style>
 	</head>
 	<body>
 		<!--
@@ -73,7 +81,18 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 
 	    	        	<div class="input-Box">
 			    			<div class="num3">
-				    			<input type="text" name="billing_country" id="billing_country"  value="<?php echo get_the_author_meta( 'billing_country', $user_ID );?>" />
+				    			<!-- <input type="text" name="billing_country" id="billing_country"  value="<?php echo get_the_author_meta( 'billing_country', $user_ID );?>" /> -->
+				    			<select name="Country"  id="Country" name="billing_country" id="billing_country">
+			    					<option>United States</option>
+			    					<option>United Kingdom</option>
+			    					<option>Germany</option>
+			    					<option>France</option>
+			    					<option>Spain</option>
+			    					<option>Italy</option>
+			    					<option>Japan</option>
+			    					<option>Australia</option>
+			    					<option>New Zealand</option>
+			    				</select>
 				    			<p class="inputPropmt"  <?php $billing_country = get_the_author_meta( 'billing_country', $user_ID );if(!empty($billing_country)):?>style="margin-top:-43px"<?php endif;?>>Country <span class="mark2">*</span></p>
 			    			</div>
 			    			<div class="num3">
@@ -100,7 +119,7 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 				    			<p class="inputPropmt" <?php $billing_postcode = get_the_author_meta( 'billing_postcode', $user_ID );if(!empty($billing_postcode)):?>style="margin-top:-43px"<?php endif;?>>Zip code <span class="mark2">*</span></p>
 
 			    			</div>
-			    			<p>Note : do not know zip code can fill 000000</p>
+			    			<p>Note : Fill 000000 In If You Don't Have A Zip Code</p>
 	    	        	</div>
 	    	        	
 					
