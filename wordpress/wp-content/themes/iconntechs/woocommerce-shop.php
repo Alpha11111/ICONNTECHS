@@ -100,6 +100,7 @@ $carnum = count($carnum);
 		<link href="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/index.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
+		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
 		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
 		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

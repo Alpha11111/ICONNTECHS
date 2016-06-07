@@ -19,6 +19,7 @@ $carnum = count($carnum);
 		<link href="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/head.css" />
+		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<script src="http://connect.facebook.net/en_US/sdk.js" async="true" defer></script>
 		<script src="https://apis.google.com/js/api:client.js"></script>

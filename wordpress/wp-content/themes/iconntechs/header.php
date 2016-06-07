@@ -20,7 +20,7 @@ $carnum = count($carnum);
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/head.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/blog.css" />
-
+		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
 	
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
