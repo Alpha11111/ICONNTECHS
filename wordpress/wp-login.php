@@ -1131,7 +1131,7 @@ $("#fblogin").click(function (){
     FB.login(function(response) { 
         statusChangeCallback(response);  //登录回调函数
     },{scope: 'email'});  //需要获取的信息scope
-});
+
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -1151,6 +1151,7 @@ function statusChangeCallback(response) {
       document.getElementById('status').innerHTML = 'Please log ' +'into Facebook.';
     }
   }
+});
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
