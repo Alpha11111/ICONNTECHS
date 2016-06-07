@@ -173,7 +173,7 @@ foreach ($data as $post) {
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="<?php bloginfo('template_url');?>/img/carousel2.png" alt="carousel" class="imgh">
+						<img src="<?php bloginfo('template_url');?>/img/carousel2_2.png" alt="carousel" class="imgh">
 						<div class="carousel-caption">
 						<div id="buy">
 					<a>BUY</a>
@@ -181,7 +181,7 @@ foreach ($data as $post) {
 						</div>
 					</div>
 					<div class="item">
-						<img src="<?php bloginfo('template_url');?>/img/carousel3.png" alt="carousel2" class="imgh">
+						<img src="<?php bloginfo('template_url');?>/img/carousel3_3.png" alt="carousel2" class="imgh">
 						<div class="carousel-caption">
 							<div id="buy">
 					<a>BUY</a>
@@ -190,7 +190,7 @@ foreach ($data as $post) {
 						</div>
 					</div>
 					<div class="item">
-						<img src="<?php bloginfo('template_url');?>/img/carousel4.png" alt="carousel3" class="imgh">
+						<img src="<?php bloginfo('template_url');?>/img/carousel4_4.png" alt="carousel3" class="imgh">
 						<div class="carousel-caption">
 							<div id="buy">
 					<a>BUY</a>
@@ -198,7 +198,7 @@ foreach ($data as $post) {
 						</div>
 					</div>
 					<div class="item">
-						<img src="<?php bloginfo('template_url');?>/img/carousel3.png" alt="carousel4" class="imgh">
+						<img src="<?php bloginfo('template_url');?>/img/carousel3_3.png" alt="carousel4" class="imgh">
 						<div class="carousel-caption">
 							<div id="buy">
 					<a>BUY</a>
