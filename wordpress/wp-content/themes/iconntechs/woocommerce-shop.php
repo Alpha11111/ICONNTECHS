@@ -189,32 +189,32 @@ $carnum = count($carnum);
 					<div class="item">
 						<img src="<?php bloginfo('template_url');?>/img/carousel2.png" alt="carousel2" class="imgh">
 						<div class="carousel-caption">
-							<h1 class="whiteBorder1">
+							<!-- <h1 class="whiteBorder1">
 			             	ICONNETCHS
 			        </h1>
 							<h3>Products as Resilient as You Are</h3>
-							<p class="bottomWord">ENRICH YOUR EXPERIENCES</p>
+							<p class="bottomWord">ENRICH YOUR EXPERIENCES</p> -->
 
 						</div>
 					</div>
 					<div class="item">
 						<img src="<?php bloginfo('template_url');?>/img/carousel3.png" alt="carousel3" class="imgh">
 						<div class="carousel-caption">
-							<h1 class="whiteBorder1">
+							<!-- <h1 class="whiteBorder1">
 			             	ICONNETCHS
 			             </h1>
 							<h3>Products as Resilient as You Are</h3>
-							<p class="bottomWord">ENRICH YOUR EXPERIENCES</p>
+							<p class="bottomWord">ENRICH YOUR EXPERIENCES</p> -->
 						</div>
 					</div>
 					<div class="item">
 						<img src="<?php bloginfo('template_url');?>/img/carousel4.png" alt="carousel4" class="imgh">
 						<div class="carousel-caption">
-							<h1 class="whiteBorder1">
+							<!-- <h1 class="whiteBorder1">
 			             	ICONNETCHS
 			             </h1>
 							<h3>Products as Resilient as You Are</h3>
-								<p class="bottomWord">ENRICH YOUR EXPERIENCES</p>
+								<p class="bottomWord">ENRICH YOUR EXPERIENCES</p> -->
 						</div>
 					</div>
 				</div>
