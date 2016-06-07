@@ -83,7 +83,13 @@ foreach ($fdata as $post) {
 	//var_dump($arr);die;
 $carnum = WC()->cart->get_cart();
 $carnum = count($carnum);
-
+if(!empty($_POST['pnum'])){
+	$pnum = $_POST['pnum'];
+	//var_dump(site_url());die;
+	 //add_to_cart( $product_id = 0, $quantity = 1, $variation_id = 0, $variation = array(), $cart_item_data = array() )
+	WC()->cart->add_to_cart($post_id,$pnum);
+	wp_redirect($_SERVER['HTTP_REFERER']);
+}
 ?>
 
 <!DOCTYPE html>
