@@ -6,7 +6,7 @@ if(!empty($_POST['Email'])){
 		$title = 'ICONNETCHS Contact Us';
 		$user_email = $_POST['Email'];
 		$message = $user_email.'通过联系我们：'.$_POST['message'];
-		wp_mail($user_email,$title,$message);
+		wp_mail('info@iconntechs.com',$title,$message);
 		
 }
 
@@ -87,13 +87,13 @@ if(!empty($_POST['Email'])){
 				rules: {
 					name1: "required",
 					Email: "required",
-					Phone:"required",
+					
 					message:"required"
 				},
 				messages: {
 					name1: "Please enter your name",
 					Email: "Please enter your email address",
-					Phone:"Please enter your phone",
+					
 					message:"Please enter your message"
 				}
 			

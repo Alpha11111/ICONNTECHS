@@ -122,9 +122,9 @@ body{
 	width: 100px;
 	height: 40px;
 	border-radius: 6%;
-	background: #fff;
-	border: 1px solid #ccc ;
-	color: #d6d6d6;
+	background: #FF5550;
+	border: 1px solid #FF5550 ;
+	color: #fff;
 	font-size: 20px;
 	float: right;
 }

@@ -2,11 +2,11 @@
 			    			<div class="share-box">
 			    				<p>FOLLOW US</p>
 			    				<p class="share-icon">
-			    					<a><i class="iconfont " >&#xe63f;</i></a>
-			    					<a><i class="iconfont">&#xe608;</i></a>
-			    					<a><i class="iconfont">&#xe60c;</i></a>
-			    					<a><i class="iconfont">&#xe622;</i></a>
-			    					<a><i class="iconfont ">&#xe629;</i></a>
+			    					<a href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"><i class="iconfont " >&#xe63f;</i></a>
+			    					<a href="https://twitter.com/Iconntechs1" target="_blank"><i class="iconfont">&#xe608;</i></a>
+			    					<a href="https://www.youtube.com/channel/UCDj-K547ibqeesndHs9gg_Q" target="_blank"><i class="iconfont">&#xe60c;</i></a>
+			    					<a href="https://www.instagram.com/iconntechs1/" target="_blank"><i class="iconfont">&#xe622;</i></a>
+			    					<a href="https://plus.google.com/?hl=en" target="_blank"><i class="iconfont ">&#xe629;</i></a>
 			    					
 			    				</p>
 			    			</div>

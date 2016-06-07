@@ -143,7 +143,7 @@ if(!empty($_POST)){
 			<p class="buyBtnBox">
 
 		<?php if ( !$user_ID ) : ?>
-		<a class="buyBtn" href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">login to checkout.</a></p> 
+		<a class="buyBtn" href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">Subtotal: <?php wc_cart_totals_subtotal_html();?>  |  CHECK OUT</a></p> 
 
 		<?php else: ?>
 
