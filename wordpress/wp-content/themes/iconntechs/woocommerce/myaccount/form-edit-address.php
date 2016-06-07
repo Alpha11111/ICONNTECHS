@@ -2,6 +2,11 @@
 global $wpdb;
 global $user_ID;
 
+if(!$user_ID){
+	$aurl = get_permalink();
+	wp_redirect( site_url("/wp-login.php?redirect_to=$aurl"));
+	//header("Location:".bloginfo('home')."/wp-login.php?redirect_to=$aurl");die;
+}
 $account = array();
 if(!empty($_GET)){
 	if($_GET['remove']=='yes'){

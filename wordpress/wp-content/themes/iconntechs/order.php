@@ -2,6 +2,11 @@
 /*
 	Template Name:My Order List
 */
+if(!$user_ID){
+	$aurl = get_permalink();
+	wp_redirect( site_url("/wp-login.php?redirect_to=$aurl"));
+	//header("Location:".bloginfo('home')."/wp-login.php?redirect_to=$aurl");die;
+}
 $customer_orders = get_posts( apply_filters('woocommerce_my_account_my_orders_query', array(
 	'numberposts' => $order_count,
 	'meta_key'    => '_customer_user',

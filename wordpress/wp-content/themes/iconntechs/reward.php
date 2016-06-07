@@ -2,6 +2,11 @@
 /*
 	Template Name:Reward
 */
+if(!$user_ID){
+	$aurl = get_permalink();
+	wp_redirect( site_url("/wp-login.php?redirect_to=$aurl"));
+	//header("Location:".bloginfo('home')."/wp-login.php?redirect_to=$aurl");die;
+}
 	$headimg = get_the_author_meta( 'headimg', $user_ID );
 ?>
 <!DOCTYPE html>
