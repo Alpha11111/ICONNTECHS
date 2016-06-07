@@ -29,7 +29,7 @@
 				<ul class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
 					<li><a href="javascript:;">Subscribe</a></li>
-					<li><a href="javascript:;">Be the first to knows about our latest products</a></li>
+					<li><a href="javascript:;">Be the first to know about our latest products</a></li>
 					<form onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=baiyanglin/gFdm', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" target="popupwindow" method="post" action="https://feedburner.google.com/fb/a/mailverify">
 				    	<input type="hidden" name="uri" value="baiyanglin/gFdm">
 						<input type="hidden" value="en_US" name="loc">		
