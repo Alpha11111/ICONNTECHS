@@ -302,7 +302,7 @@ $fdata = get_posts(array(
 		<a rel="nofollow" onclick="_gaq.push(['_trackEvent', 'add_to_cart','insert']);" href="<?php bloginfo('home');?>/index.php/shop?add-to-cart=<?php echo $id;?>"   class="cart">
 			
 			<i class="iconfont">&#xe606;</i>
-			<i class="iconfont true">&#xe6a2;</i>
+			<i class="iconfont true">&#xe61f;</i>
 		</a>
 					</div>
 		</div>
