@@ -1,3 +1,4 @@
+<?php get_template_part('head','shop');?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
@@ -25,7 +26,7 @@
         	时间：2016-05-05
         	描述：head
         -->
-		<?php get_template_part('head','shop');?>
+
 	    <div class="container-fluid container1">
 	    	 <div style="margin: 0px auto;max-width: 501px ;min-width: 320px;">
 	    	 	<img src="<?php bloginfo('template_url');?>/img/404.png "  alt="error" class="img-responsive"/>

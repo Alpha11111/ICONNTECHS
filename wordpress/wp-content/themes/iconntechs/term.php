@@ -4,6 +4,7 @@
 */
 
 ?>
+<?php get_template_part('head','shop');?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -28,7 +29,7 @@
 	</head>
 
 	<body>
-		<?php get_template_part('head','shop');?>
+
 
 		<div class="container container1">
 

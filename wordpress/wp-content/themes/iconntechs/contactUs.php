@@ -14,6 +14,7 @@ if(!empty($_POST['Email'])){
 
 
 ?>
+<?php get_template_part('head','shop');?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -39,7 +40,7 @@ if(!empty($_POST['Email'])){
 	</head>
 
 	<body>
-	<?php get_template_part('head','shop');?>
+
 	<!--
     	作者：1164365204@qq.com
     	时间：2016-05-03
