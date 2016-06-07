@@ -31,7 +31,7 @@ foreach ($data as $post) {
 						<p><a href='".$post->guid."'>".get_the_title()."</a>　</p>
 					</div>
 					<div class='otherBox'>
-						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
+						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a onclick='_gaq.push(['_trackEvent', 'add_to_cart','insert']);' class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
 					</div>
 				</div>";
 	}
@@ -63,7 +63,7 @@ foreach ($data as $post) {
 						<p><a href='".$post->guid."'>".get_the_title()."</a>　</p>
 					</div>
 					<div class='otherBox'>
-						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
+						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a onclick='_gaq.push(['_trackEvent', 'add_to_cart','insert']);' class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
 					</div>
 				</div>";
 	}
@@ -94,7 +94,7 @@ foreach ($data as $post) {
 						<p><a href='".$post->guid."'>".get_the_title()."</a>　</p>
 					</div>
 					<div class='otherBox'>
-						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
+						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a onclick='_gaq.push(['_trackEvent', 'add_to_cart','insert']);' class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
 					</div>
 				</div>";
 	}
@@ -127,7 +127,7 @@ foreach ($data as $post) {
 						<p><a href='".$post->guid."'>".get_the_title()."</a>　</p>
 					</div>
 					<div class='otherBox'>
-						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
+						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a onclick='_gaq.push(['_trackEvent', 'add_to_cart','insert']);' class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
 					</div>
 				</div>";
 	}

@@ -77,7 +77,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php do_action( 'woocommerce_pay_order_before_submit' ); ?>
 
-			<?php echo apply_filters( 'woocommerce_pay_order_button_html', '<input type="submit" class="button alt" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />' ); ?>
+			<?php echo apply_filters( 'woocommerce_pay_order_button_html', '<input type="submit" class="button alt" onclick="_gaq.push(['_trackEvent', 'place_order','order']);"  id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />' ); ?>
 
 			<?php do_action( 'woocommerce_pay_order_after_submit' ); ?>
 
