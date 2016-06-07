@@ -1,7 +1,13 @@
 <?php 
 header("Access-Control-Allow-Origin: *");
 
-
+if(!empty($_POST['pnum'])){
+	var_dump($_POST);die;
+	$pnum = $_POST['pnum'];
+	//var_dump(site_url());die;
+	 //add_to_cart( $product_id = 0, $quantity = 1, $variation_id = 0, $variation = array(), $cart_item_data = array() )
+	WC()->cart->add_to_cart($post_id,$pnum);
+}
 if(is_shop()){
 	get_template_part('woocommerce', 'shop' );
 	die;
@@ -101,13 +107,6 @@ if(!empty($sprice)){
 }
 
 
-if(!empty($_POST['pnum'])){
-	var_dump($_POST);die;
-	$pnum = $_POST['pnum'];
-	//var_dump(site_url());die;
-	 //add_to_cart( $product_id = 0, $quantity = 1, $variation_id = 0, $variation = array(), $cart_item_data = array() )
-	WC()->cart->add_to_cart($post_id,$pnum);
-}
 
 
 ?>
