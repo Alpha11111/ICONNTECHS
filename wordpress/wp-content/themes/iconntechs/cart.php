@@ -185,8 +185,7 @@ if(!empty($_POST)){
       </div><!-- /.modal-content -->
    </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-		<script src="<?php bloginfo('template_url'); ?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
-		<script src="<?php bloginfo('template_url'); ?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+		
 		<script>
 				$(function(){
 					var id=0;
