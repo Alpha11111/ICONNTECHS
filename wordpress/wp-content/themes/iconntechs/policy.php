@@ -3,8 +3,9 @@
 /*
 	Template Name:Privacy Policy
 */
+	get_template_part('head','shop');
 ?>
-<?php get_template_part('head','shop');?>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -114,10 +115,10 @@ policies. We therefore have no responsibility or liability for the content and a
         	描述：尾部
         -->
 	  <?php get_template_part('foot','shop');?>
-	   <script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
+	  
 	   <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery.validate.min.js" ></script>
 	   <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/validate_myexpand.js" ></script>
-	   <script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+	 
 		
 	   
 
