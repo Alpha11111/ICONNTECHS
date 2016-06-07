@@ -54,7 +54,6 @@ if(!empty($_POST['Email'])){
 	    	<form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" >
 	    		<p class="p2"><input type="text" placeholder="Name" id="name1" name="name1"/></p>
 	    		<p class="p2"><input type="text" placeholder="Email"  name="Email" id="Email"/></p>
-	    		<p class="p2"><input type="text" placeholder="Phone Number" id="Phone" name="Phone" /></p>
 	    		<p class="p3"><textarea placeholder="message" name="message" id="message"></textarea></p>
 	    		<p><input type="submit" value="SEND"/></p>
 	    	</form>
