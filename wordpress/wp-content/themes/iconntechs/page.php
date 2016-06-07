@@ -12,6 +12,13 @@ if(is_page('My Account') and !$user_ID){
 	wp_redirect( site_url("/wp-login.php?redirect_to=$aurl"));
 	//header("Location:".bloginfo('home')."/wp-login.php?redirect_to=$aurl");die;
 }
+if(!empty($_POST['pnum'])){
+	$pnum = $_POST['pnum'];
+	//var_dump(site_url());die;
+	 //add_to_cart( $product_id = 0, $quantity = 1, $variation_id = 0, $variation = array(), $cart_item_data = array() )
+	WC()->cart->add_to_cart($post_id,$pnum);
+	wp_redirect($_SERVER['HTTP_REFERER']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="zh-CN">

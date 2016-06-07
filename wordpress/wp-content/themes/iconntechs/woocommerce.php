@@ -200,6 +200,7 @@ if(!empty($_POST['pnum'])){
 						 <label class="clickBtn " id="reduce">-</label><input type="button" name="ppnum" id="ppnum" value="1" readonly="readonly"/><label class="clickBtn" id="add">+</label>
 					</div>
 					<div>
+						<input type="hidden" name="detail" value="detail">
 						<input type="hidden" name="pnum" id="pnum">
 						<a class="addCart1 cart" onclick="checknum()">ADD TO CART</a>
 						<a class="addCart1 amazon" onclick="_gaq.push(['_trackEvent', 'buy_on_amazon','buy']);" href="<?php echo $amazon_url;?>" target="_blank">BUY AT AMAZON US</a>
