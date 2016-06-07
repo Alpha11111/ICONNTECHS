@@ -12,6 +12,7 @@ if(is_page('My Account') and !$user_ID){
 	wp_redirect( site_url("/wp-login.php?redirect_to=$aurl"));
 	//header("Location:".bloginfo('home')."/wp-login.php?redirect_to=$aurl");die;
 }
+var_dump($_POST);die;
 if(!empty($_POST['pnum'])){
 	$pnum = $_POST['pnum'];
 	//var_dump(site_url());die;
