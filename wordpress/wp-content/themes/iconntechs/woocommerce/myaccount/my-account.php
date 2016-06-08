@@ -106,7 +106,7 @@ $headimg = get_the_author_meta( 'headimg', $user_ID );
 
 	    	<p class="name"><strong><?php echo get_the_author_meta( 'user_nicename', $user_ID );?></strong></p>
 	    	<p><?php echo get_the_author_meta( 'billing_country', $user_ID ).' ';?><?php echo get_the_author_meta( 'billing_city', $user_ID );?></p>
-	    	<p class="personDesc">I think it is really great with the product iconntechs</p>
+	    	<!-- <p class="personDesc">I think it is really great with the product iconntechs</p> -->
 	    	<div class="col-lg-3 activeDiv  ">
 	    		<a href="<?php bloginfo('home');?>/index.php/my-account/">
 	    			<div><i class="iconfont">&#xe63b;</i></div>
