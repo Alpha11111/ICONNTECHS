@@ -1,78 +1,177 @@
-body,h2{
+body {
+	padding: 0px;
 	margin: 0px;
 	font-family: arial;
-	background: #ebebeb;
-}
-
-a:hover{
-	text-decoration: none;
-}
-.top{
 	width: 100%;
 }
-.top img{
+
+.product1 img,
+.product2 img,
+.product3 img,
+.product4 img,
+.product5 img
+ {
 	width: 100%;
 	display: block;
 }
-.bottom{
-	width: 100%;
-	
-	background: #ebebeb;
-	text-align: center;
-	overflow: hidden;
-}
-.bottom h2{
-	color: #FF5550;
-	padding-top: 35px;
-	font-size: 18px;
-}
-.bottom form{
-	padding-top: 44px;
-}
-.bottom form input[type=email]{
-	display: inline-block;
-	width: 60%;
-	height: 42px;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	border: 1px solid #FF5550;
-	font-size: 18px;
-	padding-left: 5px;
-		outline: 0;
-	
-}
-input[placeholder]{
-	color: #bcbcbc;
+
+.product1,
+.product2,
+.product3,
+.product4,
+.product5
+{
+	position: relative;
 }
 
-#submit{
-	display: inline-block;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	background:#FF5550 ;
-	border: 1px solid #FF5550;
-	width: 30%;
-	height: 42px;
-	line-height: 42px;
-	font-size: 18px;
-	color: #fff;
-	outline: 0;
-	text-decoration: none;
-	vertical-align: bottom;
-	margin-left:-1px;
+
+
+.product2 .btn {
+	bottom: 54.5%;
+	left: 40.5%;
 }
-#footer{
-	margin-top: 180px;
+
+.product3 .btn {
+	bottom: 36.5%;
+	left: 23%;
 }
-#footer .faceBook,#footer .twitter{
-	width: 35px;
-	height: 35px;
+
+.product4 .btn {
+	bottom: 35.5%;
+	left: 45%;
+}
+.product5 .btn {
+	bottom: 38.5%;
+	left: 22%;
+}
+
+.product1 .btn2 {
+	border: 1px solid #FFFFFF !important;
+	color: #FFFFFF !important;
+	bottom: 50.5%;
+	left: 37.8%;
+}
+
+.product2 .btn2 {
+	bottom: 46.5%;
+	left: 40.5%;
+}
+
+.product3 .btn2 {
+	bottom: 21.5%;
+	left: 23%;
+}
+
+.product4 .btn2 {
+	bottom: 20.5%;
+	left: 45%;
+}
+.product5 .btn2 {
+	bottom: 24.5%;
+	left: 22%;
+}
+
+
+
+.btn,.btn2 {
 	display: inline-block;
+	width: 20%;
+	height: 28px;
+	border: 1px solid #fff;
+	line-height: 28px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 4px;
+	position: absolute;
+	z-index: 99;
+	cursor: pointer;
+	padding: 0px 10px;
+	text-decoration:none;
+}
+
+footer {
+	width: 100%;
+	background: #000;
+	height: 125px;
+}
+
+.faceBook,
+.Google,
+.instagram {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.faceBook {
+	background: url(../img/sanxiao.png) no-repeat 0px 0px;
+}
+
+.Google {
+	background: url(../img/sanxiao.png) no-repeat -50px 0px;
+}
+
+
+
+footer p {
+
+	text-align: center;
+	margin: 0px auto;
+	color: #FFFFFF;
+}
+
+footer .copy {
+	font-size: 14px;
+	padding-top: 10px;
+}
+@media only screen and (max-width:425px ) {
 	
+	.btn,.btn2 {
+	width: 28%;
+	height: 20px;
+	border: 1px solid #FFFFFF;
+	line-height: 20px;
+	
+   }
+.product2 .btn {
+	bottom: 53.5%;
+	left: 32.5%;
 }
-#footer .faceBook{
-	background: url(../img/icon.png) no-repeat -205px -14px;
+.product3 .btn {
+	bottom: 36.5%;
+	left: 17.5%;
 }
-#footer .twitter{
-	background: url(../img/icon.png) no-repeat -258px -14px;
+.product4 .btn {
+	bottom: 35.5%;
+	left: 40%;
+}
+.product5 .btn {
+	bottom: 38.5%;
+	left: 16%;
+}
+.product1 .btn2 {
+	border: 1px solid #FFFFFF !important;
+	color: #FFFFFF !important;
+	bottom: 50.5%;
+	left: 33%;
+}
+.product2 .btn2 {
+	bottom: 43.5%;
+	left: 32.5%;
+}
+.product3 .btn2 {
+	bottom: 21.5%;
+	left: 17.5%;
+}
+.product4 .btn2 {
+	bottom: 20.5%;
+	left: 40%;
+}
+.product5 .btn2 {
+	bottom: 24.5%;
+	left: 16%;
+}
 }

@@ -72,6 +72,157 @@ function isMobile()
     return false;
 }
 
+global $wpdb;
+//var_dump($_GET);die;
+$invite_id = $_GET['invite'];
+
+if(!empty($_POST['email'])){
+	
+	
+	$password = $_POST['password'];
+	$invite_id = $_POST['invite_id'];
+	if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
+	 {
+	 	$message = 'Email is not valid';
+	 	
+	 
+	 }
+	 else{
+		$isaa = $wpdb->get_results("select * from wp_users where user_email='$_POST[email]' limit 1",ARRAY_A); 
+		
+		if($isaa){
+			$share_id = $isaa[0]['ID'];
+			//$pre = rtrim($_SERVER['HTTP_REFERER'],'/');
+			$share_url = site_url().'/index.php/referral-program?invite='.$share_id;
+			$message = 'success';
+			wp_mail($_POST['email'],'ICONNTECHS',$msg);
+			wp_redirect(site_url('index.php/registrationcompletion/?share_url='.$share_url.'&share_id='.$share_id));	
+					
+		}else{
+
+			$ip = $_SERVER["REMOTE_ADDR"];
+			//var_dump($ip);die;
+			$ipaddress = $wpdb->get_results("select meta_value from wp_usermeta where meta_key='$ip' limit 1",ARRAY_A); 
+			
+			if(empty($ipaddress) || $ipaddress[0]['meta_value']+1<11){
+				
+				if(empty($ipaddress)){
+						$irry = array('meta_key'=>$ip,'meta_value'=>1,'user_id'=>1);
+						$wpdb->insert('wp_usermeta',$irry);
+				}else{
+						$urry = array('meta_value' => $ipaddress[0]['meta_value']+1);
+						$wcl = array('user_id'=>1,'meta_key'=>$ip);
+						$wpdb->update('wp_usermeta',$urry,$wcl);
+				}
+				
+
+
+				if(!empty($invite_id)){
+					
+					$invite_number = get_the_author_meta('invite_number',$invite_id);
+
+					if($invite_number){
+						
+						$uarry = array('meta_value' => $invite_number+1);
+						$wcl = array('user_id'=>$invite_id,'meta_key'=>'invite_number');
+						$wpdb->update('wp_usermeta',$uarry,$wcl);
+					}else{
+						
+						$iarry = array('meta_key'=>'invite_number','meta_value'=>1,'user_id'=>$invite_id);
+						$wpdb->insert('wp_usermeta',$iarry);
+					}
+				}
+				$uu = wp_create_user($_POST['email'], $password, $_POST['email'] );
+			
+				$uid = $uu;
+
+				$share_id = $uid;
+				$share_url = site_url().'/index.php/referral-program?invite='.$share_id;
+				$message = 'success';
+				
+				$msg = "<div id='emailBox'>
+					<style>
+					#emailBox{
+						width: 900px;
+						margin: 0px auto;
+						font-family: arial;
+						
+					}
+					#emailBox h1{
+						text-align: center;
+						color:#323232;
+						border-bottom: 3px solid #ff5550;
+						padding-bottom: 10px;
+					}
+					#emailBox p{
+						word-break:break-all;
+						line-height: 25px;
+						margin: 5px 0px;
+						font-size: 14px;
+					}
+					#emailBox label{
+						color: #FF5550;
+						font-size: 18px;
+						
+					}
+					ul li{
+						list-style: square;
+						font-size: 14px;
+						line-height: 25px;
+					}
+					ul li a{
+						color: #FF5550;
+					}
+					hr{
+							border: 2px solid #ff5550;
+							color:#ff5550 ;
+					}
+					.webSite{
+						text-align: center;
+						
+					}
+					.webSite a{
+						font-size: 20px;
+						
+					}
+				</style>
+					
+					<h1>ICONNTECHS</h1>
+					
+					<p>Greetings from Iconntechs,</p>
+					<p>Thank you for registering on www.Iconntechs.com.</p>
+					<p>Here is the account and password. You can log in our official website when it is launched. </p>
+					<p>Email:$_POST[email]</p>
+					<p>Password:$password</p>
+					<p>Unique link:$share_url</p>
+					<p>Share your unique link above to earn Iconntechs’s goods for each friend who signs up.</p>
+					<p>Here is how it works:</p>
+					<ul>
+						<li>5 friends successfully registered, you will get $30 worth coupon</li>
+						<li>10 friends successfully registered, you will get $80 worth coupon</li>
+						<li>25 friends successfully registered, you will get $120 worth coupon</li>
+						<li>50 of your friends successfully registered in our website, you will get $180 worth coupon</li>
+					</ul>
+					<p>The coupons can be used on any products you purchased from our Amazon store. Good news is our products are on sale now, and our promotion valid to June 18th . So hurry up!!! Once 10 of your friends registered, you can get a 4K action camera for free!</p>
+					
+					<p>Iconntechs amazon store: </p>
+		            <p><a href='http://amzn.to/25Ckbs0'>http://amzn.to/25Ckbs0</a></p>
+					<hr />
+					<p class='webSite'><a href='http://www.iconntechs.com'>http://www.iconntechs.com</a></p>
+				</div>";
+				wp_mail($_POST['email'],' Invite Friends & Earn up to $200 coupon',$msg);
+				wp_redirect(site_url('index.php/registrationcompletion/?share_url='.$share_url.'&share_id='.$share_id));
+					
+			}else{
+				$error = 'IP address is limited';		
+			}
+		}
+	}
+}
+
+
+
+
 ?>
 
 
