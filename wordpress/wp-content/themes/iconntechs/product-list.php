@@ -29,7 +29,7 @@ foreach ($data as $post) {
 							
 						</div>
 						<p><a href='".$post->guid."'>".get_the_title()."</a>　</p>
-					</div>
+					</div>																		
 					<div class='otherBox'>
 						<p><a  href='".$post->guid."' class='btn1'>learn more</a><a onclick='gaclick()' class='btn2' href='". site_url()."/index.php/product-list/?add-to-cart=". $id."'>ADD TO CART</a></p>
 					</div>
@@ -284,6 +284,9 @@ foreach ($data as $post) {
 		function gaclick(){
 			_gaq.push(['_trackEvent', 'add_to_cart','insert']);
 		}
+
+
+
 		  window.onload=function(){
 		   
 		    	if(window.innerWidth>=1350){
