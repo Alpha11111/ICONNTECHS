@@ -309,7 +309,7 @@ if(!empty($_POST['email'])){
 
 				<p class="prompt"><label id="showNum"></label> &nbsp;Friends have joined...Yet! </p>
 				<p >Keep checking</p>
-				<p class="support">Support:info@iconntechs.com</p>
+				<p class="support">info@iconntechs.com</p>
 			</div>
 		</div>
 		<script>
@@ -449,7 +449,7 @@ if(!empty($_POST['email'])){
 				   </div>
 				   <p class="prompt"><label id="showNum"></label> &nbsp;Friends have joined...Yet! </p>
 				   <p>Keep checking</p><br/>
-				   <p>Support:info@iconntechs.com</p>
+				   <p>info@iconntechs.com</p>
 				   
 			</div>
 		</div>
