@@ -41,7 +41,7 @@
 		<div>
 			<img src="<?php bloginfo('template_url');?>/img/samllPic.png" />
 		</div>
-		<form id="regform" name="regform" action="<?php bloginfo('home');?>/index.php/registrationcompletion/" method="post">
+		<form id="regform" name="regform" action="<?php bloginfo('home');?>/registrationcompletion/" method="post">
 			<p><input type="email" name="email" placeholder="Email" required/></p>
 		<!-- 	<p><input type="password" name="password" placeholder="Password" required/></p> -->
 			<p><input type="submit" value="SUBMIT" /></p>
