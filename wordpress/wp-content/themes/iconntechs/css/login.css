@@ -35,8 +35,8 @@
 }
 .register{
 	display: inline-block;
-	background: #e9554f;
-	border: 1px solid #e9554f;
+	/* background: #e9554f;
+	border: 1px solid #e9554f; */
 	text-decoration: none;
 	margin-top: 30px;
 }

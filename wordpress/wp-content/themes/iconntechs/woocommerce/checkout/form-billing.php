@@ -32,7 +32,7 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 		<style>
 	
 	/*  .woocommerce-error{
-		display: none !important;
+			display: none !important;
 		} */
 	.woocommerce-message{
 		display: none !important;
