@@ -23,8 +23,6 @@ if($name=='list'){
 $post_id = $info[0]['ID'];*/
 global $post, $woocommerce, $product;
 
-
-
 //获取底部相关产品
 $post_id = $post->ID;
 $post_parent = $post->post_parent;
@@ -93,6 +91,7 @@ $thumbnail = $data[0]['guid'];
 
 
 $data = get_post($post_id,ARRAY_A);
+
 $data['thumbnail'] = $thumbnail;//产品图
 if(!empty($sprice)){
 	$data['price'] = $sprice;//产品价格
@@ -150,7 +149,6 @@ if(!empty($_POST['pnum'])){
 				<div class="goodsInfoleft" >
 					<?php if(empty($pimg)):?>
 					<div id="mainImg" > 
-
 						<img src="<?php echo $pimg = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="good" class="img-responsive"/>
 					</div>
 					<?php else:?>
@@ -158,6 +156,7 @@ if(!empty($_POST['pnum'])){
 						<img src="<?php echo $pimg;?>" alt="good" class="img-responsive"/>
 					</div>
 					<?php endif;?>
+
 					<?php if(!empty($info)):?>
 					<div id="pic_list_2" class="scroll_horizontal">
 					    <div class="box">
@@ -207,10 +206,9 @@ if(!empty($_POST['pnum'])){
 						<a class="addCart1 amazon" onclick="_gaq.push(['_trackEvent', 'buy_on_amazon','buy']);" href="<?php echo $amazon_url;?>" target="_blank">BUY AT AMAZON US</a>
 						<script>
 							function checknum(){
-							
-							$zhi = $('#ppnum').val();
-							$('#pnum').val($zhi);
-							$('#ppform').submit();
+								$zhi = $('#ppnum').val();
+								$('#pnum').val($zhi);
+								$('#ppform').submit();
 							}
 						</script>
 					</div>
@@ -292,8 +290,7 @@ if(!empty($_POST['pnum'])){
 											<i class="iconfont">&#xe613;</i>
 											<i class="iconfont">&#xe613;</i>
 										</p> -->
-										<p class="ptime"><?php echo $comkey['comment_date'];?></p>
-										
+										<p class="ptime"><?php echo $comkey['comment_date'];?></p>									
 									</div>
 								</div>
 								<div>
@@ -375,8 +372,6 @@ if(!empty($_POST['pnum'])){
         	描述：尾部
         -->
 		<?php get_template_part('foot','shop');?>
-
-
 		<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery.cxscroll.js" ></script>
 		
 		<script>

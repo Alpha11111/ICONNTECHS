@@ -25,10 +25,11 @@ $dprice = $wpdb->get_results( "select * from wp_postmeta where post_id=$t_id ",A
 foreach ($dprice as $key) {
 	if($key['meta_key']=='_sale_price'){
 		$sprice = $key['meta_value'];
-
+		
 	}
 	if($key['meta_key']=='_regular_price'){
 		$rprice = $key['meta_value'];
+		
 	}
 }
 $data = get_post($t_id,ARRAY_A);
@@ -103,13 +104,14 @@ if(!empty($_POST['pnum'])){
 		<title>home</title>
 
 		<!-- Bootstrap -->
-		<link href="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+		 <link href="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/index.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
 		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
 		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
 		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		
 		<script src="https://apis.google.com/js/api:client.js"></script>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -125,6 +127,7 @@ if(!empty($_POST['pnum'])){
 	  var _gaq = _gaq || [];
 	  ga('create', 'UA-74879058-2', 'auto');
 	  ga('send', 'pageview');
+
 	</script>
 	</head>
 
@@ -146,13 +149,13 @@ if(!empty($_POST['pnum'])){
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav  navbar-right">
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav  navbar-right">
 								<li class=""><a href="<?php echo home_url();?>/index.php/product-list/">PRODUCTS<span class="sr-only">(current)</span></a></li>
 								<li><a href="<?php echo get_option('home');?>?blog=blog">BLOG</a></li>
 								<li><a href="<?php echo get_option('home');?>/index.php/privacy-policy/">SUPPORT</a></li>
 								<li><a href="<?php echo home_url();?>/index.php/contact-us/">CONTACT US</a></li>
-								<li class="dropdown">
+							<li class="dropdown">
 									<a href="<?php bloginfo('home');?>/index.php/my-account/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 										<img id="headPic" style="width: 22px;height: 22px;" src="<?php bloginfo('template_url');?>/img/flag.png" /></a>
 									<ul class="dropdown-menu">
@@ -198,8 +201,8 @@ if(!empty($_POST['pnum'])){
 						<img src="<?php bloginfo('template_url');?>/img/carousel2.png" alt="carousel2" class="imgh">
 						<div class="carousel-caption">
 							<!-- <h1 class="whiteBorder1">
-			             	ICONNETCHS
-			        </h1>
+										             	ICONNETCHS
+										        </h1>
 							<h3>Products as Resilient as You Are</h3>
 							<p class="bottomWord">ENRICH YOUR EXPERIENCES</p> -->
 
@@ -209,8 +212,8 @@ if(!empty($_POST['pnum'])){
 						<img src="<?php bloginfo('template_url');?>/img/carousel3.png" alt="carousel3" class="imgh">
 						<div class="carousel-caption">
 							<!-- <h1 class="whiteBorder1">
-			             	ICONNETCHS
-			             </h1>
+										             	ICONNETCHS
+										             </h1>
 							<h3>Products as Resilient as You Are</h3>
 							<p class="bottomWord">ENRICH YOUR EXPERIENCES</p> -->
 						</div>
@@ -219,8 +222,8 @@ if(!empty($_POST['pnum'])){
 						<img src="<?php bloginfo('template_url');?>/img/carousel4.png" alt="carousel4" class="imgh">
 						<div class="carousel-caption">
 							<!-- <h1 class="whiteBorder1">
-			             	ICONNETCHS
-			             </h1>
+										             	ICONNETCHS
+										             </h1>
 							<h3>Products as Resilient as You Are</h3>
 								<p class="bottomWord">ENRICH YOUR EXPERIENCES</p> -->
 						</div>
@@ -319,12 +322,6 @@ $fdata = get_posts(array(
         	描述：尾部
         -->
 		<?php get_template_part('foot','shop');?>
-
-
-				
-
-
-
 		<script>
 		    window.onload=function(){
 		   
