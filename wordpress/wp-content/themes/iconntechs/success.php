@@ -77,9 +77,8 @@ global $wpdb;
 $invite_id = $_GET['invite'];
 
 if(!empty($_POST['email'])){
+	$password = range(111111,999999);
 	
-	
-	$password = $_POST['password'];
 	$invite_id = $_POST['invite_id'];
 	if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 	 {

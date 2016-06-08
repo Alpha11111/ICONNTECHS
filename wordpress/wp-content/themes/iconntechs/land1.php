@@ -117,22 +117,22 @@
         </div>
         <div class="product2">
             <img src="<?php bloginfo('template_url');?>/img/move1.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
+          <!--   <a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a> -->
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <div class="product3">
             <img src="<?php bloginfo('template_url');?>/img/move2.jpg" />
-            <a class="btn"  href="http://www.amazon.com/dp/B01FS16U9A" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
+            <!-- <a class="btn"  href="http://www.amazon.com/dp/B01FS16U9A" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a> -->
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <div class="product4">
             <img src="<?php bloginfo('template_url');?>/img/move3.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
+           <!--  <a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a> -->
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <div class="product5">
             <img src="<?php bloginfo('template_url');?>/img/move4.jpg" />
-            <a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
+          <!--   <a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a> -->
             <a class="btn2" href="<?php bloginfo('home');?>/index.php/submit/">Register</a>
         </div>
         <footer>
@@ -191,19 +191,19 @@
         </div>
 		<div class="product2">
 			<img src="<?php bloginfo('template_url');?>/img/1.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
+			<!-- <a class="btn" href="http://www.amazon.com/dp/B01FS65MCG" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a> -->
 		</div>
 		<div class="product3">
 			<img src="<?php bloginfo('template_url');?>/img/2.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01FS16U9A" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
+			<!-- <a class="btn" href="http://www.amazon.com/dp/B01FS16U9A" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a> -->
 		</div>
 		<div class="product4">
 			<img src="<?php bloginfo('template_url');?>/img/3.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
+			<!-- <a class="btn" href="http://www.amazon.com/dp/B01F759GKC" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a> -->
 		</div>
 		<div class="product5">
 			<img src="<?php bloginfo('template_url');?>/img/4.jpg" />
-			<a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a>
+			<!-- <a class="btn" href="http://www.amazon.com/dp/B01F70Q236 " target="_blank" onclick="fbq('track', 'InitiateCheckout');">Buy On Amazon</a> -->
 		</div>
 		<footer>
 			<p><a class="faceBook" href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://twitter.com/Iconntechs1" target="_blank"></a> </p>
@@ -212,8 +212,8 @@
 		<div class="hoverBox">
 			 <div class="middleContentBox">
 			 	 <div class="logoBox">
-			 	 	<img src="<?php bloginfo('template_url');?>/img/ICONN.png" />
-			 	 	<p >Register Now to Get 25% off Coupon for Purchase Before 10th June</p>
+			 	 	<!-- <img src="<?php bloginfo('template_url');?>/img/ICONN.png" /> -->
+			 	 	<p>More Referrals,More Products, Sign Up Before 18th June</p>
 			 	 </div>
 			 	 <div class="imgBox">
 			 	 	<img src="<?php bloginfo('template_url');?>/img/tutu.png" />
@@ -221,8 +221,8 @@
 			 	 <div class="formBox">
 			 	 	 <form id="regform" name="regform" action="<?php bloginfo('home');?>/index.php/registrationcompletion/" method="post">
 			 	 	 	<p><input type="text" id="email" name="email" placeholder="Email" required="required" /></p> 
-			 	 	 	<p><input type="password" id="password" name="password" placeholder="Password" required="required" /></p> 
-			 	 	 	<p><input type="submit" value="SUBMIT"/></p>
+			 	 	 	<!-- <p><input type="password" id="password" name="password" placeholder="Password" required="required" /></p>  -->
+			 	 	 	<p><input type="submit" value="SIGN UP NOW"/></p>
 			 	 	 </form>
 			 	</div>
 			 </div>

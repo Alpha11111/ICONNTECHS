@@ -37,13 +37,13 @@
 	</head>
 
 	<body>
-		<p class="propmt">Register Now to Get 25% off Coupon for Purchase Before 10th June</p>
+		<p class="propmt">More Referrals,More Products, Sign Up Before 18th June</p>
 		<div>
 			<img src="<?php bloginfo('template_url');?>/img/samllPic.png" />
 		</div>
-		<form id="regform" name="regform" action="<?php bloginfo('home');?>/index.php/land-register/" method="post">
+		<form id="regform" name="regform" action="<?php bloginfo('home');?>/index.php/registrationcompletion/" method="post">
 			<p><input type="email" name="email" placeholder="Email" required/></p>
-			<p><input type="password" name="password" placeholder="Password" required/></p>
+		<!-- 	<p><input type="password" name="password" placeholder="Password" required/></p> -->
 			<p><input type="submit" value="SUBMIT" /></p>
 		</form>
 		<p><a class="faceBook"  href="https://business.facebook.com/iconntechs/?business_id=159600407712495" target="_blank"></a> &nbsp; &nbsp; &nbsp;<a class="Google" href="https://twitter.com/Iconntechs1" target="_blank"></a> </p>

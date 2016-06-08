@@ -1,35 +1,17 @@
- window.onload=function(){
-		  	
-		  	  document.getElementsByTagName("input")[2].onclick=function(){
-		  	  	 if(validate()==false){
-		  	  	 	setTimeout(function(){
-		  	  	 	
-		  	  	 		document.getElementById("mask").style.display="none";
-		  	  	 	},3000)
-		  	  	 	return false;
-		  	  	 }
-		  	  };
-		  	 
-		  }
-		  
-		  
-		  function validate(){
-		  	var val = document.getElementsByTagName("input")[1].value;
-		  	var filter =/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-		  	if(val==null||val==undefined||val==''){
-		  		error("Please enter your email address.");
-		  		return false;
-		  	}
-		  	if(!filter.test(val)){
-		  		error("The mailbox format you entered is not correct.");
-		  		val='';
-		  		return false;
-		  	}
-
-		  }
-		  
-		  function error(error){
-		  	   document.getElementById("mask").style.display="block";
-		  	   document.getElementById("content").setAttribute("class","animated bounceInDown");
-		  	   document.getElementById("error").innerHTML=error;
-		  }
+window.onload =function(){
+	     var screenheight = window.screen.availHeight; //获取屏幕高  
+	     var  bodyheight = document.body.clientHeight;
+		 window.onscroll=function(){
+		 
+		 	 //获取滚动条离浏览器的顶部位置的距离
+		    var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+		 	if(scrollTop+screenheight>document.body.clientHeight-230){
+		 		document.getElementsByClassName("hoverBox")[0].style.display="none";
+		 	}else{
+		 		document.getElementsByClassName("hoverBox")[0].style.display="block";
+		 	}
+		 }
+	
+		 
+	   
+}
