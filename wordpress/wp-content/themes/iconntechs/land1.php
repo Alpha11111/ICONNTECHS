@@ -219,7 +219,7 @@
 			 	 	<img src="<?php bloginfo('template_url');?>/img/tutu.png" />
 			 	 </div>
 			 	 <div class="formBox">
-			 	 	 <form id="regform" name="regform" action="<?php bloginfo('home');?>/registrationcompletion/" method="post">
+			 	 	 <form id="regform" name="regform" action="<?php bloginfo('home');?>/index.php/registrationcompletion/" method="post">
 			 	 	 	<p><input type="text" id="email" name="email" placeholder="Email" required="required" /></p> 
 			 	 	 	<!-- <p><input type="password" id="password" name="password" placeholder="Password" required="required" /></p>  -->
 			 	 	 	<p><input type="submit" value="SIGN UP NOW"/></p>
