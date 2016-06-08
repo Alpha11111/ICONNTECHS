@@ -30,7 +30,7 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
         <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 		<style>
-		
+	
 	.woocommerce-error{
 		display: none !important;
 	}
@@ -82,7 +82,7 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 	    	        	<div class="input-Box">
 			    			<div class="num3">
 				    			<!-- <input type="text" name="billing_country" id="billing_country"  value="<?php echo get_the_author_meta( 'billing_country', $user_ID );?>" /> -->
-				    			<select name="Country"  id="Country" name="billing_country" id="billing_country">
+				    			<select  name="billing_country" id="billing_country">
 			    					<option>United States</option>
 			    					<option>United Kingdom</option>
 			    					<option>Germany</option>
@@ -94,6 +94,7 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 			    					<option>New Zealand</option>
 			    				</select>
 
+				    			
 			    			</div>
 			    			<div class="num3">
 				    			<input type="text" name="billing_state" id="billing_state"   value="<?php echo get_the_author_meta( 'billing_state', $user_ID );?>"/>

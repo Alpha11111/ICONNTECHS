@@ -30,6 +30,7 @@ if(!empty($_POST['Email'])){
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/fonts/iconfont.css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/contactUs.css" />
 
+
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>http://s.ap.wps.cn/ciba/mini/index.9d49951b.html?mode=lnp#
@@ -46,6 +47,9 @@ if(!empty($_POST['Email'])){
     	时间：2016-05-03
     	描述：图片切换
     -->
+			
+				
+	 
 	<section  id="section2">
 		<div class="container">
 				<h2>CONTACT US</h2>
@@ -54,7 +58,7 @@ if(!empty($_POST['Email'])){
 	    	<form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" >
 	    		<p class="p2"><input type="text" placeholder="Name" id="name1" name="name1"/></p>
 	    		<p class="p2"><input type="text" placeholder="Email"  name="Email" id="Email"/></p>
-	    		<p class="p3"><textarea placeholder="message" name="message" id="message"></textarea></p>
+	    		<p class="p3"><textarea placeholder="Message" name="message" id="message"></textarea></p>
 	    		<p><input type="submit" value="SEND"/></p>
 	    	</form>
 	    </div>

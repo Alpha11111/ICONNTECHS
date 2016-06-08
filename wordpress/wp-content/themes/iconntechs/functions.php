@@ -124,4 +124,16 @@ add_filter( 'manage_users_columns', array('RRHE','registerdate'));
 add_action( 'manage_users_custom_column',  array('RRHE','registerdate_columns'), 15, 3);
 add_filter( 'manage_users_sortable_columns', array('RRHE','registerdate_column_sortable') );
 add_filter( 'request', array('RRHE','registerdate_column_orderby') );
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+// Add shipping note field
+function custom_override_checkout_fields( $fields ) {
+     $fields['billing']['billing_state'] = array(
+        'label'         => __('发货备注', 'woocommerce'),
+        'placeholder'   => _x('请在此处填写发货备注', 'placeholder', 'woocommerce'),
+        'required'      => false,
+        'class'         => array('form-row-wide'),
+        'clear'         => true
+     );
+     return $fields;
+}
 ?>

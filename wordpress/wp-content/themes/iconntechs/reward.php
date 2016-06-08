@@ -46,7 +46,7 @@ if(!$user_ID){
 				<?php else:?>
 	    		     <img id="head" name="head" src="<?php echo bloginfo('template_url');?>/img/headImg1.png"/>
 	    		<?php endif;?>
-	    		
+
 	    	    </div>
 	         	<input type="file" id="photoimg" name="photoimg" style="display: none;" onchange="upload()">
 	    	</form>
@@ -102,10 +102,11 @@ if(!$user_ID){
 			function upload(){
 				$("#accountform").ajaxForm({
 							beforeSubmit:function(){
-			
+							
 						}, 
 						success:function(){
 							window.location.reload();
+
 						}, 
 						error:function(){
 							$('#message').text('Upload failure');
