@@ -13,6 +13,6 @@ outline: none;
 	
 }
 .nav li a{
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: bolder;
 }

@@ -39,7 +39,7 @@ section {
 .main-title {
 	font-size: 32px;
 	text-align: left;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	height: 45px;
 	overflow: hidden;
 }

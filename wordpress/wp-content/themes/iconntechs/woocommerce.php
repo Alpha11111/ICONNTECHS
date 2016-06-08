@@ -145,7 +145,7 @@ if(!empty($_POST['pnum'])){
 						<a href="<?php bloginfo('home');?>/index.php/shop/">home</a>
 						&nbsp;/&nbsp;<a href="<?php bloginfo('home');?>/index.php/product-list/">Products</a><!-- &nbsp;/&nbsp;
 						<a href="<?php bloginfo('home');?>/index.php/product-list/">Audio</a> -->&nbsp;/&nbsp;
-						<a><?php echo $product;?></a>
+						<a><?php echo $data['post_title'];?></a>
 					</p>
 				<div class="goodsInfoleft" >
 					<?php if(empty($pimg)):?>
@@ -173,7 +173,7 @@ if(!empty($_POST['pnum'])){
 
 				</div>
 				<div class="goodsInfoRight">
-					<p class="main-title"><?php echo $product;?></p>
+					<p class="main-title"><?php echo $data['post_title'];?></p>
 					<p class="evaluate">
 						<i class="iconfont">&#xe613;</i>
 						<i class="iconfont">&#xe613;</i>
@@ -376,9 +376,7 @@ if(!empty($_POST['pnum'])){
         -->
 		<?php get_template_part('foot','shop');?>
 
-		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
 
-		<script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery.cxscroll.js" ></script>
 		
 		<script>

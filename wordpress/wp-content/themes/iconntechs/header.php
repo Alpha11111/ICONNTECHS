@@ -61,10 +61,10 @@ $carnum = count($carnum);
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav  navbar-right">
-								<li class=""><a href="<?php echo home_url();?>/index.php/product-list/">Products<span class="sr-only">(current)</span></a></li>
-								<li><a href="<?php echo get_option('home');?>?blog=blog">Blog</a></li>
-								<li><a href="<?php echo get_option('home');?>/index.php/privacy-policy/">Support</a></li>
-								<li><a href="<?php echo home_url();?>/index.php/contact-us/">Contact us</a></li>
+								<li class=""><a href="<?php echo home_url();?>/index.php/product-list/">PRODUCTS<span class="sr-only">(current)</span></a></li>
+								<li><a href="<?php echo get_option('home');?>?blog=blog">BLOG</a></li>
+								<li><a href="<?php echo get_option('home');?>/index.php/privacy-policy/">SUPPORT</a></li>
+								<li><a href="<?php echo home_url();?>/index.php/contact-us/">CONTACT US</a></li>
 								<li class="dropdown">
 									<a href="<?php bloginfo('home');?>/index.php/my-account/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="headPic" src="<?php bloginfo('template_url');?>/img/flag.png" /></a>
 									<ul class="dropdown-menu">
