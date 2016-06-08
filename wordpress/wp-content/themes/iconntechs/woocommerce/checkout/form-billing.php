@@ -34,9 +34,9 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 	.woocommerce-error{
 		display: none !important;
 	}
-	.woocommerce-message{
+	/*.woocommerce-message{
 		display: none !important;
-	}
+	} */
 		</style>
 	</head>
 	<body>
