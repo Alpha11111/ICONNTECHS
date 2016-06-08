@@ -73,7 +73,7 @@ $carnum = count($carnum);
 										<li><a href="<?php bloginfo('home');?>/index.php/my-order-list/">Orders </a></li>
 										<li><a href="<?php bloginfo('home');?>/index.php/my-account/edit-address/edit/">Address </a></li>
 										<li><a href="<?php bloginfo('home');?>/index.php/reward/">Rewards </a></li>
-										<li><a href="<?php bloginfo('home');?>/index.php/my-account/customer-logout">Logout </a></li>
+										<li><a href="<?php bloginfo('home');?>/index.php/my-account/customer-logout">Log &nbsp;Out </a></li>
 									</ul>
 									<li><a href="<?php echo home_url();?>/index.php/shop-cart/"><i class="iconfont">&#xe611;</i> <span><?php echo $carnum;?></span></a></li>
 								</li>
