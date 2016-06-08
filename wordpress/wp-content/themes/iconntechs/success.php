@@ -373,7 +373,7 @@ if(!empty($_POST['email'])){
 	<body>
 		<header>
 			<div id="head">
-				<img src="<?php bloginfo('template_url');?>/img/logo2.png"  alt="logo" title="logo"/> 
+				<a href="<?php bloginfo('home');?>/index.php/shop/"><img src="<?php bloginfo('template_url');?>/img/logo2.png"  alt="logo" title="logo"/></a>
 			</div>
 			
 		</header>

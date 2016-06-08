@@ -160,10 +160,10 @@ if(!empty($_POST['pnum'])){
 									<a href="<?php bloginfo('home');?>/index.php/my-account/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 										<img id="headPic" style="width: 22px;height: 22px;" src="<?php bloginfo('template_url');?>/img/flag.png" /></a>
 									<ul class="dropdown-menu">
-										<li><a href="<?php bloginfo('home');?>/index.php/my-account/">Personal</a></li>
-										<li><a href="<?php bloginfo('home');?>/index.php/my-order-list/">Order </a></li>
+										<li><a href="<?php bloginfo('home');?>/index.php/my-account/">Settings</a></li>
+										<li><a href="<?php bloginfo('home');?>/index.php/my-order-list/">Orders </a></li>
 										<li><a href="<?php bloginfo('home');?>/index.php/my-account/edit-address/edit/">Address </a></li>
-										<li><a href="<?php bloginfo('home');?>/index.php/reward/">Reward </a></li>
+										<li><a href="<?php bloginfo('home');?>/index.php/reward/">Rewards </a></li>
 										<li><a href="<?php bloginfo('home');?>/index.php/my-account/customer-logout">Logout </a></li>
 									</ul>
 									<li><a href="<?php echo home_url();?>/index.php/shop-cart/"><i class="iconfont">&#xe611;</i> <span><?php echo $carnum;?></span></a></li>
