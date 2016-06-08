@@ -142,7 +142,7 @@ if(!empty($_POST['pnum'])){
 			<section>
 				<div class="container con1">
 					<p class="la">
-						<a href="<?php bloginfo('home');?>/index.php/shop/">home</a>
+						<a href="<?php bloginfo('home');?>/index.php/shop/">Home</a>
 						&nbsp;/&nbsp;<a href="<?php bloginfo('home');?>/index.php/product-list/">Products</a><!-- &nbsp;/&nbsp;
 						<a href="<?php bloginfo('home');?>/index.php/product-list/">Audio</a> -->&nbsp;/&nbsp;
 						<a><?php echo $data['post_title'];?></a>
