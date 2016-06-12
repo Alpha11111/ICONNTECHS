@@ -2,6 +2,9 @@ body {
 	font-family: arial;
 	overflow-x: hidden;
 }
+ol{
+	padding: 0px !important;
+}
 
 iframe {
 	border: 0;
