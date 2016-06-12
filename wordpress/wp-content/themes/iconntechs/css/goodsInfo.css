@@ -5,10 +5,13 @@ body {
 ol{
 	padding: 0px !important;
 }
-ol li{
-	overflow: hidden;
+
+#pic_list_1 ol li{
+  max-width: 260px;
+  overflow-x: hidden;
 	word-break:break-all; 
-	¡¡word-wrap:break-word;
+	 word-wrap:break-word;
+	border: 1px solid red;
 }
 
 iframe {
