@@ -998,7 +998,7 @@ default:
 		elseif	( isset($_GET['checkemail']) && 'registered' == $_GET['checkemail'] ){
 				$errors->add('registered', __('Registration complete,your password is '.$_COOKIE['user_pass']), 'message');
 				//setcookie('message','Registration complete,your password is '.$_COOKIE['user_pass'],time()+60);
-				wp_redirect( site_url('index.php/register-success?message=Registration complete,your password is '.$_COOKIE['user_pass'] ));
+				wp_redirect( site_url('index.php/register-success/' ));
 			}
 			//$errors->add('registered', __('Registration complete. Please check your email.'), 'message');
 			

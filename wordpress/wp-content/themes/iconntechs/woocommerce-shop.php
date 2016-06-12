@@ -257,7 +257,7 @@ if(!empty($_POST['pnum'])){
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-					<img src="<?php bloginfo('template_url');?>/img/indexsound.png" class="img-responsive" />
+					<img src="<?php bloginfo('template_url');?>/img/indexsound.jpg" class="img-responsive" />
 					<p class="product-title"><?php echo $data['post_title'];?></p>
 
 				</div>
