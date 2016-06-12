@@ -116,24 +116,29 @@ if(!empty($_POST['email'])){
 				
 
 
+				$uu = wp_create_user($_POST['email'], $password, $_POST['email'] );
+				$uid = $uu;
 				if(!empty($invite_id)){
 					
 					$invite_number = get_the_author_meta('invite_number',$invite_id);
-
+					$connected_id = get_the_author_meta('connected_id',$invite_id);
 					if($invite_number){
 						
 						$uarry = array('meta_value' => $invite_number+1);
 						$wcl = array('user_id'=>$invite_id,'meta_key'=>'invite_number');
 						$wpdb->update('wp_usermeta',$uarry,$wcl);
+						$uarry = array('meta_value' => $connected_id.','.$uid);
+						$wcl = array('user_id'=>$invite_id,'meta_key'=>'connected_id');
+						$wpdb->update('wp_usermeta',$uarry,$wcl);
 					}else{
 						
 						$iarry = array('meta_key'=>'invite_number','meta_value'=>1,'user_id'=>$invite_id);
 						$wpdb->insert('wp_usermeta',$iarry);
+						$iarry = array('meta_key'=>'connected_id','meta_value'=>$uid,'user_id'=>$invite_id);
+						$wpdb->insert('wp_usermeta',$iarry);
 					}
 				}
-				$uu = wp_create_user($_POST['email'], $password, $_POST['email'] );
 			
-				$uid = $uu;
 
 				$share_id = $uid;
 				$share_url = site_url().'/index.php/referral-program?invite='.$share_id;
