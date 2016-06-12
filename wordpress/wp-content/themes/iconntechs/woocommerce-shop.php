@@ -189,7 +189,7 @@ if(!empty($_POST['pnum'])){
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="<?php bloginfo('template_url');?>/img/carousel1.png" alt="carousel" class="imgh">
+						<img src="<?php bloginfo('template_url');?>/img/carousel1.jpg" alt="carousel" class="imgh">
 						<div class="carousel-caption">
 							<h1 class="whiteBorder1">
 			             	ICONNETCHS
