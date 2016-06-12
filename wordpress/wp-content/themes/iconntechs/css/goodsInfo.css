@@ -11,7 +11,7 @@ ol{
   overflow-x: hidden;
 	word-break:break-all; 
 	 word-wrap:break-word;
-	border: 1px solid red;
+	border: none;
 }
 
 iframe {
