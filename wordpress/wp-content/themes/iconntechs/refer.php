@@ -43,10 +43,10 @@
 
 <html>
 <head>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/jquery-2.0.0.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/jquery-ui"></script>
-<link href="<?php bloginfo('template_url');?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
+<link href="<?php bloginfo('template_url');?>/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container-fluid">
