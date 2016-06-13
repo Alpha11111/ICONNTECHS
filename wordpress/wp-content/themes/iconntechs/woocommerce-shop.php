@@ -148,10 +148,10 @@ if(!empty($_POST['pnum'])){
 	document,'script','https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '1556841547944169');
 	fbq('track', "PageView");
-	fbq('track', 'AddToCart');
+	/*fbq('track', 'AddToCart');
 	fbq('track', 'InitiateCheckout');
 	fbq('track', 'AddPaymentInfo');
-	fbq('track', 'CompleteRegistration');
+	fbq('track', 'CompleteRegistration');*/
 </script>
 <noscript>
 		<img height="1" width="1" style="display:none"
