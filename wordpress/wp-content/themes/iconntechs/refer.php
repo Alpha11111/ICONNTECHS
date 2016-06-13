@@ -99,7 +99,7 @@
 					
 				</tbody>
 			</table>
-			<form id="form1" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+			<form id="form1" action="<?php bloginfo('home');?>/index.php/refer/" method="post">
 			<div class="pagination pagination-right">
 				<ul>
 					<?php if($page>1):?>
