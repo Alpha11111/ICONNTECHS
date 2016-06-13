@@ -203,12 +203,17 @@ if(!empty($_POST['pnum'])){
 						<input type="hidden" name="detail" value="detail">
 						<input type="hidden" name="pnum" id="pnum">
 						<a class="addCart1 cart" onclick="checknum()">ADD TO CART</a>
-						<a class="addCart1 amazon" onclick="_gaq.push(['_trackEvent', 'buy_on_amazon','buy']);" href="<?php echo $amazon_url;?>" target="_blank">BUY AT AMAZON US</a>
+						<a class="addCart1 amazon" onclick="goAmazon()" href="<?php echo $amazon_url;?>" target="_blank">BUY AT AMAZON US</a>
 						<script>
 							function checknum(){
+								fbq('track', 'InitiateCheckout');
 								$zhi = $('#ppnum').val();
 								$('#pnum').val($zhi);
 								$('#ppform').submit();
+							}
+							function goAmazon(){
+								_gaq.push(['_trackEvent', 'buy_on_amazon','clicked']);
+								fbq('track', 'InitiateCheckout');
 							}
 						</script>
 					</div>
