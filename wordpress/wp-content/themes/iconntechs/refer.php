@@ -38,40 +38,50 @@
 	if($sort['direction']){  
 	    array_multisort($arrSort[$sort['field']], constant($sort['direction']), $data);  
 	}  
-
+header("Content-type: text/html; charset=utf-8");
 ?>
-
+<!DOCTYPE HTML>
 <html>
 <head>
+	<meta charset="utf-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery-2.0.0.min.js"></script>
 <script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
 <link href="<?php bloginfo('template_url');?>/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/tableExport.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery.base64.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/html2canvas.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/sprintf.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jspdf.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/base64.js">
+</script>
 </head>
 <body>
 <div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="page-header">
-				<h1>
+
+				<h1 onClick ="$('#table').tableExport({type:'excel',escape:'true'});">
 					Referral Program
 				</h1>
 			</div>
-			<table class="table table-bordered">
+			<table class="table table-bordered" id="table">
 				<thead>
 					<tr>
 						<th>
 							ID
 						</th>
 						<th>
-							邮箱
+							Email
 						</th>
 						<th>
-							注册时间
+							Register Date
 						</th>
 
 						<th onclick="order(<?php echo $order;?>)">
-							受邀请人数
+							Invited number
 						</th>
 					</tr>
 				</thead>
