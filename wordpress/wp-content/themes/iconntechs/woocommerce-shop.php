@@ -346,7 +346,7 @@ $fdata = get_posts(array(
 				_gaq.push(['_trackEvent', 'add_to_cart','insert']);
 				
 			}
-				fbq('track', 'AddToCart');
+				
 			</script>
 			</div>
 		</section>

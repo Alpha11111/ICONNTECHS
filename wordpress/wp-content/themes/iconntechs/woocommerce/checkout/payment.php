@@ -54,7 +54,6 @@ if ( ! is_ajax() ) {
 	</div>
 	<script>
 		function payment(){
-			fbq('track', 'AddPaymentInfo');
 			_gaq.push(['_trackEvent', 'place_order','order']);
 		}
 	</script>

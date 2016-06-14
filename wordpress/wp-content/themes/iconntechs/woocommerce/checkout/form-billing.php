@@ -38,6 +38,9 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 		display: none !important;
 	}
 		</style>
+		<script>
+				fbq('track', 'InitiateCheckout');
+		</script>
 	</head>
 	<body>
 		<!--

@@ -6,6 +6,7 @@
 
 
 ?>
+<?php get_template_part('head','shop');?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -30,7 +31,9 @@
 
 	<body>
 		
-		<?php get_template_part('head','shop');?>
+		<script>
+			fbq('track', 'CompleteRegistration');
+		</script>
 		<div class="container container2">
 			<h2>Your Account Has Been Created</h2>
 			<p>Thank you for creating your account at ICONNTECHS.</p>
@@ -49,8 +52,6 @@
         	描述：尾部
         -->
 	   <?php get_template_part('foot','shop');?>
-	   <script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/jquery-1.11.0.js"></script>
-	   <script src="<?php bloginfo('template_url');?>/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 		
 
 

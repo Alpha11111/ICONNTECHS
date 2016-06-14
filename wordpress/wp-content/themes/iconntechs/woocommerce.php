@@ -110,7 +110,7 @@ if(!empty($_POST['pnum'])){
 
 
 ?>
-
+<?php get_template_part('head','shop');?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -132,12 +132,14 @@ if(!empty($_POST['pnum'])){
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
+	<script>
+
+	</script>
 	</head>
 
 	<body data-spy="scroll"  data-target="#navbar-example">
 		
-			<?php get_template_part('head','shop');?>
+			
 			<section>
 				<div class="container con1">
 					<p class="la">
@@ -206,7 +208,7 @@ if(!empty($_POST['pnum'])){
 						<a class="addCart1 amazon" onclick="goAmazon()" href="<?php echo $amazon_url;?>" target="_blank">BUY AT AMAZON US</a>
 						<script>
 							function checknum(){
-								fbq('track', 'InitiateCheckout');
+								
 								$zhi = $('#ppnum').val();
 								$('#pnum').val($zhi);
 								$('#ppform').submit();
@@ -214,7 +216,7 @@ if(!empty($_POST['pnum'])){
 
 							function goAmazon(){
 								_gaq.push(['_trackEvent', 'buy_on_amazon','clicked']);
-								fbq('track', 'InitiateCheckout');
+								
 							}
 						</script>
 					</div>
