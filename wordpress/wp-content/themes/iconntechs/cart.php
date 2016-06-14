@@ -46,7 +46,7 @@ if(!empty($_POST)){
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 		<script>
-			fbq('track', 'AddToCart')
+			fbq('track', 'AddToCart');
 		</script>
 	</head>
 	<body>

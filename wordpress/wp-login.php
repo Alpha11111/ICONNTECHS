@@ -833,7 +833,7 @@ case 'register' :
 
 					<p>
 						<input type="hidden" name="redirect_to" value="<?php echo esc_attr( $redirect_to ); ?>" />
-						<input type="submit"  value="REGISTER "  onclick="fbq('track', 'CompleteRegistration');"/>
+						<input type="submit"  value="REGISTER " />
 					</p>
 				    <p class="back"><a href="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>">< Sign in</a></p>
 				</form>
