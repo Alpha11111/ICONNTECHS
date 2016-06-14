@@ -54,7 +54,7 @@ if ( ! is_ajax() ) {
 	</div>
 	<script>
 		function payment(){
-			_gaq.push(['_trackEvent', 'place_order','order']);
+			_gaq.push(['_trackEvent', 'place_order','clicked']);
 		}
 	</script>
 </div>
