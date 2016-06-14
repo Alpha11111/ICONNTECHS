@@ -9,8 +9,9 @@ ol{
 #pic_list_1 ol li{
   max-width: 260px;
   overflow-x: hidden;
-	word-break:break-all; 
-	 word-wrap:break-word;
+  word-break:break-all; 
+	word-wrap:break-word;
+		
 	border: none;
 }
 

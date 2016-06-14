@@ -211,6 +211,7 @@ if(!empty($_POST['pnum'])){
 								$('#pnum').val($zhi);
 								$('#ppform').submit();
 							}
+
 							function goAmazon(){
 								_gaq.push(['_trackEvent', 'buy_on_amazon','clicked']);
 								fbq('track', 'InitiateCheckout');
