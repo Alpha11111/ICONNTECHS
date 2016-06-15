@@ -226,7 +226,7 @@ if(!empty($_POST['pnum'])){
 						</div>
 					</div>
 					<div class="item">
-						<img src="<?php bloginfo('template_url');?>/img/carousel2.png" alt="carousel2" class="imgh">
+						<img src="<?php bloginfo('template_url');?>/img/carousel2.jpg" alt="carousel2" class="imgh">
 						<div class="carousel-caption">
 							<!-- <h1 class="whiteBorder1">
 										             	ICONNETCHS
@@ -237,7 +237,7 @@ if(!empty($_POST['pnum'])){
 						</div>
 					</div>
 					<div class="item">
-						<img src="<?php bloginfo('template_url');?>/img/carousel3.png" alt="carousel3" class="imgh">
+						<img src="<?php bloginfo('template_url');?>/img/carousel3.jpg" alt="carousel3" class="imgh">
 						<div class="carousel-caption">
 							<!-- <h1 class="whiteBorder1">
 										             	ICONNETCHS
@@ -247,7 +247,7 @@ if(!empty($_POST['pnum'])){
 						</div>
 					</div>
 					<div class="item">
-						<img src="<?php bloginfo('template_url');?>/img/carousel4.png" alt="carousel4" class="imgh">
+						<img src="<?php bloginfo('template_url');?>/img/carousel4.jpg" alt="carousel4" class="imgh">
 						<div class="carousel-caption">
 							<!-- <h1 class="whiteBorder1">
 										             	ICONNETCHS
