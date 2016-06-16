@@ -59,7 +59,7 @@
 			</div>
 			<div class="container">
 				<hr />
-				<div class="col-lg-6 col-md-6 col-sm-12">Copyright     2016 ICONNTECHS Technology Co.Limited</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">Copyright     2016 Piron (Shenzhen) Supply Chain Management Co., Ltd.</div>
 				
 				
 			</div><br />
