@@ -57,7 +57,7 @@
 			<div class="container">
 				<hr />
 				<div class="col-lg-6 col-md-6 col-sm-12">Copyright     2016 Piron (Shenzhen) Supply Chain Management Co., Ltd.</div>
-				
+				<p style="color:white;float:right">codyqu@163.com</p>
 				
 			</div><br />
 			<div class="container">
