@@ -141,8 +141,8 @@ if(!empty($_POST['pnum'])){
 		ga('create', 'UA-74879058-2');
 		ga('require', 'ec');
 		ga('ec:addProduct', {
-		  'id': '<?php echo $product_id;?>',
-		  'name': '<?php echo $product_name;?>',
+		  'id': '<?php echo $parr['product_id'];?>',
+		  'name': '<?php echo $parr['product_name'];?>',
 		  'category': '',
 		  'brand': 'IconnTechs',
 		  'variant': ''
