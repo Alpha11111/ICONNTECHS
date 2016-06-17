@@ -359,9 +359,9 @@ $fdata = get_posts(array(
 		<script>
 		    window.onload=function(){
 		   
-		    	if(window.innerWidth>=1350){
+		    	/*if(window.innerWidth>=1350){
 		    		ScreenCover();
-		    	}
+		    	}*/
 
 		    	$(".cart").click(function(){
 		    		var index =$(this)
@@ -373,7 +373,7 @@ $fdata = get_posts(array(
 		    	});
 		    }
 		  
-		    window.onresize=function(){
+		 /*   window.onresize=function(){
 		    	if(window.innerWidth>=1350){
 		    		ScreenCover();
 		    	}else{
@@ -385,7 +385,7 @@ $fdata = get_posts(array(
 				    	  names[i].style.height="inherit";
 				    }
 			    }
-		    }
+		    }*/
 		    
 		    function ScreenCover(){
 		    	 document.getElementById("carousel-example-generic").style.height=window.innerHeight+"px";
