@@ -98,6 +98,11 @@ if(!empty($sprice)){
 }else{
 	$data['price'] = $rprice;//产品价格
 }
+	$parr = array();
+	$parr['product_id'] = $post->ID;
+	$parr['product_name'] = $post->post_title;
+	$parr['product_price'] = $data['price'];
+	$parr['product_sku'] = get_metadata ( 'post', $product_id, $meta_key = '_sku', $single = true );
 
 if(!empty($_POST['pnum'])){
 	$pnum = $_POST['pnum'];
@@ -133,6 +138,17 @@ if(!empty($_POST['pnum'])){
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script>
+		ga('create', 'UA-74879058-2');
+		ga('require', 'ec');
+		ga('ec:addProduct', {
+		  'id': '<?php echo $product_id;?>',
+		  'name': '<?php echo $product_name;?>',
+		  'category': '',
+		  'brand': 'IconnTechs',
+		  'variant': ''
+		});
+		ga('ec:setAction', 'detail');
+		ga('send', 'pageview');
 
 	</script>
 	</head>
@@ -202,12 +218,59 @@ if(!empty($_POST['pnum'])){
 						 <label class="clickBtn " id="reduce">-</label><input type="button" name="ppnum" id="ppnum" value="1" readonly="readonly"/><label class="clickBtn" id="add">+</label>
 					</div>
 					<div>
+						<input type="hidden" name="product_id" value="<?php echo $product_id;?>">
+						<input type="hidden" name="product_price" value="<?php echo $product_price;?>">
+						<input type="hidden" name="product_name" value="<?php echo $product_name;?>">
+						<input type="hidden" name="product_sku" value="<?php echo $product_sku;?>">
 						<input type="hidden" name="detail" value="detail">
 						<input type="hidden" name="pnum" id="pnum">
-						<a class="addCart1 cart" onclick="checknum()">ADD TO CART</a>
+						<a class="addCart1 cart" onclick="checknum();return !ga.loaded;">ADD TO CART</a>
 						<a class="addCart1 amazon" onclick="goAmazon()" href="<?php echo $amazon_url;?>" target="_blank">BUY AT AMAZON US</a>
 						<script>
+							/*ga('require', 'ecommerce');
+								ga('ecommerce:addTransaction', {
+								  'id': '1234',                     // Transaction ID. Required.
+								  'affiliation': 'Acme Clothing',   // Affiliation or store name.
+								  'revenue': '11.99',               // Grand Total.
+								  'shipping': '5',                  // Shipping.
+								  'tax': '1.29'                     // Tax.
+								});
+								ga('ecommerce:addItem', {
+								  'id': '1234',                     // Transaction ID. Required.
+								  'name': 'Fluffy Pink',    // Product name. Required.
+								  'sku': 'DD234449',                 // SKU/code.
+								  'category': 'Party Toys',         // Category or variation.
+								  'price': '11.99',                 // Unit price.
+								  'quantity': '1'                   // Quantity.
+								});
+								ga('ecommerce:addTransaction', {
+									  'id': '<?php echo $product_id;?>',                     // Transaction ID. Required.
+									  'affiliation': 'ICONNTECHS',   // Affiliation or store name.
+									  'revenue': '<?php echo $product_price;?>',               // Grand Total.
+									  'shipping': '0',                  // Shipping.
+									  'tax': '0'                     // Tax.
+									});
+									ga('ecommerce:addItem', {
+									  'id': '<?php echo $product_id;?>',                     // Transaction ID. Required.
+									  'name': '<?php echo $product_name;?>',    // Product name. Required.
+									  'sku': '<?php echo $product_sku;?>',                 // SKU/code.
+									  'category': 'test',         // Category or variation.
+									  'price': '<?php echo $product_price;?>',                 // Unit price.
+									  'quantity': '1'                   // Quantity.
+									});	
+									ga('ecommerce:send');*/
 							function checknum(){
+								 ga('ec:addProduct', {
+							    'id': '<?php echo $parr['product_id'];?>',
+							    'name': '<?php echo $parr['product_name'];?>',
+							    'category': '',
+							    'brand': 'IconnTechs',
+							    'variant': '',
+							    'price': '<?php echo $parr['product_price'];?>',
+							    'quantity': '1'
+							  });
+							  ga('ec:setAction', 'add');
+							  ga('send', 'event', 'UX', 'click', 'add to cart');     // Send data using an event.
 								
 								$zhi = $('#ppnum').val();
 								$('#pnum').val($zhi);

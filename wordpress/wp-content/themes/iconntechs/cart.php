@@ -5,11 +5,7 @@ Template Name:shop-cart
  
 $tdata = WC()->cart->get_cart();
 $tr = WC()->cart->get_cart();
-/*foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-		//var_dump($cart_item_key);die;
-		var_dump($cart_item);die;
-		 //WC()->cart->remove_cart_item($cart_item_key);
-	}*/
+
 //var_dump($tr);die;
 if(!empty($_POST)){
 	$num = $_POST['num'];

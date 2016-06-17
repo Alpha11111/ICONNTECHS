@@ -5,7 +5,17 @@
 /*$totals = $order->get_order_item_totals();
 var_dump($totals);die;*/
 $e_mail = get_the_author_meta( 'user_email', $user_id );
-
+$shopping_cart = array();
+$s = 0;
+foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+		//var_dump($cart_item_key);die;
+		$pr = $cart_item['data'];
+		$shopping_cart[$s]['id'] = $pr->id;
+		$shopping_cart[$s]['name'] = $pr->post->post_title;
+		 //WC()->cart->remove_cart_item($cart_item_key);
+		$s++;
+	}
+	$shopping_cart = json_encode($shopping_cart);
 ?>
 
 
@@ -40,6 +50,25 @@ $e_mail = get_the_author_meta( 'user_email', $user_id );
 		</style>
 		<script>
 				fbq('track', 'InitiateCheckout');
+				ga('create', 'UA-74879058-2');
+				ga('require', 'ec');
+				var cart = <?php echo $shopping_cart;?>;
+				  for(var i = 0; i < cart.length; i++) {
+				    var product = cart[i];
+				    ga('ec:addProduct', {
+				      'id': product.id,
+				      'name': product.name,
+				      'category': '',
+				      'brand': 'IconnTechs',
+				      'variant':  '',
+				      'price': '',
+				      'quantity': ''
+				    });
+				  }
+					 // In the case of checkout actions, an additional actionFieldObject can
+				// specify a checkout step and option.
+				ga('ec:setAction','checkout');
+				ga('send', 'pageview'); 
 		</script>
 	</head>
 	<body>
