@@ -34,6 +34,20 @@ if ( $order ) : ?>
 
 	<?php else : ?>
 
+		<script>
+			ga('create', 'UA-74879058-2');
+			ga('require', 'ec');
+			// Transaction level information is provided via an actionFieldObject.
+			ga('ec:setAction', 'purchase', {
+			  'id': '<?php echo $order->id;?>',
+			  'affiliation': '',
+			  'revenue': '',
+			  'tax': '',
+			  'shipping': '',
+			  'coupon': ''    // User added a coupon at checkout.
+			});
+			ga('send', 'pageview');     // Send transaction data with initial pageview.
+		</script>
 		<p class="woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
 
 		<ul class="woocommerce-thankyou-order-details order_details">
