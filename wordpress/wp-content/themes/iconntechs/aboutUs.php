@@ -52,6 +52,8 @@
 	    	<p>We bring you the most resilient bluetooth speaker </p>
 	    	<p>We bring you the coolest and sweatproof bluetooth earphones so you can stay in the moment.</p>
 	    	<p>We are IconnTechs, where sports and technology come together. </p>
+	    	<p>Customer Service:</p>
+			<p>If you need any help or have any questions about your order, please contact us at codyqu@.163com; cody_qu@163.com</p>
 	    </div>
 		</div>
 	 
