@@ -1,22 +1,10 @@
 <?php 
 
 
-$car = WC()->cart->get_cart();
-foreach ( $car as $cart_item_key => $cart_item ) {
-		//var_dump($cart_item['data']->post->post_date);
-	}
 
-/*获取产品各种属性*/
-/*$data = $wpdb->get_results( "select * from wp_postmeta where post_id=42 ",ARRAY_A );
-foreach ($data as $key) {
-	if($key['meta_key']=='_regular_price'){
-		$price = $key['meta_value'];
 		
-	}
-}*/
 
 
-//var_dump($info);die;
 /*获取产品图*/
 $data = $wpdb->get_results( "select ID,guid from wp_posts where post_type='product' and post_status='publish' order by post_date DESC limit 1",ARRAY_A );
 $thumbnail = $data[0]['guid'];
@@ -40,48 +28,16 @@ if(!empty($sprice)){
 	$data['price'] = $rprice;
 }
 
-//var_dump($data);die;
-/*获取首页四个产品*/
-/*$finfo_id = $wpdb->get_results("select m.object_id from wp_terms t  left join wp_term_relationships m on t.term_id=m.term_taxonomy_id where t.name='camera'",ARRAY_A );*/
 
-/*$fdata = get_posts(array(
-	'post_type'=>'product',
-	'order'=>ASC
-	),ARRAY_A);
 
-$arr = '';
-$i = 0;
-foreach ($fdata as $post) {
-	$id = $post->ID;
 
-	if($id!=42){
-		$link = get_permalink();
-		$arr[$i]['thumbnail'] =  the_post_thumbnail();
-		$arr[$i]['id'] = $id;
-		$arr[$i]['name'] = get_the_title();
-		$mdata = $wpdb->get_results( "select * from wp_postmeta where post_id=$id ",ARRAY_A );
-		foreach ($mdata as $key) {
-			if($key['meta_key']=='_regular_price'){
-				$arr[$i]['price'] = $key['meta_value'];
 			
-			}
-		}
 		
 		
 		
-	}
-	$i++;	
-}*/
 
 
-	/*$posts = get_posts('numberposts=4&orderby=post_date&post_type=product');
 
-	foreach($posts as $post) {
-	                   // setup_postdata($post);
-	                    the_post_thumbnail('large');
-	                    echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-	                }*/
-	//var_dump($arr);die;
 $carnum = WC()->cart->get_cart();
 $carnum = count($carnum);
 if(!empty($_POST['pnum'])){
@@ -219,7 +175,7 @@ if(!empty($_POST['pnum'])){
 						<img src="<?php bloginfo('template_url');?>/img/carousel1.jpg" alt="carousel" class="imgh">
 						<div class="carousel-caption">
 							<h1 class="whiteBorder1">
-			             	ICONNETCHS
+			             	ICONNETCHS IT
 			             </h1>
 							<h3>Products as Resilient as You Are</h3>
 							<p class="bottomWord">ENRICH YOUR EXPERIENCES</p>
@@ -319,7 +275,7 @@ $fdata = get_posts(array(
 						<a>
 							<p><?php echo get_the_title();?></p>
 						</a>
-						<label class="mark1"><i class="iconfont">&#xe602;</i></label>
+						
 					</div>
 					<div class="user-operation">
 			<label>$<?php $mdata = $wpdb->get_results( "select * from wp_postmeta where post_id=$id ",ARRAY_A );
@@ -329,9 +285,7 @@ $fdata = get_posts(array(
 			
 				}
 		}?></label>
-		<a href="<?php echo get_permalink();?>">
-			<i class="iconfont">&#xe640;</i>
-		</a> 
+	
 		<a rel="nofollow" onclick="addCart()" href="<?php bloginfo('home');?>/index.php/shop?add-to-cart=<?php echo $id;?>"   class="cart">
 			
 			<i class="iconfont">&#xe606;</i>
@@ -396,6 +350,14 @@ $fdata = get_posts(array(
 			    	  names[i].style.width=(window.innerWidth-17)+"px";
 			     }
 		    }
+/*
+		    function ScreenCover(){
+			     var names =document.getElementsByClassName("imgh");
+			     for (var i=0;i<names.length;i++) {
+			    	  names[i].style.height=window.innerHeight+"px";
+			    	  names[i].style.width="100%";
+			     }
+		    }*/
 		</script>
 
 	</body>
