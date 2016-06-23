@@ -7,20 +7,9 @@ if(is_shop()){
 	die;
 }
 
-/*获取产品名称*/
-/*$current_url = home_url(add_query_arg(array()));
-$start = strpos($current_url,"product");
-$name = substr($current_url,$start);
-$name = str_replace('/', '', (str_replace('product', '', $name)));
 
-if($name=='list'){
 	
-	get_template_part('product', 'list' );
-	die;
-}*/
 
-/*$info = $wpdb->get_results(" select * from wp_posts where post_name='$name' ",ARRAY_A);
-$post_id = $info[0]['ID'];*/
 global $post, $woocommerce, $product;
 
 //获取底部相关产品
@@ -80,6 +69,7 @@ if(!empty($photo_str)){
 			$pimg = $ky['guid'];
 		}
 		$info[$kk]['thumbnail'] = str_replace('.png', '-82x82.png', $ky['guid']);
+		$info[$kk]['thumbnail'] = str_replace('.jpg', '-82x82.jpg', $info[$kk]['thumbnail']);
 		$kk++;
 	}
 
@@ -106,8 +96,6 @@ if(!empty($sprice)){
 
 if(!empty($_POST['pnum'])){
 	$pnum = $_POST['pnum'];
-	//var_dump(site_url());die;
-	 //add_to_cart( $product_id = 0, $quantity = 1, $variation_id = 0, $variation = array(), $cart_item_data = array() )
 	WC()->cart->add_to_cart($post_id,$pnum);
 	wp_redirect(site_url('/index.php/shop-cart/'));
 }
