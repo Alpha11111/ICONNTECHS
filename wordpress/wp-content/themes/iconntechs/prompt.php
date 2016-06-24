@@ -44,8 +44,8 @@ $msg = "<div id='emailBox'>
 				font-size: 20px;
 			}
 		</style>
-			<h1>ICONNTECHS</h1>
-			<p>Greetings from Iconntechs,</p>
+			<h1>ICONNTECHS IT</h1>
+			<p>Greetings from ICONNTECHS IT,</p>
 			<p>Here is the promotional code <label>UB86EXMY</label></a></p>
 			
 			<p>You can use the code to get 25% discount off any products you purchase in our Amazon store:</p>
@@ -55,10 +55,10 @@ $msg = "<div id='emailBox'>
 				<li>Bluetooth Speaker &nbsp;<a href='https://www.amazon.com/dp/B01FS65MCG'>https://www.amazon.com/dp/B01FS65MCG </a></li>
 				<li>Bluetooth Earbuds  &nbsp;<a href='https://www.amazon.com/dp/B01FS16U9A'>https://www.amazon.com/dp/B01FS16U9A  </a></li>
 			</ul>
-			<p>Just apply the code before you pay at the check, make sure the seller is IconnTechs.</p>
+			<p>Just apply the code before you pay at the check, make sure the seller is ICONNTECHS IT.</p>
 			<p>Thanks again for choosing us, our website will officially be launched on June 6th , we hope you have a great shopping experience here and enjoy your day!</p>
 			<p>Warm Regards,</p>
-			<p>The Iconntechs Team </p><br />
+			<p>The ICONNTECHS IT Team </p><br />
 			<hr />
 			<p class='webSite'><a href='https://www.iconntechs.com'>https://www.iconntechs.com</a></p>
 		</div>";
@@ -245,7 +245,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>ICONNTECHS</title>
+		<title>ICONNTECHS IT</title>
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/prompt.css" />
 		<script>
 	    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?

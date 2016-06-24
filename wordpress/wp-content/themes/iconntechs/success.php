@@ -191,15 +191,15 @@ if(!empty($_POST['email'])){
 					}
 				</style>
 					
-					<h1>ICONNTECHS</h1>
+					<h1>ICONNTECHS IT</h1>
 					
-					<p>Greetings from Iconntechs,</p>
+					<p>Greetings from ICONNTECHS IT,</p>
 					<p>Thank you for registering on www.Iconntechs.com.</p>
 					<p>Here is the account and password. You can log in our official website when it is launched. </p>
 					<p>Email:$_POST[email]</p>
 					<p>Password:$password</p>
 					<p>Unique link:$share_url</p>
-					<p>Share your unique link above to earn Iconntechs’s goods for each friend who signs up.</p>
+					<p>Share your unique link above to earn ICONNTECHS IT'S goods for each friend who signs up.</p>
 					<p>Here is how it works:</p>
 					<ul>
 						<li>5 friends successfully registered, you will get $30 worth coupon</li>
@@ -209,7 +209,7 @@ if(!empty($_POST['email'])){
 					</ul>
 					<p>The coupons can be used on any products you purchased from our Amazon store. Good news is our products are on sale now, and our promotion valid to June 18th . So hurry up!!! Once 10 of your friends registered, you can get a 4K action camera for free!</p>
 					
-					<p>Iconntechs amazon store: </p>
+					<p>ICONNTECHS IT amazon store: </p>
 		            <p><a href='http://amzn.to/25Ckbs0'>http://amzn.to/25Ckbs0</a></p>
 					<hr />
 					<p class='webSite'><a href='http://www.iconntechs.com'>http://www.iconntechs.com</a></p>
@@ -275,7 +275,7 @@ if(!empty($_POST['email'])){
 			<div id="top">
 				<h5>INVITE FRIENDS & EARN <span style="color: #FF5550;">FREE</span> PRODUCTS</h5>
 				<p>Share your unique link via email,Facebook</p>
-				<P>or Twitter and earn Iconntechs’s goods for </P>
+				<P>or Twitter and earn ICONNTECHS IT's goods for </P>
 				<p>each friend who signs up.</p>
 				<label class="linkBox"><?php echo $_GET['share_url'];?></label>
 				<p class="shareBox">
@@ -384,7 +384,7 @@ if(!empty($_POST['email'])){
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>ICONNTECHS</title>
+		<title>ICONNTECHS IT</title>
 		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/img/logoIcon.png">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/css/success.css"/>
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/animate.css" />
@@ -435,7 +435,7 @@ if(!empty($_POST['email'])){
 				<h1>INVITE FRIENDS & EARN <span style="color:#ff5500">FREE</span> PRODUCTS</h1>
 				<br />
 				<p>Share your unique link via email,Facebook</p>
-				<p>or Twitter and earn Iconntechs’s goods for  </p>
+				<p>or Twitter and earn ICONNTECHS IT'S goods for  </p>
 				<p>each friend who signs up.</p>
 				<br /><br />
 				<div class="linkBox"><?php echo $_GET['share_url'];?></div><br /><br />
@@ -515,12 +515,12 @@ if(!empty($_POST['email'])){
 		       <p class="input"><label>Subject :</label><input type="text" name="emailtitle" value="Share and get free products!!!"></p>
 		       <div  class="textarea">
 		       	  <p>Hello Buddy!</p>
-		       	  <p>Iconntechs is giving away coupon!</p>
+		       	  <p>ICONNTECHS IT is giving away coupon!</p>
 		       	  <p>All you need to do is:</p>
-		       	  <p>1, Click the link below, you will then be taken to Iconntechs registration page  <a href="<?php echo $_GET['share_url'];?>"><?php echo $_GET['share_url'];?></a></p>
+		       	  <p>1, Click the link below, you will then be taken to ICONNTECHS IT registration page  <a href="<?php echo $_GET['share_url'];?>"><?php echo $_GET['share_url'];?></a></p>
 		       	  <p>2, Registered on Iconntechs website and you will get your unique link</p>
-		       	  <p>3, Share your unique link to your friends and earn Iconntechs coupon</p>
-		       	  <p>With the coupon, you can purchase many types of fashionable and advanced electronics from Iconntechs Amazon store <a href="http://amzn.to/25Ckbs0">http://amzn.to/25Ckbs0</a></p>
+		       	  <p>3, Share your unique link to your friends and earn ICONNTECHS IT coupon</p>
+		       	  <p>With the coupon, you can purchase many types of fashionable and advanced electronics from ICONNTECHS IT Amazon store <a href="http://amzn.to/25Ckbs0">http://amzn.to/25Ckbs0</a></p>
 		       </div>
 		       	 
 		      

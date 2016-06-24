@@ -46,12 +46,12 @@
 	    	<p>We also love the blood, sweats and tears that come with them.</p>
 	    	<p>But most of all, we love our experiences in all of above. </p>
 	    	<p>Because a trophy carries dust, but memories last forever.</p>
-	    	<p>That's why we created IconnTechs, a group of product engineers and sports fanatics who want to enable you to enhance your experiences in </p>
+	    	<p>That's why we created ICONNTECHS IT, a group of product engineers and sports fanatics who want to enable you to enhance your experiences in </p>
 	    	<p>whatever sports you do.</p>
 	    	<p>We bring you the most versatile action camera so you can capture your most incredible moment to inspire, and share with those around you. </p>
 	    	<p>We bring you the most resilient bluetooth speaker </p>
 	    	<p>We bring you the coolest and sweatproof bluetooth earphones so you can stay in the moment.</p>
-	    	<p>We are IconnTechs, where sports and technology come together. </p>
+	    	<p>We are ICONNTECHS IT, where sports and technology come together. </p>
 	    	<p>Customer Service:</p>
 			<p>If you need any help or have any questions about your order, please contact us at <strong>codyqu@163.com; cody_qu@163.com</strong></p>
 	    </div>

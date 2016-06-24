@@ -68,7 +68,7 @@ preference; and merchandise category preferences) very seriously.</p>
 			<p>•to process exchanges or product returns;</p>
 			<p>•to improve our competitiveness and service,</p>
 			<p>•to respond to requests or complaints.</p>
-			<p>Iconntechs will respect your privacy and will pay attention to your online safety. We will record a variety of information from your visit to our site in order to provide the 
+			<p>ICONNTECHS IT will respect your privacy and will pay attention to your online safety. We will record a variety of information from your visit to our site in order to provide the 
 best products, efficient customer service, and timely updates for you. You will see the notice below explaining our online information practices and the choices you can 
 make about the way your information is collected and used. All of this information which we made is in order to protect your privacy better. If you want to know more 
 information, you can read our privacy notice below.</p>
