@@ -19,3 +19,8 @@ update
   <img  src="https://www.momosextoys.com/image/catalog/MomoSexToys_v3.png" width="120px">
   <a href="https://www.momosextoys.com">Momo Sex Toys</a>
 </div>
+
+<div style="background-color: black;">
+  <img  src="https://mankotoys.com/wp-content/uploads/2022/09/mankotoys-logo-v2.png" width="120px">
+  <a href="https://mankotoys.com/">Manko Sex Toys</a>
+</div>
