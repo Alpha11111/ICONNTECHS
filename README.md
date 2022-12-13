@@ -14,3 +14,8 @@ update
   <img  src="https://cdn.shopify.com/s/files/1/0619/0805/8291/files/instockdoll00001_215x.png?v=1660191452" width="120px">
   <a href="https://www.instockdoll.com">sex dolls</a>
 </div>
+
+<div style="background-color: black;">
+  <img  src="https://www.momosextoys.com/image/catalog/MomoSexToys_v3.png" width="120px">
+  <a href="https://www.momosextoys.com">Momo Sex Toys</a>
+</div>
