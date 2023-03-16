@@ -24,3 +24,8 @@ update
   <img  src="https://mankotoys.com/wp-content/uploads/2022/09/mankotoys-logo-v2.png" width="120px">
   <a href="https://mankotoys.com/">Manko Sex Toys</a>
 </div>
+
+<div style="background-color: black;">
+  <img  src="https://cdn.shopify.com/s/files/1/0718/5111/4791/files/D-CITY_LOGO_390x@2x.png" width="120px">
+  <a href="https://sexdollscity.com/">SexDollsCity</a>
+</div>
