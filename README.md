@@ -7,7 +7,7 @@ update
 
 <div style="background-color: black;">
   <img  src="https://www.qcsexdolls.com/wp-content/uploads/2022/08/qcsexdolls-logo.png" width="120px">
-  <a href="https://www.qcsexdolls.com">sexdolls</a>
+  <a href="https://www.qcsexdolls.com">QcSexDolls</a>
 </div>
 
 <div style="background-color: black;">
