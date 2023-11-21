@@ -26,6 +26,6 @@ update
 </div>
 
 <div style="background-color: black;">
-  <img  src="[https://cdn.shopify.com/s/files/1/0718/5111/4791/files/D-CITY_LOGO_390x@2x.png](https://www.prprdoll.com/wp-content/uploads/2023/11/Banner116.png)" width="120px">
+  <img  src="https://www.prprdoll.com/wp-content/uploads/2023/11/Banner116.png" width="120px">
   <a href="https://www.prprdoll.com">ラブドール 風俗</a>
 </div>
