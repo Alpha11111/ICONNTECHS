@@ -27,5 +27,5 @@ update
 
 <div style="background-color: black;">
   <img  src="https://www.prprdoll.com/wp-content/uploads/2023/11/Banner116.png" width="120px">
-  <a href="https://www.prprdoll.com">ラブドール 風俗</a>
+  <a href="https://www.prprdoll.com">ラブドール</a>
 </div>
